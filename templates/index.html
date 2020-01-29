@@ -3,18 +3,18 @@
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156513245-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-156513245-1');
-    </script>
+  gtag('config', 'UA-156513245-1');
+</script>
 
     <title>Mindhug</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -51,15 +51,17 @@
         /*font-weight: bold;*/
         margin: 8px 0;
         margin-right: 0%;
+        margin-left: 0%;
     }
 
     .navbar .container .navbar-brand {
-        color: #000000 !important;
-        font-weight: bold;
-        margin: 8px 0;
-    }
 
-    ul.nav a:hover { color: #4b92dc !important; }
+    color: #000000 !important;
+    font-weight: bold;
+    margin: 8px 0;
+
+  }
+  ul.nav a:hover { color: #4b92dc !important;  }
 
     .jumbotron {
         font-family: 'Hammersmith One', sans-serif;
@@ -623,7 +625,7 @@
                         </div>
                         <div class="form-check" style="padding: 10px">
 
-                            <label  for="field_terms"><input type="checkbox" class="btn-lg" id="field_terms" style="margin: 5px" oninvalid="this.setCustomValidity('Please check the box to continue')" oninput="this.setCustomValidity('')" required/><font style="font-size: 13px; font-weight: normal; color: dimgrey">I accept <a href="/privacy-policy"><u>privacy policy</u></a> and <a href = "/cookie-policy"><u>cookie policy</u></a>.</font><span class="mock_checkbox"></span></label>
+                            <label  for="field_terms"><input type="checkbox" class="btn-lg" id="field_terms" style="margin: 5px" oninvalid="this.setCustomValidity('Please check the box to continue')" oninput="this.setCustomValidity('')" required/><font style="font-size: 13px; font-weight: normal; color: dimgrey">I accept <a href="/privacy-policy" target="_blank"><u>privacy policy</u></a> and <a href = "/cookie-policy" target="_blank"><u>cookie policy</u></a>.</font><span class="mock_checkbox"></span></label>
                         </div>
                     </form>
                 </div>
@@ -790,7 +792,7 @@
 
                         </div>
                         <div class="form-check" style="padding: 10px">
-                            <label  for="field_terms1"><input type="checkbox" class="btn-lg" id="field_terms1" style="margin: 5px" oninvalid="this.setCustomValidity('Please check the box to continue')" oninput="this.setCustomValidity('')" required/><font style="font-size: 13px; font-weight: normal; color: dimgrey">I accept <a href="/privacy-policy"><u>privacy policy</u></a> and <a href = "/cookie-policy"><u>cookie policy</u></a>.</font><span class="mock_checkbox"></span></label>
+                            <label  for="field_terms1"><input type="checkbox" class="btn-lg" id="field_terms1" style="margin: 5px" oninvalid="this.setCustomValidity('Please check the box to continue')" oninput="this.setCustomValidity('')" required/><font style="font-size: 13px; font-weight: normal; color: dimgrey">I accept <a href="/privacy-policy" target="_blank"><u>privacy policy</u></a> and <a href = "/cookie-policy" target="_blank"><u>cookie policy</u></a>.</font><span class="mock_checkbox"></span></label>
                         </div>
                     </form>
                 </div>
@@ -976,30 +978,30 @@
 </script>
 
 <script>
-    $(document).ready(function() {
-        $(".navbar a").on('click', function(event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                var ht = $(".navbar-fixed-top").height() - 50;
-                var val = $(hash).offset().top;
-                $('html, body').unbind().animate({
-                    scrollTop: val
-                }, 500, function() {
-                    window.location.hash = hash;
-                });
-            }
-        });
+      $(document).ready(function() {
+          $(".navbar a").on('click', function(event) {
+              if (this.hash !== "") {
+                  event.preventDefault();
+                  var hash = this.hash;
+                  var ht = $(".navbar-fixed-top").height() - 50;
+                  var val = $(hash).offset().top;
+                  $('html, body').unbind().animate({
+                      scrollTop: val
+                  }, 500, function() {
+                      window.location.hash = hash;
+                  });
+              }
+          });
 
-        $('.navbar-nav>li>a').on('click', function() {
-            $('.navbar-collapse').collapse('hide');
-        });
+          $('.navbar-nav>li>a').on('click', function() {
+              $('.navbar-collapse').collapse('hide');
+          });
 
-        $('.hidden').fadeIn(4000).removeClass('hidden');
-        $('h1').fadeIn(4000).removeClass('hiddenA');
-        $('p').fadeIn(4000).removeClass('hiddenB');
-        //        $('.scroll-downs').fadeIn(4000).removeClass('hidden');
-    });
-</script>
+          $('.hidden').fadeIn(4000).removeClass('hidden');
+          $('h1').fadeIn(4000).removeClass('hiddenA');
+          $('p').fadeIn(4000).removeClass('hiddenB');
+          //        $('.scroll-downs').fadeIn(4000).removeClass('hidden');
+      });
+    </script>
 
 </html>
