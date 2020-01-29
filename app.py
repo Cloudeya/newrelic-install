@@ -1,0 +1,74 @@
+from flask import Flask, request, jsonify, render_template, make_response, redirect, url_for, flash, sessions, session, get_flashed_messages
+
+from hubspot import subscribe_form, workshop_forms, partnership_forms
+
+app = Flask(__name__)
+app.secret_key = "abcdefgh"
+
+@app.route('/', methods=["GET", "POST"])
+def index():
+    if request.method=="POST":
+        if request.form['subscribe_btn']=='subscribe_btn':
+            sub_email = request.form['sub_email']
+        else:
+            sub_email = request.form['sub_email1']
+        # flag = subscribe_form(sub_email)
+        # print(flag)
+    return render_template('index.html')
+
+@app.route('/workshop-form', methods=["GET", "POST"])
+def workshop_form():
+    if request.method=="POST":
+        email = request.form['email']
+        fname = request.form['fname']
+        lname = request.form['lname']
+        company = request.form['company']
+        message = request.form['comment']
+        # flag = workshop_forms(email, fname, lname, company, message)
+        # print(flag)
+
+    return render_template('form.html')
+
+@app.route('/partnerships', methods=["GET", "POST"])
+def partnerships():
+    return render_template('partnership.html')
+
+@app.route('/partnerships/partnership-form', methods=["GET", "POST"])
+def partnership_form():
+    if request.method=="POST":
+        fname = request.form['fname']
+        lname = request.form['lname']
+        email = request.form['email']
+        company = request.form['company']
+        message = request.form['comment']
+
+        # flag = partnership_forms(email, fname, lname, company, message)
+        # print(flag)
+    return render_template('form.html')
+
+@app.route('/careers', methods=["GET", "POST"])
+def careers():
+    return render_template('career.html')
+
+@app.route('/events', methods=["GET", "POST"])
+def events():
+    if request.method=="POST":
+        if request.form['subscribe_btn']=='subscribe_btn':
+            sub_email = request.form['sub_email']
+        else:
+            sub_email = request.form['sub_email1']
+        # print(sub_email)
+        # flag = subscribe_form(sub_email)
+        # print(flag)
+    return render_template('events.html')
+
+@app.route('/cookie-policy')
+def cookie_policy():
+    return render_template('cookie_policy.html')
+
+@app.route('/privacy-policy')
+def privacy_policy():
+    return render_template('privacy_policy.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)

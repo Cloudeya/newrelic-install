@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156513245-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-156513245-1');
+</script>
+  <title>Mindhug</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <link rel="shortcut icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
+</head>
+<style>
+    body {
+  
+  
+  font-size: 100%;
+  font-family: 'Lato',Arial, sans-serif;
+  background:whitesmoke;
+  }
+
+
+  #nav{
+    background:whitesmoke;
+    margin-bottom:0;
+  }
+  #home{
+
+    font-family: 'Hammersmith One', sans-serif;
+  }
+   
+  .nav a{
+        color: rgb(0, 0, 0) !important;
+        font-family: 'Lato', 'sans-serif';
+        font-size: 1.67em;
+        /*font-weight: bold;*/
+        margin: 8px 0;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    .navbar .container .navbar-brand {
+      
+    color: #000000 !important;
+    font-weight: bold;
+    margin: 8px 0;
+    
+  }
+  ul.nav a:hover { color: #4b92dc !important;  }
+
+
+
+    .jumbotron {
+      /* height:50vh; */
+      font-family: 'Hammersmith One', sans-serif;
+      padding-top: 20%;
+      padding-bottom: 20%;
+      padding-left: 5%;
+      margin-top: 0%;
+      margin-bottom: 0%;
+      color:black !important;
+      
+      background: 
+      linear-gradient(to right,
+      rgba(245,245,245,0.75),
+      rgba(64,224,208,0.75) 
+    
+      ),
+  url('/static/images/3155587.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+      
+      
+    }
+  .jumbotron p{
+    font-family: 'Lato';
+    font-weight: normal;
+  }
+  #part_intro{
+      margin-top: 0px;
+      text-align: center;
+      margin-bottom: 0px;
+  }
+  #part_intro h2{
+      font-weight: bold;
+  }
+  #f2{
+    margin-top: 0%;
+    padding-top: 10%;
+    padding-left: 3%;
+    height:50vh;
+    color:rgb(0, 0, 0) !important;
+    text-align:left;
+    background:whitesmoke;
+  }
+  #f2 {
+    margin-top: 50px;
+    height: auto;
+    max-width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #f2 p{
+    font-size: 16px;
+  }
+  #f2 h3{
+    font-weight: bold;
+  }
+  #p1_t{
+      padding-top: 10%;
+  }
+
+  #intro{
+    
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-top: 5%;
+    border-radius: 15px;
+    padding-bottom: 10%;
+    display: block;
+    height:300px;
+    font-family: 'Lato', sans-serif;
+    
+    color:black !important;
+    text-align:center;
+    background:rgb(64,224,208);
+      
+  }
+
+  #intro h3{
+    font-weight: bold;
+  }
+  #intro p{
+    font-size: 16px;
+  }
+  #b2 {
+    font-family: 'Lato','sans-serif';
+    font-weight: bolder;
+    height: 50px;
+  /* margin-left: 5% ; */
+  background-color:rgb(64,224,208);
+  /* background-color: rgb(7, 124, 118);  */
+  
+  border-radius: 5px;
+  border-color: white;
+  color: white;
+  /* padding: 15px 32px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#b2:hover{
+  color:#4b92dc
+}
+
+
+
+    footer .main-footer{	padding: 20px 0;	background: rgb(64,224,208);}
+    footer ul{	padding-left: 0;	list-style: none;}
+
+
+    /* Copy Right Footer */
+    .footer-copyright {	background: #222;	padding: 3px 0; padding-bottom: 5px;}
+    .footer-copyright .logo {    display: inherit;}
+    .footer-copyright nav {    float: right;    margin-top: 5px;}
+    .footer-copyright nav ul {	list-style: none;	margin: 0;	padding: 0;}
+    .footer-copyright nav ul li {	border-left: 1px solid #505050;	display: inline-block;	line-height: 12px;	margin: 0;	padding: 0 8px;}
+    .footer-copyright nav ul li a{	color: #969696;}
+    .footer-copyright nav ul li:first-child {	border: medium none;	padding-left: 0;}
+    .footer-copyright p {	color: #969696;	margin: 2px 0 0;}
+
+    /* Footer Top */
+    .footer-top{	background: #252525;	padding-bottom: 30px;	margin-bottom: 30px;	border-bottom: 3px solid #222;}
+
+    /* Footer transparent */
+    footer.transparent .footer-top, footer.transparent .main-footer{	background: transparent;}
+    footer.transparent .footer-copyright{	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3) ;}
+
+    /* Footer light */
+    footer.light .footer-top{	background: #f9f9f9;}
+    footer.light .main-footer{	background: #f9f9f9;}
+    footer.light .footer-copyright{	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3) ;}
+
+    /* Footer 4 */
+    .footer- .logo {    display: inline-block;}
+
+    /*====================
+    Widgets
+    ====================== */
+    .widget{	padding: 20px;	margin-bottom: 40px;}
+    .widget.widget-last{	margin-bottom: 0px;}
+    .widget.no-box{	padding: 0;	background-color: transparent;	margin-bottom: 40px;
+    box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none;}
+    .widget.subscribe p{	margin-bottom: 18px;}
+    .widget li a{	color: whitesmoke; font-size: 16px;}
+    .widget li a:hover{	color: #4b92dc;}
+    .widget-title {margin-bottom: 20px;}
+    /*.widget-title span {background: #839FAD none repeat scroll 0 0;display: block; height: 1px;margin-top: 25px;position: relative;width: 20%;}*/
+    .widget-title span::after {background: inherit;content: "";height: inherit;    position: absolute;top: -4px;width: 50%;}
+    .widget-title.text-center span,.widget-title.text-center span::after {margin-left: auto;margin-right:auto;left: 0;right: 0;}
+    .widget .badge{	float: right;	background: rgb(0, 83, 21)}
+
+    .typo-light h1,
+    .typo-light h2,
+    .typo-light h3,
+    .typo-light h4,
+    .typo-light h5,
+    .typo-light h6,
+    .typo-light p,
+    .typo-light div,
+    .typo-light span,
+    .typo-light small{	color: #fff;}
+
+    ul.social-footer2 {	margin: 0;padding: 0;	width: auto;}
+    ul.social-footer2 li {display: inline-block;padding: 0;}
+    /*ul.social-footer2 li a:hover {background-color:#ff8d1e; color: white; }*/
+    ul.social-footer2 li a {display: block;	height:30px;width: 30px;text-align: center;}
+    .btn{background-color: rgb(64,224,208); color:#fff; border-color: white;}
+    .btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;
+        -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        -ms-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        -o-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        -webkit-transition: all 250ms ease-in-out 0s;
+        -moz-transition: all 250ms ease-in-out 0s;
+        -ms-transition: all 250ms ease-in-out 0s;
+        -o-transition: all 250ms ease-in-out 0s;
+        transition: all 250ms ease-in-out 0s;
+    }
+    Footer h5{
+        font-size:20px;
+    }
+    Footer p{
+        font-size:16px;
+    }
+    #you img{
+        border-radius: 50%;
+    }
+
+    /*Cookie Consent Begin*/
+    #cookieConsent {
+        background-color: rgba(20,20,20,0.8);
+        min-height: 26px;
+        font-size: 14px;
+        color: #ccc;
+        line-height: 26px;
+        padding: 8px 0 8px 30px;
+        font-family: "Trebuchet MS",Helvetica,sans-serif;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: none;
+        z-index: 9999;
+    }
+    #cookieConsent a {
+        color: #4B8EE7;
+        text-decoration: none;
+    }
+    #closeCookieConsent {
+        float: right;
+        display: inline-block;
+        cursor: pointer;
+        height: 20px;
+        width: 20px;
+        margin: -15px 0 0 0;
+        font-weight: bold;
+    }
+    #closeCookieConsent:hover {
+        color: #FFF;
+    }
+    #cookieConsent a.cookieConsentOK {
+        background-color: #F1D600;
+        color: #000;
+        display: inline-block;
+        border-radius: 5px;
+        padding: 0 20px;
+        cursor: pointer;
+        float: right;
+        margin: 0 60px 0 10px;
+    }
+    #cookieConsent a.cookieConsentOK:hover {
+        background-color: #E0C91F;
+    }
+    /*Cookie Consent End*/
+
+</style>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="6">
+    <nav class="navbar navbar-default navbar-fixed-top" id="nav">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/" style="padding-top: 0px; padding-bottom: 0px; vertical-align: center;">
+                    <img src="{{ url_for('static', filename='images/logo1.png') }}" style="height: 55px; width: 55px; display:inline-block;">
+                </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+<!--                    <span class="icon-bar"></span>-->
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" style="background: #e7e7e7;">Partnerships</a></li>
+                    <li><a href="/">Blog/Research</a></li>
+                    <!-- <li><a href="#intro">Research</a></li> -->
+                    <li><a href="/events">Events</a></li>
+                    <li><a href="/">Connect</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+      
+      
+      <div class="jumbotron" id="page_home">  
+        <!-- <img class="img-responsive" src="logo.png" alt="Image" height="300" width="300" /> -->
+        <h1>Partnerships</h1>
+        
+      </div>
+      <div class="container" id="part_intro">
+        <h2>Our current partners:</h2>
+        </div>
+
+        <div class="container" id="f2">
+            
+              
+                <img class="img-responsive" src="{{ url_for('static', filename='images/ucl.jpg') }}" />
+            
+              
+          
+          </div>
+
+          <div class="container" id="intro">
+            <h3>We are always on the lookout for valuable partnerships</h3> 
+              <br>
+              <br>
+              <p> If you are based in the UK and offer quality therapies and activities, feel free to get in touch</p>
+              <br>
+              <br>
+              <form action="/partnerships/partnership-form">
+                <button class="btn" type="submit" id="b2">Contact us</button>
+                </form>
+              </div>
+    <footer id="footer" class="footer-1" >
+        <div class="main-footer widgets-dark typo-light" id="connect">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget subscribe no-box">
+                            <h5 class="widget-title">MindHug<span></span></h5>
+                            <p><a href="mailto:hello@mindhug.io" title="glorythemes">hello@mindhug.io</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Quick Links<span></span></h5>
+                            <ul class="thumbnail-widget">
+                                <li>
+                                    <div class="thumb-content"><a href="/partnerships">Partnerships</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="/">Blog</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="/">Research</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="/events">Event/Tickets</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="/workshop-form">Contact Us</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Careers<span></span></h5>
+                            <p>Are you passionate about working with an exciting startup, looking to change how mental wellbeing is perceived and approached?</p>
+                            <a class="btn" href="/careers" >Get in touch</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Social Media<span></span></h5>
+                            <ul class="social-footer2">
+                                <li class=""><a title="LinkedIn" target="_blank" href="https://www.linkedin.com/company/mindhug" id="you"><img alt="linkedin" width="30" height="30" src="{{ url_for('static', filename='images/in.jpg') }}"></a></li>
+                                <li class=""><a href="https://www.facebook.com/mymindhug/" target="_blank" title="Facebook" id="you"><img alt="Facebook" width="30" height="30" src="{{ url_for('static', filename='images/fac.jpg') }}"></a></li>
+                                <li class=""><a href="https://twitter.com/mymindhug?s=08" target="_blank" title="Twitter" id="you"><img alt="Twitter" width="30" height="30" src="{{ url_for('static', filename='images/twi.jpg') }}"></a></li>
+                                <li class=""><a title="instagram" target="_blank" href="https://instagram.com/mymindhug?igshid=5vhb6th1p1p8" id="you"><img alt="instagram" width="30" height="30" src="{{ url_for('static', filename='images/ins.jpg') }}"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p style="font-size: 13px">Copyright MindHug © 2020. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<div id="cookieConsent">
+<!--        <div id="closeCookieConsent">x</div>-->
+        This website is using cookies. <a href="/cookie-policy" target="_blank">More info</a>. <a class="cookieConsentOK">Close</a>
+    </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          $(".navbar a").on('click', function(event) {
+              if (this.hash !== "") {
+                  event.preventDefault();
+                  var hash = this.hash;
+                  var ht = $(".navbar-fixed-top").height() - 50;
+                  var val = $(hash).offset().top;
+                  $('html, body').unbind().animate({
+                      scrollTop: val
+                  }, 500, function() {
+                      window.location.hash = hash;
+                  });
+              }
+          });
+    
+          $('.navbar-nav>li>a').on('click', function() {
+              $('.navbar-collapse').collapse('hide');
+          });
+    
+          $('.hidden').fadeIn(4000).removeClass('hidden');
+          $('h1').fadeIn(4000).removeClass('hiddenA');
+          $('p').fadeIn(4000).removeClass('hiddenB');
+          //        $('.scroll-downs').fadeIn(4000).removeClass('hidden');
+      });
+    </script>
+<!--for cookie policy footer-->
+<script>
+    $(document).ready(function(){
+        setTimeout(function () {
+            $("#cookieConsent").fadeIn(800);
+         }, 1000);
+        $("#closeCookieConsent, .cookieConsentOK").click(function() {
+            $("#cookieConsent").fadeOut(800);
+        });
+    });
+</script>
+
+    </html>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
