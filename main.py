@@ -71,4 +71,4 @@ def privacy_policy():
     return render_template('privacy_policy.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=8080)
