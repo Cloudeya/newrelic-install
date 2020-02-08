@@ -1,29 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156513245-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+{% extends 'layout.html' %}
 
-  gtag('config', 'UA-156513245-1');
-</script>
+{% block title %}MindHug{% endblock %}
 
-    <title>Mindhug</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+{% block style %}
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <link rel="shortcut icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
-</head>
 <style>
- 
     body {
         font-size: 100%;
         font-family: 'Lato',Arial, sans-serif;
@@ -34,33 +15,6 @@
         max-width: 100%;
         overflow-x: hidden;
     }
-    #nav {
-        background:whitesmoke;
-        margin-bottom:0;
-    }
-    #home {
-        font-family: 'Hammersmith One', sans-serif;
-    }
-
-    .nav a{
-        color: rgb(0, 0, 0) !important;
-        font-family: 'Lato', 'sans-serif';
-        font-size: 1.67em;
-        /*font-weight: bold;*/
-        margin: 8px 0;
-        margin-right: 0%;
-        margin-left: 0%;
-    }
-
-    .navbar .container .navbar-brand {
-
-    color: #000000 !important;
-    font-weight: bold;
-    margin: 8px 0;
-
-  }
-  ul.nav a:hover { color: #4b92dc !important;  }
-
     .jumbotron {
         font-family: 'Hammersmith One', sans-serif;
         padding-top: 10%;
@@ -70,7 +24,7 @@
         margin-bottom: 0%;
         color:black !important;
         background:linear-gradient(to right,
-            rgba(245,245,245,0.75),
+            rgba(64,224,208,0.75),
             rgba(64,224,208,0.75)
 
         ),
@@ -89,7 +43,7 @@
         font-weight: bolder;
         margin: 0 auto;
     }
-  
+
 
     .newsletter {
         padding: 80px 0;
@@ -201,7 +155,7 @@
     }
     #f2{
         margin-top: 0%;
-        padding-top: 10%;
+        padding-top: 5%;
         padding-left: 3%;
         height:50vh;
         color:rgb(0, 0, 0) !important;
@@ -219,7 +173,7 @@
     }
     #f3{
         margin-top: 0%;
-        padding-top: 10%;
+        padding-top: 5%;
         padding-left: 3%;
         height:50vh;
         color:rgb(0, 0, 0) !important;
@@ -234,7 +188,7 @@
     }
     #f4{
         margin-top: 0%;
-        padding-top: 10%;
+        padding-top: 5%;
         padding-left: 3%;
         height:50vh;
         color:rgb(0, 0, 0) !important;
@@ -252,7 +206,7 @@
     }
     #f5{
         margin-top: 0%;
-        padding-top: 10%;
+        padding-top: 5%;
         padding-left: 3%;
         height:50vh;
         color:rgb(0, 0, 0) !important;
@@ -269,28 +223,29 @@
         padding-top: 0%;
     }
     #pro1 img {
-        width: 200px;
-        height: 200px;
+        width: auto;
+        height: 250px;
         margin: auto;
         display: block;
+        padding: 2%;
     }
     #pro2 img {
-        width: 350px;
+        width: auto;
         height: 300px;
         margin: auto;
         display: block;
     }
     #pro3 img {
-        width: 350px;
+        width: auto;
         height: 300px;
         margin: auto;
         display: block;
     }
     #feat1,#feat2,#feat3{
         margin-top: 0%;
-        padding-top: 10%;
+        padding-top: 5%;
         padding-left: 3%;
-        height:50vh;
+        height:30vh;
         color:rgb(0, 0, 0) !important;
         font-family: 'Lato','sans-serif';
         text-align:left;
@@ -342,88 +297,6 @@
         color:#4b92dc
     }
 
-    footer .main-footer{	padding: 20px 0;	background: rgb(64,224,208);}
-    footer ul{	padding-left: 0;	list-style: none;}
-
-
-    /* Copy Right Footer */
-    .footer-copyright {	background: #222;	padding: 3px 0; padding-bottom: 5px;}
-    .footer-copyright .logo {    display: inherit;}
-    .footer-copyright nav {    float: right;    margin-top: 5px;}
-    .footer-copyright nav ul {	list-style: none;	margin: 0;	padding: 0;}
-    .footer-copyright nav ul li {	border-left: 1px solid #505050;	display: inline-block;	line-height: 12px;	margin: 0;	padding: 0 8px;}
-    .footer-copyright nav ul li a{	color: #969696;}
-    .footer-copyright nav ul li:first-child {	border: medium none;	padding-left: 0;}
-    .footer-copyright p {	color: #969696;	margin: 2px 0 0;}
-
-    /* Footer Top */
-    .footer-top{	background: #252525;	padding-bottom: 30px;	margin-bottom: 30px;	border-bottom: 3px solid #222;}
-
-    /* Footer transparent */
-    footer.transparent .footer-top, footer.transparent .main-footer{	background: transparent;}
-    footer.transparent .footer-copyright{	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3) ;}
-
-    /* Footer light */
-    footer.light .footer-top{	background: #f9f9f9;}
-    footer.light .main-footer{	background: #f9f9f9;}
-    footer.light .footer-copyright{	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3) ;}
-
-    /* Footer 4 */
-    .footer- .logo {    display: inline-block;}
-
-    /*====================
-    Widgets
-    ====================== */
-    .widget{	padding: 20px;	margin-bottom: 40px;}
-    .widget.widget-last{	margin-bottom: 0px;}
-    .widget.no-box{	padding: 0;	background-color: transparent;	margin-bottom: 40px;
-    box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none;}
-    .widget.subscribe p{	margin-bottom: 18px;}
-    .widget li a{	color: whitesmoke; font-size: 16px;}
-    .widget li a:hover{	color: #4b92dc;}
-    .widget-title {margin-bottom: 20px;}
-    /*.widget-title span {background: #839FAD none repeat scroll 0 0;display: block; height: 1px;margin-top: 25px;position: relative;width: 20%;}*/
-    .widget-title span::after {background: inherit;content: "";height: inherit;    position: absolute;top: -4px;width: 50%;}
-    .widget-title.text-center span,.widget-title.text-center span::after {margin-left: auto;margin-right:auto;left: 0;right: 0;}
-    .widget .badge{	float: right;	background: rgb(0, 83, 21)}
-
-    .typo-light h1,
-    .typo-light h2,
-    .typo-light h3,
-    .typo-light h4,
-    .typo-light h5,
-    .typo-light h6,
-    .typo-light p,
-    .typo-light div,
-    .typo-light span,
-    .typo-light small{	color: #fff;}
-
-    ul.social-footer2 {	margin: 0;padding: 0;	width: auto;}
-    ul.social-footer2 li {display: inline-block;padding: 0;}
-    ul.social-footer2 li a:hover {background-color:#ff8d1e; color: white; }
-    ul.social-footer2 li a {display: block;	height:30px;width: 30px;text-align: center;}
-    .btn{background-color: rgb(64,224,208); color:#fff; border-color: white;}
-    .btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;
-        -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        -ms-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        -o-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        -webkit-transition: all 250ms ease-in-out 0s;
-        -moz-transition: all 250ms ease-in-out 0s;
-        -ms-transition: all 250ms ease-in-out 0s;
-        -o-transition: all 250ms ease-in-out 0s;
-        transition: all 250ms ease-in-out 0s;
-    }
-    Footer h5{
-        font-size:20px;
-    }
-    Footer p{
-        font-size:16px;
-    }
-    #you img{
-        border-radius: 50%;
-    }
     @media screen and (max-width: 767px) and (min-width: 601px) {
         .jumbotron{
             text-align: center;
@@ -433,19 +306,20 @@
             margin-left: 0% ;
         }
         #f1{
-            margin-bottom: 60%;
+            /*margin-bottom: 5%;*/
+            padding-bottom: 0%;
         }
         #f2{
-            margin-bottom: 90%;
+            margin-bottom: 5%;
         }
         #f3{
-            margin-bottom: 100%;
+            margin-bottom: 5%;
         }
         #f4{
-            margin-bottom: 60%;
+            margin-bottom: 5%;
         }
         #f5{
-            margin-bottom: 150%;
+            margin-bottom: 5%;
         }
         #intro{
             border-radius: 0%;
@@ -478,37 +352,36 @@
             margin-left: 0% ;
         }
         #f1{
-            margin-bottom: 30%;
+            margin-bottom: 10%;
         }
         #f2{
-            margin-bottom: 30%;
+            margin-bottom: 10%;
         }
         #f3{
-            margin-bottom: 70%;
+            margin-bottom: 10%;
         }
         #f4{
-            margin-bottom: 30%;
+            margin-bottom: 10%;
         }
         #f5{
-            margin-bottom: 70%;
+            margin-bottom: 50%;
         }
         #intro{
             border-radius: 0%;
             height:350px;
-            margin-bottom: 30%;
+            margin-bottom: 10%;
         }
         #feat1{
-            margin-bottom: 40%;
+            margin-bottom: 60%;
         }
         #feat2{
-            margin-bottom: 30%;
+            margin-bottom: 60%;
         }
         #feat3{
             margin-bottom: 70%;
         }
         #intro2{
             border-radius: 0%;
-
             margin-bottom: 30%;
         }
 
@@ -516,386 +389,218 @@
     #myForm1 {
         margin-top: 0px;
     }
-    .chkbox label
-        {
-            position: relative;
-            top: -2px;
-        }
-    /*Cookie Consent Begin*/
-    #cookieConsent {
-        background-color: rgba(20,20,20,0.8);
-        min-height: 26px;
-        font-size: 14px;
-        color: #ccc;
-        line-height: 26px;
-        padding: 8px 0 8px 30px;
-        font-family: "Trebuchet MS",Helvetica,sans-serif;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: none;
-        z-index: 9999;
+    .chkbox label {
+        position: relative;
+        top: -2px;
     }
-    #cookieConsent a {
-        color: #4B8EE7;
-        text-decoration: none;
-    }
-    #closeCookieConsent {
-        float: right;
-        display: inline-block;
-        cursor: pointer;
-        height: 20px;
-        width: 20px;
-        margin: -15px 0 0 0;
-        font-weight: bold;
-    }
-    #closeCookieConsent:hover {
-        color: #FFF;
-    }
-    #cookieConsent a.cookieConsentOK {
-        background-color: #F1D600;
-        color: #000;
-        display: inline-block;
-        border-radius: 5px;
-        padding: 0 20px;
-        cursor: pointer;
-        float: right;
-        margin: 0 60px 0 10px;
-    }
-    #cookieConsent a.cookieConsentOK:hover {
-        background-color: #E0C91F;
-    }
-    /*Cookie Consent End*/
 </style>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="6">
-    <nav class="navbar navbar-default navbar-fixed-top" id="nav">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#" style="padding-top: 0px; padding-bottom: 0px; vertical-align: center">
-                    <img src="{{ url_for('static', filename='images/logo1.png') }}" style="height: 55px; width: 55px; display:inline-block;">
-                </a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-<!--                    <span class="icon-bar"></span>-->
-                </button>
+{% endblock %}
 
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/partnerships">Partnerships</a></li>
-                    <li><a href="https://medium.com/mymindhug" target="_blank">Blog/Research</a></li>
-                    <!-- <li><a href="#intro">Research</a></li> -->
-                    <li><a href="/events">Events</a></li>
-                    <li><a href="#connect">Connect</a></li>
-                </ul>
+{% block body %}
+
+<div class="jumbotron" id="page_home" style="padding-right: 28px">
+    <h1>MindHug</h1>
+    <h3>Mental Wellbeing and you. We understand that one size does not fit all. </h3>
+    <br>
+    <br>
+    <br>
+
+    <p>We help find what works best for your happiness and wellbeing. We do this by harnessing the familiarity of community and the power of digital.  </p>
+    <br>
+    <br><br>
+    <iframe name="votar" style="display:none;"></iframe>
+    <section class="newsletter">
+        <div class="row">
+            <div class="content">
+                <h2>Let's keep in touch</h2>
+                <form  method="post" id="myForm" target="votar">
+                    <div class="input-group">
+                        <input type="email" class="form-control" name="sub_email" placeholder="Enter your email" oninvalid="this.setCustomValidity('Please enter a valid email address')" oninput="this.setCustomValidity('')" required>
+                        <span class="input-group-btn">
+                            <button class="btn" type="submit" onclick="myFunction()" name="subscribe_btn" value="subscribe_btn" id="subscribe_button" >Subscribe Now</button>
+                        </span>
+
+                    </div>
+                    <div class="form-check" style="padding: 10px">
+
+                        <label  for="field_terms"><input type="checkbox" class="btn-lg" id="field_terms" style="margin: 5px" oninvalid="this.setCustomValidity('Please check the box to continue')" oninput="this.setCustomValidity('')" required/><font style="font-size: 13px; font-weight: normal; color: dimgrey">I accept <a href="/privacy-policy" target="_blank"><u>privacy policy</u></a> and <a href = "/cookie-policy" target="_blank"><u>cookie policy</u></a>.</font><span class="mock_checkbox"></span></label>
+                    </div>
+                </form>
             </div>
         </div>
-    </nav>
+    </section>
+</div>
 
-    
-    
-    <div class="jumbotron" id="page_home" style="padding-right: 28px">
-        <h1>MindHug</h1>
-        <h3>Mental Wellbeing and you. We understand that one size does not fit all. </h3>
-        <br>
-        <br>
-        <br>
-
-        <p>We help find what works best for your happiness and wellbeing. We do this by harnessing the familiarity of community and the power of digital.  </p>
-        <br>
-        <br><br>
-        <iframe name="votar" style="display:none;"></iframe>
-        <section class="newsletter">
-            <div class="row">
-                <div class="content">
-                    <h2>Let's keep in touch</h2>
-                    <form  method="post" id="myForm" target="votar">
-                        <div class="input-group">
-                            <input type="email" class="form-control" name="sub_email" placeholder="Enter your email" oninvalid="this.setCustomValidity('Please enter a valid email address')" oninput="this.setCustomValidity('')" required>
-                            <span class="input-group-btn">
-                                <button class="btn" type="submit" onclick="myFunction()" name="subscribe_btn" value="subscribe_btn" id="subscribe_button" >Subscribe Now</button>
-                            </span>
-
-                        </div>
-                        <div class="form-check" style="padding: 10px">
-
-                            <label  for="field_terms"><input type="checkbox" class="btn-lg" id="field_terms" style="margin: 5px" oninvalid="this.setCustomValidity('Please check the box to continue')" oninput="this.setCustomValidity('')" required/><font style="font-size: 13px; font-weight: normal; color: dimgrey">I accept <a href="/privacy-policy" target="_blank"><u>privacy policy</u></a> and <a href = "/cookie-policy" target="_blank"><u>cookie policy</u></a>.</font><span class="mock_checkbox"></span></label>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- The Modal -->
-    <div class="modal fade" id="myModal">
-        <div class="modal-dialog modal-dialog-centered" >
-            <div class="modal-content">
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered" >
+        <div class="modal-content">
 <!--                <div class="modal-header">-->
 <!--                    <h4 class="modal-title">Response received</h4>-->
 <!--                </div>-->
-                <div class="modal-body">
-                    <font style="font-size: 20px">Thank you for subscribing.</font>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="closeModal()">Close</button>
-                </div>
+            <div class="modal-body">
+                <font style="font-size: 20px">Thank you for subscribing.</font>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="closeModal()">Close</button>
             </div>
         </div>
     </div>
-    
-    <div class="container-fluid" id="feat">
-        <h3>Our team is busy building a platform that will allow you to:</h3>
-    </div>
+</div>
 
-    <div class="container" >
-        <div class="row" id="f1">
-            <div class="col-sm-6 col-xs-push-0 col-sm-push-6 col-md-push-6 col-lg-push-6 " id="p1">
-                <img class="img-responsive" src="{{ url_for('static', filename='images/free.png') }}" />
-            </div>
-            <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6">
-                <h3>Explore your community</h3>
-                <p>Find, book and try a wide choice of beneficial therapies and activities in your community. We will offer art therapy, mindfulness, music therapy, sound baths, breathing, pet therapy, drama therapy, yoga and nature walks.</p>
-            </div>
+<div class="container-fluid" id="feat">
+    <h3>Our team is busy building a platform that will allow you to:</h3>
+</div>
+
+<div class="container" >
+    <div class="row" id="f1">
+        <div class="col-sm-6 col-xs-push-0 col-sm-push-6 col-md-push-6 col-lg-push-6 " id="p1">
+            <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/free.png') }}" />
+        </div>
+        <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6">
+            <h3>Explore your community</h3>
+            <p>Find, book and try a wide choice of beneficial therapies and activities in your community. We will offer art therapy, mindfulness, music therapy, sound baths, breathing, pet therapy, drama therapy, yoga and nature walks.</p>
         </div>
     </div>
+</div>
 
-    <div class="container" >
-        <div class="row" id="f2">
-            <div class="col-sm-6" id="p1">
-                <img class="img-responsive" src="{{ url_for('static', filename='images/digital.png') }}" />
-            </div>
-            <div class="col-sm-6">
-                <h3>Engage digitally</h3>
-                <p>Subscribe to a variety of digital content, media, activities and therapies. From experiential art based activities to guided meditation to breathing exercises. </p>
-            </div>
+<div class="container" >
+    <div class="row" id="f2">
+        <div class="col-sm-6" id="p1">
+            <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/digital.png') }}" />
+        </div>
+        <div class="col-sm-6">
+            <h3>Engage digitally</h3>
+            <p>Subscribe to a variety of digital content, media, activities and therapies. From experiential art based activities to guided meditation to breathing exercises. </p>
         </div>
     </div>
+</div>
 
-    <div class="container" >
-        <div class="row" id="f3">
-            <div class="col-sm-6 col-xs-push-0 col-sm-push-6 col-md-push-6 col-lg-push-6 " id="p1">
-                <img class="img-responsive" src="{{ url_for('static', filename='images/workshop.png') }}" />
-            </div>
-            <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 ">
-                <h3>Book workshops and events </h3>
-                <p>Book and attend bespoke workshops and retreats to help rejuvenate yourself. If you would like to talk to us about organising a workshop for your organisation or group, please <a href="/workshop-form">contact us</a>.</p>
-            </div>
+<div class="container" >
+    <div class="row" id="f3">
+        <div class="col-sm-6 col-xs-push-0 col-sm-push-6 col-md-push-6 col-lg-push-6 " id="p1">
+            <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/workshop.png') }}" />
+        </div>
+        <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 ">
+            <h3>Book workshops and events </h3>
+            <p>Book and attend bespoke workshops and retreats to help rejuvenate yourself. If you would like to talk to us about organising a workshop for your organisation or group, please <a href="/workshop-form">contact us</a>.</p>
         </div>
     </div>
+</div>
 
-    <div class="container" >
-        <div class="row" id="f4">
-            <div class="col-sm-6" id="p1">
-                <img class="img-responsive" src="{{ url_for('static', filename='images/free2.png') }}" />
-            </div>
-            <div class="col-sm-6">
-                <h3>Experience free taster sessions </h3>
-                <p>Attend free events to meet your community and try some therapies and activities. </p>
-            </div>
-         </div>
-    </div>
+<div class="container" >
+    <div class="row" id="f4">
+        <div class="col-sm-6" id="p1">
+            <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/free2.png') }}" />
+        </div>
+        <div class="col-sm-6">
+            <h3>Experience free taster sessions </h3>
+            <p>Attend free events to meet your community and try some therapies and activities. </p>
+        </div>
+     </div>
+</div>
 
-    <div class="container" >
-        <div class="row" id="f5">
-            <div class="col-sm-6 col-xs-push-0 col-sm-push-6 col-md-push-6 col-lg-push-6 ">
-                <img class="img-responsive" src="{{ url_for('static', filename='images/mood.png') }}" />
-            </div>
-            <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 " id="p1">
-                <h3>Employ a mood diary and wellbeing analytics </h3>
-                <p>Track lifestyle, sleep, diet, emotional health and your response to activities and therapies through our unique mood diary. Use our analytics to find what works best for you.</p>
-            </div>
+<div class="container">
+    <div class="row" id="f5">
+        <div class="col-sm-6 col-xs-push-0 col-sm-push-6 col-md-push-6 col-lg-push-6 ">
+            <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/mood.png') }}" />
+        </div>
+        <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 " id="p1">
+            <h3>Employ a mood diary and wellbeing analytics </h3>
+            <p>Track lifestyle, sleep, diet, emotional health and your response to activities and therapies through our unique mood diary. Use our analytics to find what works best for you.</p>
         </div>
     </div>
+</div>
 
+<br>
+<br>
+
+<div class="container" id="intro">
+    <h3>"We are doing amazing things for mental wellbeing."</h3>
     <br>
     <br>
+    <p> If you would like to talk to us about deploying our platform for your organisation, school or university please get in touch.</p>
+    <br>
+    <br>
+    <form action="/workshop-form">
+        <button class="btn" type="submit" id="b2">Contact Us</button>
+    </form>
+</div>
 
-    <div class="container" id="intro">
-        <h3>"We are doing amazing things for mental wellbeing."</h3>
-        <br>
-        <br>
-        <p> If you would like to talk to us about deploying our platform for your organisation, school or university please get in touch.</p>
-        <br>
-        <br>
-        <form action="/workshop-form">
-            <button class="btn" type="submit" id="b2">Let's Go</button>
-        </form>
-    </div>
+<br><br><br>
 
-    <br><br><br>
- 
-    <div class="container" id="feat">
-        <h3>Our promise to you: </h3>
-    </div>
+<div class="container" id="feat">
+    <h3>Our promise to you: </h3>
+</div>
 
-    <div class="container" >
-        <div class="row" id="feat1">
-            <div class="col-sm-6" id="pro2">
-                <img class="img-responsive" src="{{ url_for('static', filename='images/cred.png') }}" />
-            </div>
-            <div class="col-sm-6" id="t1">
-                <h3>Credibility </h3>
-                <p>We take the quality and credibility of our services and offerings very seriously. </p>
-            </div>
+<div class="container" style="padding-top: 10%">
+    <div class="row" id="feat1">
+        <div class="col-sm-6" id="pro2">
+            <img class="img-responsive" style="height: auto; width: auto;" src="{{ url_for('static', filename='images/cred.png') }}" />
+        </div>
+        <div class="col-sm-6" id="t1">
+            <h3>Credibility </h3>
+            <p>We take the quality and credibility of our services and offerings very seriously. </p>
         </div>
     </div>
+</div>
 
-    <div class="container" >
-        <div class="row" id="feat2">
-            <div class="col-sm-6  col-xs-push-0 col-sm-push-6 col-md-push-6 col-lg-push-6  " id="pro1">
-                <img class="img-responsive" src="{{ url_for('static', filename='images/saf.png') }}"  />
-            </div>
-    
-            <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 " id="t1">
-                <h3>Safety </h3>
-                <p>The safety and wellbeing of everyone on the platform is our number one priority. </p>
-            </div>
+<div class="container" >
+    <div class="row" id="feat2">
+        <div class="col-sm-6  col-xs-push-0 col-sm-push-6 col-md-push-6 col-lg-push-6  " id="pro1">
+            <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/saf.png') }}"  />
+        </div>
+
+        <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 " id="t1">
+            <h3>Safety </h3>
+            <p>The safety and wellbeing of everyone on the platform is our number one priority. </p>
         </div>
     </div>
+</div>
 
-    <div class="container" >
-        <div class="row" id="feat3">
-            <div class="col-sm-6" id="pro3">
-                <img class="img-responsive" src="{{ url_for('static', filename='images/priv2.png') }}" />
-            </div>
-            <div class="col-sm-6" id="t1">
-                <h3>Privacy </h3>
-                <p>You control your data and decide if, when and with whom you want to share it with. </p>
-            </div>
+<div class="container" >
+    <div class="row" id="feat3">
+        <div class="col-sm-6" id="pro3">
+            <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/priv2.png') }}" />
+        </div>
+        <div class="col-sm-6" id="t1">
+            <h3>Privacy </h3>
+            <p>You control your data and decide if, when and with whom you want to share it. </p>
         </div>
     </div>
+</div>
 
-    <br><br><br>
+<br><br><br>
 
-    <div class="container" id="intro2" style="border: 1px solid rgb(64,224,208);">
-        <h3>Stay in touch</h3>
-        <br>
-        <p> If you would like to get early access when we go live and/or stay abreast of our developments please subscribe.</p>
-        <iframe name="votar" style="display:none;"></iframe>
-        <section class="newsletter">
-            <div class="row">
-                <div class="content">
+<div class="container" id="intro2" style="border: 1px solid rgb(64,224,208);">
+    <h3>Stay in touch</h3>
+    <br>
+    <p> If you would like to get early access when we go live and/or stay abreast of our developments please subscribe.</p>
+    <iframe name="votar" style="display:none;"></iframe>
+    <section class="newsletter">
+        <div class="row">
+            <div class="content">
 
-                    <form  method="post" id="myForm1" target="votar">
-                        <div class="input-group">
-                            <input type="email" class="form-control" name="sub_email1" placeholder="Enter your email" oninvalid="this.setCustomValidity('Please enter a valid email address')" oninput="this.setCustomValidity('')" required>
-                            <span class="input-group-btn">
-                                <button class="btn" type="submit" onclick="myFunction1()" name="subscribe_btn" value="subscribe_btn1" id="subscribe_btn" >Subscribe Now</button>
-                            </span>
+                <form  method="post" id="myForm1" target="votar">
+                    <div class="input-group">
+                        <input type="email" class="form-control" name="sub_email1" placeholder="Enter your email" oninvalid="this.setCustomValidity('Please enter a valid email address')" oninput="this.setCustomValidity('')" required>
+                        <span class="input-group-btn">
+                            <button class="btn" type="submit" onclick="myFunction1()" name="subscribe_btn" value="subscribe_btn1" id="subscribe_btn" >Subscribe Now</button>
+                        </span>
 
-                        </div>
-                        <div class="form-check" style="padding: 10px">
-                            <label  for="field_terms1"><input type="checkbox" class="btn-lg" id="field_terms1" style="margin: 5px" oninvalid="this.setCustomValidity('Please check the box to continue')" oninput="this.setCustomValidity('')" required/><font style="font-size: 13px; font-weight: normal; color: dimgrey">I accept <a href="/privacy-policy" target="_blank"><u>privacy policy</u></a> and <a href = "/cookie-policy" target="_blank"><u>cookie policy</u></a>.</font><span class="mock_checkbox"></span></label>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </div>
-
-
-
-<!--    <div class="container" id="intro2" style="border: 1px solid rgb(64,224,208);">-->
-<!--        <h3>Stay in touch</h3>-->
-<!--        <br>-->
-<!--        <br>-->
-<!--        <p> If you would like to get early access when we go live and/or stay abreast of our developments please subscribe.</p>-->
-<!--        <br>-->
-<!--        <br>-->
-
-<!--        <form action="/form1.html">-->
-<!--&lt;!&ndash;            <input type="email" class="form-control" name="sub_email" placeholder="Enter your email" style="width: 50%; margin: auto" required>&ndash;&gt;-->
-<!--&lt;!&ndash;            <br>&ndash;&gt;-->
-<!--            <button class="btn" type="submit" id="b3">Subscribe</button>-->
-<!--        </form>-->
-<!--    </div>-->
-
-    <footer id="footer" class="footer-1" >
-        <div class="main-footer widgets-dark typo-light" id="connect">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="widget subscribe no-box">
-                            <h5 class="widget-title">MindHug<span></span></h5>
-                            <p>MindHug, UCL BaseKX, 103c Camley Street, London N1C 4PF</p>
-                            <p><a href="mailto:hello@mindhug.io" title="glorythemes">hello@mindhug.io</a></p>
-                        </div>
                     </div>
-    
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="widget no-box">
-                            <h5 class="widget-title">Quick Links<span></span></h5>
-                            <ul class="thumbnail-widget">
-                                <li>
-                                    <div class="thumb-content"><a href="/partnerships">Partnerships</a></div>
-                                </li>
-                                <li>
-                                    <div class="thumb-content"><a href="https://medium.com/mymindhug" target="_blank">Blog/Research</a></div>
-                                </li>
-                                <li>
-                                    <div class="thumb-content"><a href="/events">Event/Tickets</a></div>
-                                </li>
-                                <li>
-                                    <div class="thumb-content"><a href="/workshop-form">Contact Us</a></div>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="form-check" style="padding: 10px">
+                        <label  for="field_terms1"><input type="checkbox" class="btn-lg" id="field_terms1" style="margin: 5px" oninvalid="this.setCustomValidity('Please check the box to continue')" oninput="this.setCustomValidity('')" required/><font style="font-size: 13px; font-weight: normal; color: dimgrey">I accept <a href="/privacy-policy" target="_blank"><u>privacy policy</u></a> and <a href = "/cookie-policy" target="_blank"><u>cookie policy</u></a>.</font><span class="mock_checkbox"></span></label>
                     </div>
-    
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="widget no-box">
-                            <h5 class="widget-title">Careers<span></span></h5>
-                            <p>Are you passionate about working with an exciting startup, looking to change how mental wellbeing is perceived and approached?</p>
-                            <a class="btn" href="/careers" >Get in touch</a>
-                        </div>
-                    </div>
-    
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="widget no-box">
-                            <h5 class="widget-title">Social Media<span></span></h5>
-                            <ul class="social-footer2">
-                                <li class=""><a title="LinkedIn" target="_blank" href="https://www.linkedin.com/company/mindhug" id="you"><img alt="linkedin" width="30" height="30" src="{{ url_for('static', filename='images/in.jpg') }}"></a></li>
-                                <li class=""><a href="https://www.facebook.com/mymindhug/" target="_blank" title="Facebook" id="you"><img alt="Facebook" width="30" height="30" src="{{ url_for('static', filename='images/fac.jpg') }}"></a></li>
-                                <li class=""><a href="https://twitter.com/mymindhug?s=08" target="_blank" title="Twitter" id="you"><img alt="Twitter" width="30" height="30" src="{{ url_for('static', filename='images/twi.jpg') }}"></a></li>
-                                <li class=""><a title="Instagram" target="_blank" href="https://instagram.com/mymindhug?igshid=5vhb6th1p1p8" id="you"><img alt="instagram" width="30" height="30" src="{{ url_for('static', filename='images/ins.jpg') }}"></a></li>
-                                <li class=""><a title="Medium" target="_blank" href="https://medium.com/mymindhug" id="you"><img alt="medium" width="30" height="30" src="{{ url_for('static', filename='images/medium1.jpg') }}"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
-      
-        <div class="footer-copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p style="font-size: 13px">Copyright MindHug © 2020. All rights reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </section>
+</div>
 
-    <div id="cookieConsent">
-<!--        <div id="closeCookieConsent">x</div>-->
-        This website is using cookies. <a href="/cookie-policy" target="_blank">More info</a>. <a class="cookieConsentOK">Close</a>
-    </div>
+{% endblock %}
 
-<!-- Start of HubSpot Embed Code -->
-<!--<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6894081.js"></script>-->
-<!-- End of HubSpot Embed Code -->
-
-</body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% block script %}
 
 <script>
     function myFunction() {
@@ -931,21 +636,8 @@
 
 </script>
 
-<!--for cookie policy footer-->
-<script>
-    $(document).ready(function(){
-        setTimeout(function () {
-            $("#cookieConsent").fadeIn(800);
-         }, 1000);
-        $("#closeCookieConsent, .cookieConsentOK").click(function() {
-            $("#cookieConsent").fadeOut(800);
-        });
-    });
-</script>
-
 <script>
     window.addEventListener("DOMContentLoaded", function(e) {
-
         var myForm = document.getElementById("myForm");
         var checkForm = function(e) {
             ...
@@ -970,35 +662,8 @@
         myCheckbox.addEventListener("change", function(e) {
             this.setCustomValidity(this.validity.valueMissing ? myCheckboxMsg : "");
         }, false);
-      
+
     }, false);
 </script>
 
-<script>
-      $(document).ready(function() {
-          $(".navbar a").on('click', function(event) {
-              if (this.hash !== "") {
-                  event.preventDefault();
-                  var hash = this.hash;
-                  var ht = $(".navbar-fixed-top").height() - 50;
-                  var val = $(hash).offset().top;
-                  $('html, body').unbind().animate({
-                      scrollTop: val
-                  }, 500, function() {
-                      window.location.hash = hash;
-                  });
-              }
-          });
-
-          $('.navbar-nav>li>a').on('click', function() {
-              $('.navbar-collapse').collapse('hide');
-          });
-
-          $('.hidden').fadeIn(4000).removeClass('hidden');
-          $('h1').fadeIn(4000).removeClass('hiddenA');
-          $('p').fadeIn(4000).removeClass('hiddenB');
-          //        $('.scroll-downs').fadeIn(4000).removeClass('hidden');
-      });
-    </script>
-
-</html>
+{% endblock %}

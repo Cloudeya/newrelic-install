@@ -200,7 +200,6 @@
             margin-bottom: 30%;
         }
     }
-
 </style>
 
 {% endblock %}
@@ -208,27 +207,24 @@
 {% block body %}
 
 <div class="jumbotron" id="page_home">
-    <h1>Partnerships</h1>
-</div>
-<div class="container" id="part_intro">
-    <h2>Our current partners:</h2>
+    <h1>Therapists</h1>
 </div>
 
-<div class="container" id="f2">
-    <img class="img-responsive" src="{{ url_for('static', filename='images/ucl.jpg') }}" />
-</div>
+<!--<div class="container" id="part_intro">-->
 
 <div class="container" id="intro">
-    <h3>We are always on the lookout for valuable partnerships</h3>
+    <h3>Are you a therapist or an activity provider keen to join us on our journey?</h3>
     <br>
     <br>
-    <p> If you would like to partner with us, feel free to contact us. </p>
+    <p>  </p>
     <br>
     <br>
     <form action="/partnerships/partnership-form">
         <button class="btn" type="submit" id="b2">Contact us</button>
     </form>
 </div>
+
+<!--</div>-->
 
 {% endblock %}
 

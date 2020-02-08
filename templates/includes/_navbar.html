@@ -1,0 +1,74 @@
+<style>
+    #nav {
+        background:whitesmoke;
+        margin-bottom:0;
+    }
+    .nav a{
+        color: rgb(0, 0, 0) !important;
+        font-family: 'Lato', 'sans-serif';
+        font-size: 1.67em;
+        /*font-weight: bold;*/
+        margin: 8px 0;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    .navbar .container .navbar-brand {
+        color: #000000 !important;
+        font-weight: bold;
+        margin: 8px 0;
+    }
+    ul.nav a:hover { color: #4b92dc !important; }
+</style>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="nav">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/" style="padding-top: 0px; padding-bottom: 0px; vertical-align: center">
+                <img src="{{ url_for('static', filename='images/logo1.png') }}" style="height: 55px; width: 55px; display:inline-block;">
+            </a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/partnerships">Partnerships</a></li>
+                <li><a href="/therapists">Therapists</a></li>
+                <li><a href="https://medium.com/mymindhug" target="_blank">Blog/Research</a></li>
+                <li><a href="https://www.eventbrite.com/o/mindhug-29549779583" target="_blank">Events</a></li>
+                <li><a href="#connect">Connect</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<script>
+  $(document).ready(function() {
+      $(".navbar a").on('click', function(event) {
+          if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              var ht = $(".navbar-fixed-top").height() - 50;
+              var val = $(hash).offset().top;
+              $('html, body').unbind().animate({
+                  scrollTop: val
+              }, 500, function() {
+                  window.location.hash = hash;
+              });
+          }
+      });
+
+      $('.navbar-nav>li>a').on('click', function() {
+          $('.navbar-collapse').collapse('hide');
+      });
+
+      $('.hidden').fadeIn(4000).removeClass('hidden');
+      $('h1').fadeIn(4000).removeClass('hiddenA');
+      $('p').fadeIn(4000).removeClass('hiddenB');
+  });
+</script>
