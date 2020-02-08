@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, render_template, make_response, redirect, url_for, flash, sessions, session, get_flashed_messages
 
-from hubspot import subscribe_form, workshop_forms, partnership_forms
+from hubspot import subscribe_form, workshop_forms, partnership_forms, therapist_forms
 
 app = Flask(__name__)
 app.secret_key = "abcdefgh"
@@ -43,7 +43,7 @@ def therapists_form():
         email = request.form['email']
         company = request.form['company']
         message = request.form['comment']
-        flag = therapists_form(email, fname, lname, company, message)
+        flag = therapist_forms(email, fname, lname, company, message)
     return render_template('form.html')
 
 @app.route('/partnerships/partnership-form', methods=["GET", "POST"])
