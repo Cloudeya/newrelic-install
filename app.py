@@ -43,7 +43,7 @@ def therapists_form():
         email = request.form['email']
         company = request.form['company']
         message = request.form['comment']
-        flag = partnership_forms(email, fname, lname, company, message)
+        flag = therapists_form(email, fname, lname, company, message)
     return render_template('form.html')
 
 @app.route('/partnerships/partnership-form', methods=["GET", "POST"])
