@@ -12,8 +12,7 @@ def index():
             sub_email = request.form['sub_email']
         else:
             sub_email = request.form['sub_email1']
-        # flag = subscribe_form(sub_email)
-        # print(flag)
+        flag = subscribe_form(sub_email)
     return render_template('index.html')
 
 @app.route('/workshop-form', methods=["GET", "POST"])
@@ -24,14 +23,28 @@ def workshop_form():
         lname = request.form['lname']
         company = request.form['company']
         message = request.form['comment']
-        # flag = workshop_forms(email, fname, lname, company, message)
-        # print(flag)
+        flag = workshop_forms(email, fname, lname, company, message)
 
     return render_template('form.html')
 
 @app.route('/partnerships', methods=["GET", "POST"])
 def partnerships():
     return render_template('partnership.html')
+
+@app.route('/therapists', methods=["GET", "POST"])
+def therapists():
+    return render_template('therapists.html')
+
+@app.route('/therapists/therapists-form', methods=["GET", "POST"])
+def therapists_form():
+    if request.method=="POST":
+        fname = request.form['fname']
+        lname = request.form['lname']
+        email = request.form['email']
+        company = request.form['company']
+        message = request.form['comment']
+        flag = partnership_forms(email, fname, lname, company, message)
+    return render_template('form.html')
 
 @app.route('/partnerships/partnership-form', methods=["GET", "POST"])
 def partnership_form():
@@ -42,25 +55,12 @@ def partnership_form():
         company = request.form['company']
         message = request.form['comment']
 
-        # flag = partnership_forms(email, fname, lname, company, message)
-        # print(flag)
+        flag = partnership_forms(email, fname, lname, company, message)
     return render_template('form.html')
 
 @app.route('/careers', methods=["GET", "POST"])
 def careers():
     return render_template('career.html')
-
-@app.route('/events', methods=["GET", "POST"])
-def events():
-    if request.method=="POST":
-        if request.form['subscribe_btn']=='subscribe_btn':
-            sub_email = request.form['sub_email']
-        else:
-            sub_email = request.form['sub_email1']
-        # print(sub_email)
-        # flag = subscribe_form(sub_email)
-        # print(flag)
-    return render_template('events.html')
 
 @app.route('/cookie-policy')
 def cookie_policy():
@@ -71,4 +71,4 @@ def privacy_policy():
     return render_template('privacy_policy.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=8080)
