@@ -1,0 +1,233 @@
+{% extends 'layout.html' %}
+
+{% block title %}MindHug{% endblock %}
+
+{% block style %}
+
+<style>
+    body {
+        font-size: 100%;
+        font-family: 'Lato',Arial, sans-serif;
+        background:whitesmoke;
+    }
+    .jumbotron {
+        /* height:50vh; */
+        font-family: 'Hammersmith One', sans-serif;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        padding-left: 5%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        color:black !important;
+
+        background:
+            linear-gradient(to right,
+                rgba(245,245,245,0.75),
+                rgba(64,224,208,0.75)
+            ),
+            url('/static/images/2685.jpg');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .jumbotron p{
+        font-family: 'Lato';
+        font-weight: normal;
+    }
+    #part_intro{
+        margin-top: 0px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    #part_intro h2{
+        font-weight: bold;
+    }
+    #f2{
+        margin-top: 0%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        /*padding-left: 3%;*/
+        height:50vh;
+        color:rgb(0, 0, 0) !important;
+        text-align:left;
+        background:whitesmoke;
+    }
+    #f2 {
+        margin-top: 20px;
+        height: auto;
+        max-width: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #f2 p{
+        font-size: 16px;
+    }
+    #f2 h3{
+        font-weight: bold;
+    }
+    #p1_t{
+        padding-top: 10%;
+    }
+    #intro{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding-top: 5%;
+        border-radius: 10px;
+        padding-bottom: 10%;
+        display: block;
+        height:300px;
+        font-family: 'Lato', sans-serif;
+
+        color:black !important;
+        text-align:center;
+        background:rgb(64,224,208);
+    }
+
+    #intro h3{
+        font-weight: bold;
+    }
+    #intro p{
+        font-size: 16px;
+    }
+    #b2 {
+        font-family: 'Lato','sans-serif';
+        font-weight: bolder;
+        height: 50px;
+        /* margin-left: 5% ; */
+        background-color:rgb(64,224,208);
+        /* background-color: rgb(7, 124, 118);  */
+
+        border-radius: 5px;
+        border-color: white;
+        color: white;
+        /* padding: 15px 32px; */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+    #b2:hover{
+        color:#4b92dc
+    }
+
+    @media screen and (max-width: 767px) and (min-width: 601px) {
+        .jumbotron{
+            text-align: center;
+            margin-bottom: 10%;
+        }
+        #b1{
+            margin-left: 0% ;
+        }
+        #f1{
+            margin-bottom: 60%;
+        }
+        #f2{
+            margin-bottom: 90%;
+        }
+        #f3{
+            margin-bottom: 100%;
+        }
+        #f4{
+            margin-bottom: 60%;
+        }
+        #f5{
+            margin-bottom: 150%;
+        }
+        #intro{
+            border-radius: 0%;
+            height:400px;
+            margin-bottom: 30%;
+        }
+        #feat1{
+            margin-bottom: 40%;
+        }
+        #feat2{
+            margin-bottom: 30%;
+        }
+        #feat3{
+            margin-bottom: 70%;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .newsletter .content {
+            max-width: 350px;
+        }
+        .jumbotron{
+            text-align: center;
+            margin-bottom: 10%;
+            /*padding-right: 0px;*/
+            padding-left: 30px;
+            padding-top: 100px;
+
+        }
+        #b1{
+            margin-left: 0% ;
+        }
+        #f1{
+            margin-bottom: 30%;
+        }
+        #f2{
+            margin-bottom: 30%;
+        }
+        #f3{
+            margin-bottom: 70%;
+        }
+        #f4{
+            margin-bottom: 30%;
+        }
+        #f5{
+            margin-bottom: 70%;
+        }
+        #intro{
+            border-radius: 0%;
+            height:auto;
+            margin-bottom: 30%;
+        }
+        #feat1{
+            margin-bottom: 40%;
+        }
+        #feat2{
+            margin-bottom: 30%;
+        }
+        #feat3{
+            margin-bottom: 70%;
+        }
+        #intro2{
+            border-radius: 0%;
+
+            margin-bottom: 30%;
+        }
+    }
+</style>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="jumbotron" id="page_home">
+    <h1>Therapists</h1>
+</div>
+
+<!--<div class="container" id="part_intro">-->
+
+<div class="container" id="intro">
+    <h3>Are you a therapist or an activity provider keen to join us on our journey?</h3>
+    <br>
+    <br>
+    <p>  </p>
+    <br>
+    <br>
+    <form action="/therapists/therapists-form">
+        <button class="btn" type="submit" id="b2">Contact us</button>
+    </form>
+</div>
+
+<!--</div>-->
+
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}
