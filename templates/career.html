@@ -44,7 +44,7 @@
         margin-bottom: 0px;
         padding-bottom: 10%;
         display: block;
-        height:30vh;
+        /*height:30vh;*/
         font-family: 'Lato', sans-serif;
 
         color:black !important;
@@ -127,14 +127,13 @@
         display: block;
     }
     #join{
-
         margin-top: 10%;
         margin-bottom: 5px;
         padding-top: 3%;
         border-radius: 15px;
         padding-bottom: 10%;
         display: block;
-        height:40vh;
+        /*height:40vh;*/
         font-family: 'Lato', sans-serif;
 
         color:black !important;
@@ -150,9 +149,30 @@
         font-size: 16px;
     }
 
-    @media screen and (max-width: 767px) and (min-width: 601px) {
+    @media screen and (max-width: 1024px) and (min-width: 601px) {
         #join{
             height: 300px;
+        }
+        #raj img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: auto;
+            display: block;
+        }
+        #thad img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: auto;
+            display: block;
+        }
+        #mark img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: auto;
+            display: block;
         }
     }
     @media screen and (max-width: 600px) {
@@ -162,6 +182,7 @@
 
         #join {
             height: 300px;
+            border-radius: 0%;
         }
     }
 </style>
@@ -185,28 +206,32 @@
             <div><img src="{{ url_for('static', filename='images/raj2.jpeg') }}"></div>
             <div><h3>Chitraj Singh</h3></div>
             <div><p>CEO and Co-Founder</p></div>
+            <br><br>
         </div>
         <div class="col-sm-4" id="thad">
             <div><img src="{{ url_for('static', filename='images/thad1.jpg') }}"></div>
             <div><h3><b>Dr. Thaddeus Cheung</b> </h3></div>
             <h3>MBChB, MRCPsych</h3>
             <div><p>Chief Medical Officer and Co-Founder</p></div>
+            <br><br>
         </div>
         <div class="col-sm-4" id="mark">
             <div><img src="{{ url_for('static', filename='images/mark.jpg') }}"></div>
             <div><h3><b>Mark Claydon</b> </h3></div>
             <!--            <h3>MBChB, MRCPsych</h3>-->
             <div><p>CTO and Co-Founder</p></div>
+            <br><br>
         </div>
     </div>
-    <div class="container" id="join" style="height: 200px;">
-        <h3>Join the team</h3>
-        <br>
-        <br>
-        <p> if you are interested in working for MindHug drop us a line with your CV at <b><a href="mailto:hello@mindhug.io" title="glorythemes">hello@mindhug.io</a></b> </p>
-        <br>
-        <br>
-    </div>
+</div>
+
+<div class="container" id="join" style="height: 200px">
+    <h3>Join the team</h3>
+    <br>
+    <br>
+    <p> if you are interested in working for MindHug drop us a line with your CV at <b><a href="mailto:hello@mindhug.io" title="glorythemes">hello@mindhug.io</a></b> </p>
+    <br>
+    <br>
 </div>
 <br><br>
 

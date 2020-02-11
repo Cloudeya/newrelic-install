@@ -141,7 +141,7 @@
         margin-top: 0%;
         padding-top: 10%;
         padding-left: 3%;
-        height:50vh;
+        /*height:50vh;*/
         color:rgb(0, 0, 0) !important;
         text-align:left;
         background:whitesmoke;
@@ -157,7 +157,7 @@
         margin-top: 0%;
         padding-top: 5%;
         padding-left: 3%;
-        height:50vh;
+        /*height:50vh;*/
         color:rgb(0, 0, 0) !important;
         text-align:left;
         background:whitesmoke;
@@ -175,7 +175,7 @@
         margin-top: 0%;
         padding-top: 5%;
         padding-left: 3%;
-        height:50vh;
+        /*height:50vh;*/
         color:rgb(0, 0, 0) !important;
         text-align:left;
         background:whitesmoke;
@@ -190,7 +190,7 @@
         margin-top: 0%;
         padding-top: 5%;
         padding-left: 3%;
-        height:50vh;
+        /*height:50vh;*/
         color:rgb(0, 0, 0) !important;
         text-align:left;
         background:whitesmoke;
@@ -208,7 +208,8 @@
         margin-top: 0%;
         padding-top: 5%;
         padding-left: 3%;
-        height:50vh;
+        margin-bottom: 10%;
+        /*height:50vh;*/
         color:rgb(0, 0, 0) !important;
         text-align:left;
         background:whitesmoke;
@@ -222,22 +223,23 @@
     #f5 img{
         padding-top: 0%;
     }
+
     #pro1 img {
         width: auto;
-        height: 250px;
+        max-height: 270px;
         margin: auto;
         display: block;
-        padding: 2%;
+        padding: 8%;
     }
     #pro2 img {
         width: auto;
-        height: 300px;
+        max-height: 300px;
         margin: auto;
         display: block;
     }
     #pro3 img {
         width: auto;
-        height: 300px;
+        max-height: 250px;
         margin: auto;
         display: block;
     }
@@ -245,7 +247,7 @@
         margin-top: 0%;
         padding-top: 5%;
         padding-left: 3%;
-        height:30vh;
+        /*height:30vh;*/
         color:rgb(0, 0, 0) !important;
         font-family: 'Lato','sans-serif';
         text-align:left;
@@ -297,7 +299,9 @@
         color:#4b92dc
     }
 
-    @media screen and (max-width: 767px) and (min-width: 601px) {
+
+    /*iPads*/
+    @media screen and (max-width: 1024px) and (min-width: 601px) {
         .jumbotron{
             text-align: center;
             margin-bottom: 10%;
@@ -306,8 +310,7 @@
             margin-left: 0% ;
         }
         #f1{
-            /*margin-bottom: 5%;*/
-            padding-bottom: 0%;
+            margin-bottom: 5%;
         }
         #f2{
             margin-bottom: 5%;
@@ -319,23 +322,24 @@
             margin-bottom: 5%;
         }
         #f5{
-            margin-bottom: 5%;
+            margin-bottom: 15%;
         }
         #intro{
-            border-radius: 0%;
-            height:400px;
-            margin-bottom: 30%;
+            border-radius: 15px;
+            height:300px;
+            margin-bottom: 0%;
         }
         #feat1{
-            margin-bottom: 40%;
+            margin-bottom: 5%;
         }
         #feat2{
-            margin-bottom: 30%;
+            margin-bottom: 5%;
         }
         #feat3{
-            margin-bottom: 70%;
+            margin-bottom: 5%;
         }
     }
+    /*Phones*/
     @media screen and (max-width: 600px) {
         .newsletter .content {
             max-width: 350px;
@@ -352,19 +356,20 @@
             margin-left: 0% ;
         }
         #f1{
-            margin-bottom: 10%;
+            margin-bottom: 20%;
+            /*padding-bottom: 80%;*/
         }
         #f2{
-            margin-bottom: 10%;
+            margin-bottom: 20%;
         }
         #f3{
-            margin-bottom: 10%;
+            margin-bottom: 20%;
         }
         #f4{
-            margin-bottom: 10%;
+            margin-bottom: 20%;
         }
         #f5{
-            margin-bottom: 50%;
+            margin-bottom: 22%;
         }
         #intro{
             border-radius: 0%;
@@ -372,13 +377,13 @@
             margin-bottom: 10%;
         }
         #feat1{
-            margin-bottom: 60%;
+            margin-bottom: 20%;
         }
         #feat2{
-            margin-bottom: 60%;
+            margin-bottom: 20%;
         }
         #feat3{
-            margin-bottom: 70%;
+            margin-bottom: 22%;
         }
         #intro2{
             border-radius: 0%;
@@ -400,7 +405,7 @@
 
 <div class="jumbotron" id="page_home" style="padding-right: 28px">
     <h1>MindHug</h1>
-    <h3>Mental Wellbeing and you. We understand that one size does not fit all. </h3>
+    <h3>Mental Wellbeing and you. Because one size does not fit all. </h3>
     <br>
     <br>
     <br>
@@ -491,7 +496,7 @@
 <div class="container" >
     <div class="row" id="f4">
         <div class="col-sm-6" id="p1">
-            <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/free2.png') }}" />
+            <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/8493-min.png') }}" />
         </div>
         <div class="col-sm-6">
             <h3>Experience free taster sessions </h3>
@@ -536,7 +541,7 @@
 <div class="container" style="padding-top: 10%">
     <div class="row" id="feat1">
         <div class="col-sm-6" id="pro2">
-            <img class="img-responsive" style="height: auto; width: auto;" src="{{ url_for('static', filename='images/cred.png') }}" />
+            <img class="img-responsive" src="{{ url_for('static', filename='images/cred.png') }}" />
         </div>
         <div class="col-sm-6" id="t1">
             <h3>Credibility </h3>
@@ -548,7 +553,7 @@
 <div class="container" >
     <div class="row" id="feat2">
         <div class="col-sm-6  col-xs-push-0 col-sm-push-6 col-md-push-6 col-lg-push-6  " id="pro1">
-            <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/saf.png') }}"  />
+            <img class="img-responsive"  src="{{ url_for('static', filename='images/saf.png') }}"  />
         </div>
 
         <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 " id="t1">
@@ -561,7 +566,7 @@
 <div class="container" >
     <div class="row" id="feat3">
         <div class="col-sm-6" id="pro3">
-            <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/priv2.png') }}" />
+            <img class="img-responsive"  src="{{ url_for('static', filename='images/priv2.png') }}" />
         </div>
         <div class="col-sm-6" id="t1">
             <h3>Privacy </h3>
