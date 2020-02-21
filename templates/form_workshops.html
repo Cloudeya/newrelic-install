@@ -1,0 +1,258 @@
+{% extends 'layout.html' %}
+
+{% block metatags %}
+
+<meta name="description" content="Fill out this form to organise a MindHug workshop for your organisation">
+
+{% endblock %}
+
+{% block title %}MindHug - Workshop Form{% endblock %}
+
+{% block style %}
+
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+    * {
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        -webkit-font-smoothing:antialiased;
+        -moz-font-smoothing:antialiased;
+        -o-font-smoothing:antialiased;
+        text-rendering:optimizeLegibility;
+    }
+
+    body {
+        font-family: 'Lato',Arial, sans-serif;
+        /*font-weight:300;*/
+        /*font-size: 12px;*/
+        font-size: 100%;
+        /*line-height:30px;*/
+        color:#777;
+        background: whitesmoke ;
+        margin-bottom: 0;
+    }
+
+    #form_con {
+        max-width:450px;
+        width:100%;
+        margin:100px auto;
+        position:relative;
+        border-width: 1px;
+        border-color: rgb(64,224,208);
+        border-radius: 15px;
+        /*margin-top: ;*/
+    }
+
+    #contact_workshop input[type="text"], #contact_workshop input[type="email"], #contact_workshop input[type="tel"], #contact_workshop input[type="url"], #contact_workshop textarea, #contact_workshop button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+    #contact_workshop {
+        background:whitesmoke;
+        padding:25px;
+        margin:50px 0;
+    }
+
+    #contact_workshop h1 {
+        color: #09C;
+        display: block;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    #contact_workshopt h4 {
+        margin:5px 0 15px;
+        display:block;
+        font-size:13px;
+    }
+
+    fieldset {
+        border: medium none !important;
+        margin: 0 0 10px;
+        min-width: 100%;
+        padding: 0;
+        width: 100%;
+    }
+
+    #contact_workshop input[type="text"], #contact_workshop input[type="email"], #contact_workshop input[type="tel"], #contact_workshop input[type="url"], #contact_workshop textarea {
+        width:100%;
+        border:1px solid #CCC;
+        background:#FFF;
+        margin:0 0 5px;
+        padding:10px;
+    }
+
+    #contact_workshop input[type="text"]:hover, #contact_workshop input[type="email"]:hover, #contact_workshop input[type="tel"]:hover, #contact_workshop input[type="url"]:hover, #contact_workshop textarea:hover {
+        -webkit-transition:border-color 0.3s ease-in-out;
+        -moz-transition:border-color 0.3s ease-in-out;
+        transition:border-color 0.3s ease-in-out;
+        border:1px solid #AAA;
+    }
+
+    #contact_workshop textarea {
+        height:100px;
+        max-width:100%;
+      resize:none;
+    }
+
+    #mess {
+        height:150px;
+        max-width:100%;
+      resize:none;
+    }
+
+    #contact_workshop button[type="submit"] {
+        cursor:pointer;
+        width:100%;
+        border:none;
+        background:#0CF;
+        color:#FFF;
+        margin:0 0 5px;
+        padding:10px;
+        font-size:15px;
+    }
+
+    #contact_workshop button[type="submit"]:hover {
+        background:#09C;
+        -webkit-transition:background 0.3s ease-in-out;
+        -moz-transition:background 0.3s ease-in-out;
+        transition:background-color 0.3s ease-in-out;
+    }
+
+    #contact_workshop button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+    #contact_workshop input:focus, #contact_workshop textarea:focus {
+        outline:0;
+        border:1px solid #999;
+    }
+
+    ::-webkit-input-placeholder {
+     color:#888;
+    }
+
+    :-moz-placeholder {
+     color:#888;
+    }
+
+    ::-moz-placeholder {
+     color:#888;
+    }
+
+    :-ms-input-placeholder {
+     color:#888;
+    }
+
+    .chkbox label
+        {
+            position: relative;
+            top: -2px;
+        }
+
+    @media screen and (max-width: 767px) and (min-width: 601px) {
+         #form_con {
+
+        margin:200px 200px;
+
+
+        /*margin-top: ;*/
+    }
+    }
+    @media screen and (max-width: 600px) {
+        #form_con {
+        max-width:350px;
+        width:100%;
+        margin:100px auto;
+            margin-bottom: 50px;
+
+        border-width: 1px;
+        border-color: rgb(64,224,208);
+        border-radius: 15px;
+        /*margin-top: ;*/
+    }
+
+    }
+</style>
+
+{% endblock %}
+
+{% block body %}
+
+<iframe name="votar" style="display:none;"></iframe>
+<div class="container" id="form_con" style="border: 1px solid rgb(64,224,208);">
+    <form id="contact_workshop" target="votar" method="post">
+        <h1>Contact us</h1>
+        <h6>Get in touch with us today</h6>
+
+        <fieldset>
+            <input placeholder="First Name" type="text" tabindex="1" id="fname" name="fname" oninvalid="this.setCustomValidity('Please enter your first name')" oninput="this.setCustomValidity('')" required autofocus>
+        </fieldset>
+
+        <fieldset>
+            <input placeholder="Last Name" type="text" tabindex="1" id="lname" name="lname">
+        </fieldset>
+
+        <fieldset>
+            <input placeholder="Email address" type="email" id="email" name="email" tabindex="2" oninvalid="this.setCustomValidity('Please enter a valid email address')" oninput="this.setCustomValidity('')" required >
+        </fieldset>
+
+        <fieldset>
+            <input placeholder="Organisation's name" type="text" id="company" name="company" tabindex="3">
+        </fieldset>
+        <fieldset>
+            <textarea rows="4" cols="50" name="comment" form="contact_workshop" id="mess" placeholder="Your message" tabindex="4"></textarea>
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" tabindex="5" onclick="myFunction()">Submit</button>
+            <label  for="field_terms"><input type="checkbox" class="btn-lg" id="field_terms" style="margin: 5px; padding: 0px;" oninvalid="this.setCustomValidity('Please check the box to continue')" oninput="this.setCustomValidity('')" required/><font style="font-size: 12px; font-weight: normal; color: dimgrey">I accept <a href="/privacy-policy" target="_blank"><u>privacy policy</u></a> and <a href = "/cookie-policy" target="_blank"><u>cookie policy</u></a>.</font><span class="mock_checkbox"></span></label>
+
+        </fieldset>
+        <a href="/" class="btn btn-primary">Go back to Home</a>
+    </form>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered" >
+            <div class="modal-content">
+                <div class="modal-body">
+                    <font style="font-size: 20px">Thanks for contacting us, we'll get back to you soon.</font>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block script %}
+
+<script>
+    function myFunction() {
+        var name = document.forms["contact_workshop"]["fname"].value;
+        var email = document.forms["contact_workshop"]["email"].value;
+        if (name!="" && validate(email) && document.getElementById('field_terms').checked) {
+            $('#myModal').modal('show');
+        }
+        else {
+            return false;
+        }
+    }
+    function closeModal() {
+        document.getElementById("contact_workshop").reset();
+        window.location.href = "/";
+    }
+    function validate(email) {
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{1,4})$/;
+        if (reg.test(email) == false) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+</script>
+
+{% endblock %}
