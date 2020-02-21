@@ -25,7 +25,7 @@ def workshop_form():
         message = request.form['comment']
         flag = workshop_forms(email, fname, lname, company, message)
 
-    return render_template('form.html')
+    return render_template('form_workshops.html')
 
 @app.route('/partnerships', methods=["GET", "POST"])
 def partnerships():
@@ -44,7 +44,7 @@ def therapists_form():
         company = request.form['company']
         message = request.form['comment']
         flag = therapist_forms(email, fname, lname, company, message)
-    return render_template('form.html')
+    return render_template('form_therapists.html')
 
 @app.route('/partnerships/partnership-form', methods=["GET", "POST"])
 def partnership_form():
@@ -56,7 +56,7 @@ def partnership_form():
         message = request.form['comment']
 
         flag = partnership_forms(email, fname, lname, company, message)
-    return render_template('form.html')
+    return render_template('form_partnerships.html')
 
 @app.route('/careers', methods=["GET", "POST"])
 def careers():
