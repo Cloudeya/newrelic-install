@@ -1,0 +1,3 @@
+Sitemap: https://mindhug.io/sitemap.xml
+User-agent:*
+Disallow:
