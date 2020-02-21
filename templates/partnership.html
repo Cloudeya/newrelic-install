@@ -1,6 +1,12 @@
 {% extends 'layout.html' %}
 
-{% block title %}MindHug{% endblock %}
+{% block metatags %}
+
+<meta name="description" content="Partnerships at MindHug">
+
+{% endblock %}
+
+{% block title %}Partnerships at MindHug{% endblock %}
 
 {% block style %}
 
@@ -215,7 +221,7 @@
 </div>
 
 <div class="container" id="f2">
-    <img class="img-responsive" src="{{ url_for('static', filename='images/ucl.jpg') }}" />
+    <img class="img-responsive" src="{{ url_for('static', filename='images/ucl.jpg') }}" alt="UCL Innovation and Enterprise" />
 </div>
 
 <div class="container" id="intro">
