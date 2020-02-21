@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://mindhug.io/</loc>
+  <lastmod>2020-02-21T14:19:19+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://mindhug.io/partnerships</loc>
+  <lastmod>2020-02-21T14:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mindhug.io/therapists</loc>
+  <lastmod>2020-02-21T14:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mindhug.io/privacy-policy</loc>
+  <lastmod>2020-02-21T14:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mindhug.io/cookie-policy</loc>
+  <lastmod>2020-02-21T14:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mindhug.io/workshop-form</loc>
+  <lastmod>2020-02-21T14:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mindhug.io/careers</loc>
+  <lastmod>2020-02-21T14:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
