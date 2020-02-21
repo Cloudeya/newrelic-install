@@ -72,7 +72,11 @@ def privacy_policy():
 
 @app.route('/sitemap.xml')
 def site_map():
-  return render_template('sitemap.xml')
+    return render_template('sitemap.xml')
+
+@app.route('/robots.txt')
+def robots():
+    return render_template('robots.txt')
 
 if __name__ == '__main__':
     app.run(debug=False, port=8080)
