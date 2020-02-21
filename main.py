@@ -70,5 +70,9 @@ def cookie_policy():
 def privacy_policy():
     return render_template('privacy_policy.html')
 
+@app.route('/sitemap.xml')
+def site_map():
+  return render_template('sitemap.xml')
+
 if __name__ == '__main__':
     app.run(debug=False, port=8080)
