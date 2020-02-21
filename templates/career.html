@@ -1,6 +1,12 @@
 {% extends 'layout.html' %}
 
-{% block title %}MindHug{% endblock %}
+{% block metatags %}
+
+<meta name="description" content="Careers at MindHug">
+
+{% endblock %}
+
+{% block title %}Careers at MindHug{% endblock %}
 
 {% block style %}
 
@@ -203,20 +209,20 @@
 <div class="container" id="team">
     <div class="row">
         <div class="col-sm-4" id="raj">
-            <div><img src="{{ url_for('static', filename='images/raj2.jpeg') }}"></div>
+            <div><img src="{{ url_for('static', filename='images/raj2.jpeg') }}" alt="Chitraj Singh, Co-Founder and CEO of MindHug" /></div>
             <div><h3>Chitraj Singh</h3></div>
             <div><p>CEO and Co-Founder</p></div>
             <br><br>
         </div>
         <div class="col-sm-4" id="thad">
-            <div><img src="{{ url_for('static', filename='images/thad1.jpg') }}"></div>
+            <div><img src="{{ url_for('static', filename='images/thad1.jpg') }}" alt="Dr. Thaddeus Cheung, Chief Medical Officer and Co-Founder of MindHug"></div>
             <div><h3><b>Dr. Thaddeus Cheung</b> </h3></div>
             <h3>MBChB, MRCPsych</h3>
             <div><p>Chief Medical Officer and Co-Founder</p></div>
             <br><br>
         </div>
         <div class="col-sm-4" id="mark">
-            <div><img src="{{ url_for('static', filename='images/mark.jpg') }}"></div>
+            <div><img src="{{ url_for('static', filename='images/mark.jpg') }}" alt="Mark Claydon, CTO and Co-Founder of MindHug"></div>
             <div><h3><b>Mark Claydon</b> </h3></div>
             <!--            <h3>MBChB, MRCPsych</h3>-->
             <div><p>CTO and Co-Founder</p></div>
