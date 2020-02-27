@@ -15,8 +15,8 @@ def index():
         flag = subscribe_form(sub_email)
     return render_template('index.html')
 
-@app.route('/workshop-form', methods=["GET", "POST"])
-def workshop_form():
+@app.route('/contact-us', methods=["GET", "POST"])
+def contact_us():
     if request.method=="POST":
         email = request.form['email']
         fname = request.form['fname']
