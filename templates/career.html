@@ -18,11 +18,11 @@
     }
 
     .jumbotron {
-        /* height:50vh; */
         font-family: 'Hammersmith One', sans-serif;
         padding-top: 20%;
         padding-bottom: 20%;
         padding-left: 5%;
+
         margin-top: 0%;
         margin-bottom: 0%;
         color:black !important;
@@ -33,10 +33,10 @@
                 rgba(64,224,208,0.75)
             ),
             url('/static/images/2730921-min.jpg');
-        background-size:cover;
+        background-size: 100vw auto;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: center;
+        background-position: center -60px;
 
     }
     .jumbotron p{
@@ -184,6 +184,10 @@
     @media screen and (max-width: 600px) {
         .jumbotron {
             text-align: center;
+            margin-bottom: 10%;
+            padding-left: 0px;
+            padding-top: 120px;
+            background-position: center 30px;
         }
 
         #join {
