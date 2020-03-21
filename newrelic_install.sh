@@ -63,3 +63,4 @@ check process newrelic_plugin_com.newrelic.plugins.mysql.instance
   stop program = "/sbin/service newrelic_plugin_com.newrelic.plugins.mysql.instance stop"' >> /etc/monit.d/newrelic
 fi
 service monit restart
+
