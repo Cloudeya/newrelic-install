@@ -10,7 +10,7 @@ Run the following in your terminal. Don't forget to update your NewRelic license
 
 ## License
 
-All templates are published under [BSD 3-Clause License](license.txt).
+The script is published under [BSD 3-Clause License](license.txt).
 
 ## Copyright
 
