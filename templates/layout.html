@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta name="keywords" content="MindHug, Mental Health, Mental Wellbeing, Happiness, Art Therapy, Music Therapy, Sound Therapy, Drama Therapy, Mindfullness">
 
     {% block metatags %} {% endblock %}
@@ -38,40 +37,19 @@
 
 {% block script %} {% endblock %}
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Vendors -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <!-- Cookies -->
 <script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script>
-<script>
-        window.addEventListener("load", function(){
-            window.wpcc.init({
-                "colors":{
-                    "popup":{
-                        "background":"#222222",
-                        "text":"#ffffff",
-                        "border":"#f9f9f9"
-                    },
-                    "button":{
-                        "background":"#F1D600",
-                        "text":"#000000"
-                    }
-                },
-                "position":"bottom",
-                "margin":"none",
-                "transparency":"10",
-                "content":{
-                    "message":"This website uses cookies to ensure you get the best experience on our website.",
-                    "link":"Cookie Policy",
-                    "button":"Close",
-                    "href":"/cookie-policy"
-                }
-            })
-        });
-</script>
+
+<!-- Main Script -->
+<script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js') }}"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156513245-1"></script>
+<script async src="//www.googletagmanager.com/gtag/js?id=UA-156513245-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
