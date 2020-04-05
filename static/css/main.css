@@ -19,7 +19,7 @@ body {
     font-size: 100%;
     /*line-height:30px;*/
     color:#777;
-    background: whitesmoke ;
+    background: whitesmoke !important;
     margin-bottom: 0;
     max-width: 100%;
     overflow-x: hidden;
@@ -48,7 +48,6 @@ body {
     ul.nav a:hover { color: #4b92dc !important; }
 
 /*Index*/
-
     .jumbotron .home{
         font-family: 'Hammersmith One', sans-serif;
         padding-top: 10%;
