@@ -62,7 +62,7 @@ body {
             rgba(64,224,208,0.75)
 
         ),
-        url('/static/images/247-min.jpg') !important;
+        url('/static/images/home-hero@1x.webp') !important;
         background-size:cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -463,7 +463,7 @@ body {
                 rgba(245,245,245,0.75),
                 rgba(64,224,208,0.75)
             ),
-            url('/static/images/3155587-min.jpg') !important;
+            url('/static/images/hero-partnerships@1x.webp') !important;
         background-size: 100vw auto;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -597,7 +597,7 @@ body {
         rgba(245, 245, 245, 0.75),
         rgba(64, 224, 208, 0.75)
         ),
-        url('/static/images/2685.jpg') !important;
+        url('/static/images/hero-therapists@1x.webp') !important;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -683,7 +683,6 @@ body {
         }
     }
 
-
 /*Career*/
     .jumbotron .career {
         font-family: 'Hammersmith One', sans-serif;
@@ -699,7 +698,7 @@ body {
                 rgba(245,245,245,0.75),
                 rgba(64,224,208,0.75)
             ),
-            url('/static/images/2730921-min.jpg');
+            url('/static/images/hero-careers@1x.webp');
         background-size: 100vw auto;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -1346,5 +1345,3 @@ body {
             border-radius: 15px;
         }
     }
-
-
