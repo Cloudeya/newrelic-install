@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="keywords" content="MindHug, Mental Health, Mental Wellbeing, Happiness, Art Therapy, Music Therapy, Sound Therapy, Drama Therapy, Mindfullness">
 
-    {% block metatags %} {% endblock %}
-
-    <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
+
+    <!-- Meta Tags -->
+    {% block metatags %}
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="MindHug, Mental Health, Mental Health Coronavirus, Mental Wellbeing, Happiness, Art Therapy, Music Therapy, Sound Therapy, Drama Therapy, Mindfullness, Therapists Near Me, Losing It With Mental Health, Mental Disorder, Mental Health Emergency">
+    {% endblock %}
+
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
@@ -32,7 +35,6 @@
     <meta property="og:description" content="We help find what works best for your happiness and wellbeing.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="{{ url_for('static', filename='images/og-image.jpg') }}">
-
 
 </head>
 
