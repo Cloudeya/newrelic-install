@@ -70,6 +70,10 @@ def cookie_policy():
 def privacy_policy():
     return render_template('privacy_policy.html')
 
+@app.route('/disclaimer')
+def disclaimer():
+    return render_template('disclaimer.html')
+
 @app.route('/sitemap.xml')
 def site_map():
     return render_template('sitemap.xml')
