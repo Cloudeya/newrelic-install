@@ -6,19 +6,37 @@
 
 {% block title %}MindHug's Panel of Therapists{% endblock %}
 
+<body class="sub_page">
+
 {% block body %}
 
-<div class="jumbotron therapists" id="page_home">
-    <h1>Therapists</h1>
-</div>
+{% include 'includes/_navsub.html' %}
 
-<div class="container" id="intro">
-    <h3>Are you a therapist or an activity provider keen to join us on our journey?</h3>
-    <br>
-    <br>
-    <form action="/therapists/therapists-form">
-        <button class="btn" type="submit" id="b2">Contact us</button>
-    </form>
-</div>
+    <section class="about_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about_img-container">
+              <img src="{{ url_for('static', filename='images/placeholder.png') }}" alt="UCL Innovation and Enterprise">
+            </div>
+          </div>
+          <div class="col-md-6" style="margin: 200px auto;">
+            <div class="about_detail-box">
+              <h3>
+                Therapists
+              </h3>
+              <p>
+                Are you a therapist or an activity provider keen to join us on our journey?
+              </p>
+              <div class="">
+                <a href="/therapists/therapists-form" class="call_to-btn btn_white-border">
+                  Contact Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 {% endblock %}

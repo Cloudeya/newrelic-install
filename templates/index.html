@@ -6,193 +6,317 @@
 
 {% block title %}MindHug - Mental Wellbeing and You.{% endblock %}
 
+<body>
+
 {% block body %}
 
-<div class="jumbotron home" id="page_home">
-    <h1>MindHug<sup><font id="r_tag" style="font-family: Lato, serif; ">&reg;</font></sup></h1>
-    <p>Mental wellbeing and you. Because one size does not fit all. We help find what works best for your happiness and wellbeing. We do this by harnessing the familiarity of community and the power of digital.</p>
+<div class="top_container">
 
-    <button class="btn" type="submit" id="b2" onClick="document.getElementById('intro2').scrollIntoView();">Stay In Touch</button>
+    {% include 'includes/_navbar.html' %}
 
-    <iframe name="votar" style="display:none;"></iframe>
-<!--     <section class="newsletter">
-        <div class="row">
-            <div class="content">
-                <h2>Let's keep in touch</h2>
-                <form  method="post" id="myForm" target="votar">
-                    <div class="input-group">
-                        <input type="email" class="form-control" name="sub_email" placeholder="Enter your email" oninvalid="this.setCustomValidity('Please enter a valid email address')" oninput="this.setCustomValidity('')" required>
-                        <span class="input-group-btn">
-                            <button class="btn" type="submit" onclick="myFunction()" name="subscribe_btn" value="subscribe_btn" id="subscribe_button" >Subscribe Now</button>
-                        </span>
-
-                    </div>
-                    <div class="form-check" style="padding: 10px">
-
-                        <label  for="field_terms"><input type="checkbox" class="btn-lg" id="field_terms" style="margin: 5px" oninvalid="this.setCustomValidity('Please check the box to continue')" oninput="this.setCustomValidity('')" required/><font style="font-size: 13px; font-weight: normal; color: dimgrey">I accept <a href="/privacy-policy" target="_blank"><u>privacy policy</u></a> and <a href = "/cookie-policy" target="_blank"><u>cookie policy</u></a>.</font><span class="mock_checkbox"></span></label>
-                    </div>
-                </form>
-            </div>
+    <section class="hero_section ">
+      <div class="hero-container container">
+        <div class="hero_detail-box">
+          <h1>
+            Mental wellbeing and you. Because one size does not fit all.
+          </h1>
+          <p>
+            We help find what works best for your happiness and wellbeing. We do this by harnessing the familiarity of community and the power of digital.
+          </p>
+          <div class="hero_btn-continer">
+            <button class="call_to-btn btn_white-border" onClick="document.getElementById('intro2').scrollIntoView();">
+              Stay In Touch
+            </button>
+          </div>
         </div>
-    </section> -->
-</div>
-
-<!-- The Modal -->
-<div class="modal fade" id="myModal">
-    <div class="modal-dialog modal-dialog-centered" >
-        <div class="modal-content">
-<!--                <div class="modal-header">-->
-<!--                    <h4 class="modal-title">Response received</h4>-->
-<!--                </div>-->
-            <div class="modal-body">
-                <font style="font-size: 20px">Thank you for subscribing.</font>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="closeModal()">Close</button>
-            </div>
+        <div class="hero_img-container">
+          <div>
+            <img src="{{ url_for('static', filename='images/hero.png') }}" alt="MindHug Hero" class="img-fluid">
+          </div>
         </div>
-    </div>
-</div>
-
-<div class="container-fluid" id="feat">
-    <h3>Our tight-knit team is working on these features</h3>
-</div>
-
-<div class="container" >
-    <div class="row" id="f1">
-        <div class="col-sm-6 col-xs-push-0 col-sm-push-6 col-md-push-6 col-lg-push-6 " id="p1">
-            <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/free@1x.webp') }}" alt="A wide choice of beneficial therapies and activities art therapy, mindfulness, music therapy, sound baths, breathing, pet therapy, drama therapy, yoga, and nature walks for your mental wellbeing" />
-        </div>
-        <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 f1-al">
-            <h3>Explore your community</h3>
-            <p>Find, book and try a wide choice of beneficial therapies and activities in your community. We will offer art therapy, mindfulness, music therapy, sound baths, breathing, pet therapy, drama therapy, yoga and nature walks.</p>
-        </div>
-    </div>
-</div>
-
-<div class="container" >
-    <div class="row" id="f2">
-        <div class="col-sm-6" id="p1">
-            <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/digital@1x.webp') }}" alt="Explore digital content to try out different forms of therapies." />
-        </div>
-        <div class="col-sm-6 f4-al">
-            <h3>Engage digitally</h3>
-            <p>Subscribe to a variety of digital content, media, activities and therapies. From experiential art based activities to guided meditation to breathing exercises.</p>
-        </div>
-     </div>
-</div>
-
-<div class="container" >
-    <div class="row" id="f3">
-        <div class="col-sm-6 col-xs-push-0 col-sm-push-6 col-md-push-6 col-lg-push-6 " id="p1">
-            <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/workshop@1x.webp') }}" alt="Bespoke workshops and retreats to help rejuvenate yourself." />
-        </div>
-        <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 f3-al">
-            <h3>Book workshops and events </h3>
-            <p>Book and attend bespoke workshops and retreats to help rejuvenate yourself. If you would like to talk to us about organising a workshop for your organisation or group, please <a href="/contact-us">contact us</a>.</p>
-        </div>
-    </div>
-</div>
-
-<div class="container" >
-    <div class="row" id="f4">
-        <div class="col-sm-6" id="p1">
-            <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/yoga@1x.webp') }}" alt="Free events to meet your community and try some therapies and activities." />
-        </div>
-        <div class="col-sm-6 f4-al">
-            <h3>Experience free taster sessions </h3>
-            <p>Attend free events to meet your community and try some therapies and activities. </p>
-        </div>
-     </div>
-</div>
-
-<div class="container">
-    <div class="row" id="f5">
-        <div class="col-sm-6 col-xs-push-0 col-sm-push-6 col-md-push-6 col-lg-push-6">
-            <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/mood@1x.webp') }}" alt="Track your mood using our mood diary to keep a track of your mental wellbeing" />
-        </div>
-        <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 f5-al" id="p1">
-            <h3>Employ a mood diary and wellbeing analytics </h3>
-            <p>Track lifestyle, sleep, diet, emotional health and your response to activities and therapies through our unique mood diary. Use our analytics to find what works best for you.</p>
-        </div>
-    </div>
-</div>
-
-<div class="container" id="intro">
-    <h3>"We are doing amazing things for mental wellbeing."</h3>
-    <p> If you would like to talk to us about deploying our platform for your organisation, school or university please get in touch.</p>
-    <form action="/contact-us">
-        <button class="btn" type="submit" id="b2">Contact Us</button>
-    </form>
-</div>
-
-<div class="container" id="feat">
-    <h3>Our promise to you</h3>
-</div>
-
-<div class="container">
-    <div class="row" id="feat1">
-        <div class="col-sm-6" id="pro2">
-            <img class="img-responsive" src="{{ url_for('static', filename='images/cred@1x.webp') }}" alt="High quality and credible services" />
-        </div>
-        <div class="col-sm-6" id="t1">
-            <h3>Credibility </h3>
-            <p>We take the quality and credibility of our services and offerings very seriously. </p>
-        </div>
-    </div>
-</div>
-
-<div class="container" >
-    <div class="row" id="feat2">
-        <div class="col-sm-6  col-xs-push-0 col-sm-push-6 col-md-push-6 col-lg-push-6  " id="pro1">
-            <img class="img-responsive"  src="{{ url_for('static', filename='images/saf@1x.webp') }}" alt="Your safety and welbeing is our number one priority" />
-        </div>
-
-        <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 " id="t1">
-            <h3>Safety </h3>
-            <p>The safety and wellbeing of everyone on the platform is our number one priority. </p>
-        </div>
-    </div>
-</div>
-
-<div class="container" >
-    <div class="row" id="feat3">
-        <div class="col-sm-6" id="pro3">
-            <img class="img-responsive"  src="{{ url_for('static', filename='images/priv2@1x.webp') }}" alt="You control your data, as MinHug is committed to your privacy" />
-        </div>
-        <div class="col-sm-6" id="t1">
-            <h3>Privacy </h3>
-            <p>You control your data and decide if, when and with whom you want to share it. </p>
-        </div>
-    </div>
-</div>
-
-<br><br><br>
-
-<div class="container" id="intro2" style="border: 1px solid rgb(64,224,208);">
-    <h3>Stay in touch</h3>
-    <br>
-    <p> If you would like to get early access when we go live and/or stay abreast of our developments please subscribe.</p>
-    <iframe name="votar" style="display:none;"></iframe>
-    <section class="newsletter">
-        <div class="row">
-            <div class="content">
-
-                <form  method="post" id="myForm1" target="votar">
-                    <div class="input-group">
-                        <input type="email" class="form-control" name="sub_email1" placeholder="Enter your email" oninvalid="this.setCustomValidity('Please enter a valid email address')" oninput="this.setCustomValidity('')" required>
-                        <span class="input-group-btn">
-                            <button class="btn" type="submit" onclick="myFunction1()" name="subscribe_btn" value="subscribe_btn1" id="subscribe_btn" >Subscribe Now</button>
-                        </span>
-
-                    </div>
-                    <div class="form-check" style="padding: 10px">
-                        <label  for="field_terms1"><input type="checkbox" class="btn-lg" id="field_terms1" style="margin: 5px" oninvalid="this.setCustomValidity('Please check the box to continue')" oninput="this.setCustomValidity('')" required/><font style="font-size: 13px; font-weight: normal; color: dimgrey">I accept <a href="/privacy-policy" target="_blank"><u>privacy policy</u></a> and <a href = "/cookie-policy" target="_blank"><u>cookie policy</u></a>.</font><span class="mock_checkbox"></span></label>
-                    </div>
-                </form>
-            </div>
-        </div>
+      </div>
     </section>
 </div>
+<!-- end header section -->
+
+  <div class="common_style">
+
+    <!-- section one -->
+    <section class="about_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about_img-container">
+              <img src="{{ url_for('static', filename='images/placeholder.png') }}" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="about_detail-box">
+              <h3>
+                Explore your community
+              </h3>
+              <p>
+                Find, book and try a wide choice of beneficial therapies and activities in your community. We will offer art therapy, mindfulness, music therapy, sound baths, breathing, pet therapy, drama therapy, yoga and nature walks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section two -->
+    <section class="admission_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="admission_detail-box">
+              <h3>
+                Engage digitally
+              </h3>
+              <p>
+                Subscribe to a variety of digital content, media, activities and therapies. From experiential art based activities to guided meditation to breathing exercises.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="admission_img-container">
+              <img src="{{ url_for('static', filename='images/placeholder.png') }}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section three -->
+    <section class="why_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="why_img-container">
+              <img src="{{ url_for('static', filename='images/placeholder.png') }}" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="why_detail-box">
+              <h3>
+                Book workshops and events
+              </h3>
+              <p>
+                Book and attend bespoke workshops and retreats to help rejuvenate yourself. If you would like to talk to us about organising a workshop for your organisation or group.
+              </p>
+              <div class="">
+                <a href="" class="call_to-btn btn_white-border">
+                  Contact Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section four -->
+    <section class="determine_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="determine_detail-box">
+              <h3>
+                Experience free taster sessions
+              </h3>
+              <p>
+                Attend free events to meet your community and try some therapies and activities.
+              </p>
+              <div class="">
+                <a href="https://www.eventbrite.com/o/mindhug-29549779583" class="call_to-btn btn_white-border">
+                  Events
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="determine_img-container">
+              <img src="{{ url_for('static', filename='images/placeholder.png') }}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section five -->
+    <section class="why_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="why_img-container">
+              <img src="{{ url_for('static', filename='images/placeholder.png') }}" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="why_detail-box">
+              <h3>
+                Employ a mood diary and wellbeing analytics
+              </h3>
+              <p>
+                Track lifestyle, sleep, diet, emotional health and your response to activities and therapies through our unique mood diary. Use our analytics to find what works best for you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- section six -->
+    <section class="determine_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="determine_detail-box">
+              <h3>
+                Credibility
+              </h3>
+              <p>
+                We take the quality and credibility of our services and offerings very seriously.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="determine_img-container">
+              <img src="{{ url_for('static', filename='images/placeholder.png') }}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section seven -->
+    <section class="why_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="why_img-container">
+              <img src="{{ url_for('static', filename='images/placeholder.png') }}" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="why_detail-box">
+              <h3>
+                Safety
+              </h3>
+              <p>
+                The safety and wellbeing of everyone on the platform is our number one priority.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section eight -->
+    <section class="determine_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="determine_detail-box">
+              <h3>
+                Privacy
+              </h3>
+              <p>
+                You control your data and decide if, when and with whom you want to share it.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="determine_img-container">
+              <img src="{{ url_for('static', filename='images/placeholder.png') }}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- testimonial section -->
+  <section class="client_section layout_padding">
+    <h2 class="">
+      Testimonial
+    </h2>
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="row">
+                      <div class="col-md-3">
+                        <div class="client_img-box">
+                          <img src="{{ url_for('static', filename='images/testimonial.png') }}" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="client_detail-box">
+                          <h5>
+                            Alex Du
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-md-3">
+                        <div class="client_img-box">
+                          <img src="{{ url_for('static', filename='images/testimonial.png') }}" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="client_detail-box">
+                          <h5>
+                            Alex Du
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-md-3">
+                        <div class="client_img-box">
+                          <img src="{{ url_for('static', filename='images/testimonial.png') }}" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="client_detail-box">
+                          <h5>
+                            Alex Du
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </section>
+
+  </div>
 
 {% endblock %}

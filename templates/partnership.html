@@ -6,26 +6,37 @@
 
 {% block title %}Partnerships at MindHug{% endblock %}
 
+<body class="sub_page">
+
 {% block body %}
 
-<div class="jumbotron partnership" id="page_home">
-    <h1>Partnerships</h1>
-</div>
-<div class="container" id="part_intro">
-    <h2>Our Current Partner</h2>
-</div>
+{% include 'includes/_navsub.html' %}
 
-<div class="container" id="f2">
-    <img class="img-responsive" src="{{ url_for('static', filename='images/ucl-inno.webp') }}" alt="UCL Innovation and Enterprise" style="margin: 0 auto;"/>
-</div>
-
-<div class="container" id="intro">
-    <h3>We are always on the lookout for valuable partnerships</h3>
-    <p> If you would like to partner with us, feel free to contact us. </p>
-    <br>
-    <form action="/partnerships/partnership-form">
-        <button class="btn" type="submit" id="b2">Contact us</button>
-    </form>
-</div>
+    <section class="about_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about_img-container">
+              <img src="{{ url_for('static', filename='images/placeholder.png') }}" alt="UCL Innovation and Enterprise">
+            </div>
+          </div>
+          <div class="col-md-6" style="margin: 200px auto;">
+            <div class="about_detail-box">
+              <h3>
+                Our Current Partner
+              </h3>
+              <p>
+                We are always on the lookout for valuable partnerships. If you would like to partner with us, feel free to contact us.
+              </p>
+              <div class="">
+                <a href="/partnerships/partnership-form" class="call_to-btn btn_white-border">
+                  Contact Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 {% endblock %}
