@@ -1,4 +1,5 @@
 ## MindHug Marketing Site
+We help find what works best for their happiness and wellbeing. We do this by harnessing the familiarity of community and the power of digital.
 
 ### Development
 
@@ -38,7 +39,7 @@ pip3 install -r requirements.txt
 python3 main.py
 ```
 
-* Site is served here: `http://127.0.0.1:8080`
+- Site is served here: `http://127.0.0.1:8080`
 
 
 ### Production Deployment (Google App Engine)
