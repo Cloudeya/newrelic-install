@@ -8,18 +8,14 @@
 
 {% block body %}
 
-<div class="jumbotron home" id="page_home" style="padding-right: 28px">
-    <h1>MindHug<sup><font id="r_tag"  style="font-family: Lato, serif; ">&reg;</font></sup></h1>
-    <h3>Mental wellbeing and you. Because one size does not fit all. </h3>
-    <br>
-    <br>
-    <br>
+<div class="jumbotron home" id="page_home">
+    <h1>MindHug<sup><font id="r_tag" style="font-family: Lato, serif; ">&reg;</font></sup></h1>
+    <p>Mental wellbeing and you. Because one size does not fit all. We help find what works best for your happiness and wellbeing. We do this by harnessing the familiarity of community and the power of digital.</p>
 
-    <p>We help find what works best for your happiness and wellbeing. We do this by harnessing the familiarity of community and the power of digital.  </p>
-    <br>
-    <br><br>
+    <button class="btn" type="submit" id="b2" onClick="document.getElementById('intro2').scrollIntoView();">Stay In Touch</button>
+
     <iframe name="votar" style="display:none;"></iframe>
-    <section class="newsletter">
+<!--     <section class="newsletter">
         <div class="row">
             <div class="content">
                 <h2>Let's keep in touch</h2>
@@ -38,7 +34,7 @@
                 </form>
             </div>
         </div>
-    </section>
+    </section> -->
 </div>
 
 <!-- The Modal -->
@@ -59,7 +55,7 @@
 </div>
 
 <div class="container-fluid" id="feat">
-    <h3>Our team is busy building a platform that will allow you to:</h3>
+    <h3>Our tight-knit team is working on these features</h3>
 </div>
 
 <div class="container" >
@@ -67,7 +63,7 @@
         <div class="col-sm-6 col-xs-push-0 col-sm-push-6 col-md-push-6 col-lg-push-6 " id="p1">
             <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/free@1x.webp') }}" alt="A wide choice of beneficial therapies and activities art therapy, mindfulness, music therapy, sound baths, breathing, pet therapy, drama therapy, yoga, and nature walks for your mental wellbeing" />
         </div>
-        <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6">
+        <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 f1-al">
             <h3>Explore your community</h3>
             <p>Find, book and try a wide choice of beneficial therapies and activities in your community. We will offer art therapy, mindfulness, music therapy, sound baths, breathing, pet therapy, drama therapy, yoga and nature walks.</p>
         </div>
@@ -79,11 +75,11 @@
         <div class="col-sm-6" id="p1">
             <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/digital@1x.webp') }}" alt="Explore digital content to try out different forms of therapies." />
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 f4-al">
             <h3>Engage digitally</h3>
-            <p>Subscribe to a variety of digital content, media, activities and therapies. From experiential art based activities to guided meditation to breathing exercises. </p>
+            <p>Subscribe to a variety of digital content, media, activities and therapies. From experiential art based activities to guided meditation to breathing exercises.</p>
         </div>
-    </div>
+     </div>
 </div>
 
 <div class="container" >
@@ -91,7 +87,7 @@
         <div class="col-sm-6 col-xs-push-0 col-sm-push-6 col-md-push-6 col-lg-push-6 " id="p1">
             <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/workshop@1x.webp') }}" alt="Bespoke workshops and retreats to help rejuvenate yourself." />
         </div>
-        <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 ">
+        <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 f3-al">
             <h3>Book workshops and events </h3>
             <p>Book and attend bespoke workshops and retreats to help rejuvenate yourself. If you would like to talk to us about organising a workshop for your organisation or group, please <a href="/contact-us">contact us</a>.</p>
         </div>
@@ -103,7 +99,7 @@
         <div class="col-sm-6" id="p1">
             <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/yoga@1x.webp') }}" alt="Free events to meet your community and try some therapies and activities." />
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 f4-al">
             <h3>Experience free taster sessions </h3>
             <p>Attend free events to meet your community and try some therapies and activities. </p>
         </div>
@@ -112,38 +108,29 @@
 
 <div class="container">
     <div class="row" id="f5">
-        <div class="col-sm-6 col-xs-push-0 col-sm-push-6 col-md-push-6 col-lg-push-6 ">
+        <div class="col-sm-6 col-xs-push-0 col-sm-push-6 col-md-push-6 col-lg-push-6">
             <img class="img-responsive" style="max-height: 400px; width: auto" src="{{ url_for('static', filename='images/mood@1x.webp') }}" alt="Track your mood using our mood diary to keep a track of your mental wellbeing" />
         </div>
-        <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 " id="p1">
+        <div class="col-sm-6 col-xs-pull-0 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 f5-al" id="p1">
             <h3>Employ a mood diary and wellbeing analytics </h3>
             <p>Track lifestyle, sleep, diet, emotional health and your response to activities and therapies through our unique mood diary. Use our analytics to find what works best for you.</p>
         </div>
     </div>
 </div>
 
-<br>
-<br>
-
 <div class="container" id="intro">
     <h3>"We are doing amazing things for mental wellbeing."</h3>
-    <br>
-    <br>
     <p> If you would like to talk to us about deploying our platform for your organisation, school or university please get in touch.</p>
-    <br>
-    <br>
     <form action="/contact-us">
         <button class="btn" type="submit" id="b2">Contact Us</button>
     </form>
 </div>
 
-<br><br><br>
-
 <div class="container" id="feat">
-    <h3>Our promise to you: </h3>
+    <h3>Our promise to you</h3>
 </div>
 
-<div class="container" style="padding-top: 10%">
+<div class="container">
     <div class="row" id="feat1">
         <div class="col-sm-6" id="pro2">
             <img class="img-responsive" src="{{ url_for('static', filename='images/cred@1x.webp') }}" alt="High quality and credible services" />
@@ -207,73 +194,5 @@
         </div>
     </section>
 </div>
-
-{% endblock %}
-
-{% block script %}
-
-<script>
-    function myFunction() {
-        var email = document.forms["myForm"]["sub_email"].value;
-        if (validate(email) && document.getElementById('field_terms').checked) {
-            $('#myModal').modal('show');
-        }
-        else {
-            return false;
-        }
-    }
-    function myFunction1() {
-        var email = document.forms["myForm1"]["sub_email1"].value;
-        if (validate(email) && document.getElementById('field_terms1').checked) {
-            $('#myModal').modal('show');
-        }
-        else {
-            return false;
-        }
-    }
-    function closeModal() {
-        document.getElementById("myForm").reset();
-        document.getElementById("myForm1").reset();
-    }
-    function validate(email) {
-        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{1,4})$/;
-        if (reg.test(email) == false) {
-            return false;
-        } else {
-            return true;
-        }
-    }
-
-</script>
-
-<script>
-    window.addEventListener("DOMContentLoaded", function(e) {
-        var myForm = document.getElementById("myForm");
-        var checkForm = function(e) {
-            ...
-            if(!this.terms.checked) {
-                alert("Please indicate that you accept the Terms and Conditions");
-                this.terms.focus();
-                e.preventDefault(); // equivalent to return false
-                return;
-            }
-        };
-
-        // attach the form submit handler
-        myForm.addEventListener("submit", checkForm, false);
-
-        var myCheckbox = document.getElementById("field_terms");
-        var myCheckboxMsg = "Please indicate that you accept the Terms and Conditions";
-
-        // set the starting error message
-        myCheckbox.setCustomValidity(myCheckboxMsg);
-
-        // attach checkbox handler to toggle error message
-        myCheckbox.addEventListener("change", function(e) {
-            this.setCustomValidity(this.validity.valueMissing ? myCheckboxMsg : "");
-        }, false);
-
-    }, false);
-</script>
 
 {% endblock %}
