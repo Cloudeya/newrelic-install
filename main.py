@@ -83,10 +83,10 @@ def robots():
     return render_template('robots.txt')
 
 # Development: comment out before pushing to repo!
-# if __name__ == '__main__':
-#     server = Server(app.wsgi_app)
-#     server.serve(debug=False, port=8080)
+if __name__ == '__main__':
+    server = Server(app.wsgi_app)
+    server.serve(debug=False, port=8080)
 
 # Production: uncomment before pushing to repo!
-if __name__ == '__main__':
-    app.run(debug=False, port=8080)
+# if __name__ == '__main__':
+#     app.run(debug=False, port=8080)
