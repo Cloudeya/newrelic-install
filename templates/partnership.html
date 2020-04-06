@@ -1,16 +1,10 @@
 {% extends 'layout.html' %}
 
 {% block metatags %}
-
 <meta name="description" content="Partnerships at MindHug">
-
 {% endblock %}
 
 {% block title %}Partnerships at MindHug{% endblock %}
-
-<!-- {% block style %}
-
-{% endblock %} -->
 
 {% block body %}
 
@@ -18,27 +12,20 @@
     <h1>Partnerships</h1>
 </div>
 <div class="container" id="part_intro">
-    <h2>Our current partners:</h2>
+    <h2>Our Current Partner</h2>
 </div>
 
 <div class="container" id="f2">
-    <img class="img-responsive" src="{{ url_for('static', filename='images/ucl.jpg') }}" alt="UCL Innovation and Enterprise" />
+    <img class="img-responsive" src="{{ url_for('static', filename='images/ucl-inno.webp') }}" alt="UCL Innovation and Enterprise" style="margin: 0 auto;"/>
 </div>
 
 <div class="container" id="intro">
     <h3>We are always on the lookout for valuable partnerships</h3>
-    <br>
-    <br>
     <p> If you would like to partner with us, feel free to contact us. </p>
-    <br>
     <br>
     <form action="/partnerships/partnership-form">
         <button class="btn" type="submit" id="b2">Contact us</button>
     </form>
 </div>
-
-{% endblock %}
-
-{% block script %}
 
 {% endblock %}
