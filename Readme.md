@@ -38,7 +38,7 @@ pip3 install -r requirements.txt
 ```bash
 python3 main.py
 
-#Site is served here: **http://127.0.0.1:8080**
+#Site is served here: http://127.0.0.1:8080
 ```
 
 
