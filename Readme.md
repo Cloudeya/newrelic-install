@@ -40,15 +40,18 @@ python3 main.py
 
 * Site is served here: `http://127.0.0.1:8080`
 
+
 ### Production Deployment (Google App Engine)
 
-`https://console.cloud.google.com/home/dashboard?project=mindhug-marketing-site`
-
-- Click the shell icon 'Activate Cloud Shell' in the top right
-
-- Type in the shell at the bottom of the window:
+- Install Google Cloud SDK
 ```bash
-cd MindHug
+brew cask install google-cloud-sdk
+```
+
+- Follow the setup and deployment guide [here](https://cloud.google.com/sdk/docs/quickstart-macos)
+
+- Deploy the app
+```bash
 gcloud app deploy app.yml --project mindhug-marketing-site
 ```
 
