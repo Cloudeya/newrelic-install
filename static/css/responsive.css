@@ -1,8 +1,6 @@
 @media (max-width: 1120px) {}
 
 @media (max-width: 992px) {
-
-
     .hero-container {
         flex-direction: column;
     }
@@ -21,13 +19,11 @@
     }
 
     .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
-        color: #fff;
+        color: #101010;
     }
 }
 
 @media (max-width: 768px) {
-
-
     .hero_detail-box {
         text-align: center;
     }
@@ -53,14 +49,13 @@
         width: 100%;
         margin: 20px auto;
     }
-
 }
 
 @media (max-width: 576px) {
     .hero-container {
         padding-bottom: 100px;
     }
-    
+
     .client_img-box::before,
     .client_img-box::after {
         content: "";
@@ -93,7 +88,6 @@
             top: 43%;
             transform: rotate(142deg);
             left: 31%;
-
         }
 
         100% {
@@ -134,15 +128,15 @@
     }
 
     .subpagemob {
-        background-color: #40E0D0;
+        background-color: #FFFFFF;
+        -webkit-box-shadow: 1px 4px 11px -7px #000000; 
+        box-shadow: 1px 4px 11px -7px #000000;
     }
 
     .mindhug_validation {
-        display: block;
-        position: relative;
-        padding-left: 30px;
+        padding-left: 0px;
         margin-top: 15px;
-        margin-left: 80px;
+        margin-left: 50px;
         margin-bottom: 12px;
         cursor: pointer;
     }
@@ -150,35 +144,32 @@
 
 
 @media (max-width: 480px) {
-    .hero_detail-box p {
-        font-size: 2.2rem !important;
-        line-height: 2.6rem !important;
+    body {
+        font-size: 1.2rem !important;
     }
-    .common_style p {
-        font-size: 1.8rem !important;
-        line-height: 2.2rem !important;
+    .about_detail-box {
+        margin-top: 20px !important;
+        margin-bottom: 60px !important;
     }
 }
 
 @media (max-width: 400px) {
-    .hero_detail-box p {
-        font-size: 2.2rem !important;
-        line-height: 2.6rem !important;
+    body {
+        font-size: 1.2rem !important;
     }
-    .common_style p {
-        font-size: 1.8rem !important;
-        line-height: 2.2rem !important;
+    .about_detail-box {
+        margin-top: 20px !important;
+        margin-bottom: 60px !important;
     }
 }
 
 @media (max-width: 360px) {
-    .hero_detail-box p {
-        font-size: 2.2rem !important;
-        line-height: 2.6rem !important;
+    body {
+        font-size: 1.2rem !important;
     }
-    .common_style p {
-        font-size: 1.8rem !important;
-        line-height: 2.2rem !important;
+    .about_detail-box {
+        margin-top: 20px !important;
+        margin-bottom: 60px !important;
     }
 }
 
