@@ -60,7 +60,7 @@
     .hero-container {
         padding-bottom: 100px;
     }
-
+    
     .client_img-box::before,
     .client_img-box::after {
         content: "";
@@ -138,7 +138,6 @@
     }
 
     .mindhug_validation {
-        width: 270px;
         display: block;
         position: relative;
         padding-left: 30px;
@@ -150,11 +149,38 @@
 }
 
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .hero_detail-box p {
+        font-size: 2.2rem !important;
+        line-height: 2.6rem !important;
+    }
+    .common_style p {
+        font-size: 1.8rem !important;
+        line-height: 2.2rem !important;
+    }
+}
 
-@media (max-width: 400px) {}
+@media (max-width: 400px) {
+    .hero_detail-box p {
+        font-size: 2.2rem !important;
+        line-height: 2.6rem !important;
+    }
+    .common_style p {
+        font-size: 1.8rem !important;
+        line-height: 2.2rem !important;
+    }
+}
 
-@media (max-width: 360px) {}
+@media (max-width: 360px) {
+    .hero_detail-box p {
+        font-size: 2.2rem !important;
+        line-height: 2.6rem !important;
+    }
+    .common_style p {
+        font-size: 1.8rem !important;
+        line-height: 2.2rem !important;
+    }
+}
 
 @media (min-width: 1200px) {
     .container {
