@@ -136,7 +136,6 @@ sup {
 .subpages{
   padding-top: 10px;
   font-family: 'Poppins', sans-serif;
-  background-color: #34bbae;
   margin-bottom: 100px;
   height: 90px;
 }
@@ -243,7 +242,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../images/menu.png);
+  background-image: url('../images/menu.svg');
   background-size: 40px;
 }
 
