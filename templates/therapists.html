@@ -17,7 +17,11 @@
         <div class="row">
           <div class="col-md-6">
             <div class="about_img-container">
-              <img src="{{ url_for('static', filename='images/therapist.png') }}" alt="Therapists">
+              <picture>
+                <source srcset="{{ url_for('static', filename='images/therapist.webp') }}" type="image/webp" alt="MindHug Therapists" class="img-fluid">
+                <source srcset="{{ url_for('static', filename='images/therapist.png') }}" type="image/png" alt="MindHug Therapists" class="img-fluid"> 
+                <img src="{{ url_for('static', filename='images/therapist.png') }}" type="image/png" alt="MindHug Therapists" class="img-fluid">
+              </picture>
             </div>
           </div>
           <div class="col-md-6" style="margin: 200px auto;">
