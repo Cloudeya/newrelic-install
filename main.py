@@ -15,7 +15,7 @@ def index():
         flag = subscribe_form(sub_email)
     return render_template('index.html')
 
-@app.route('/contact-us', methods=["GET", "POST"])
+@app.route('/contact', methods=["GET", "POST"])
 def contact_us():
     if request.method=="POST":
         email = request.form['email']
