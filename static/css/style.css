@@ -11,6 +11,8 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #fefeff;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
 }
 
 sup {
@@ -77,6 +79,10 @@ sup {
 
 .layout_padding-bottom {
   padding-bottom: 75px;
+}
+
+.footer_link {
+  font-weight: 600;
 }
 
 .call_to-btn {
@@ -247,7 +253,7 @@ a:focus {
 .hero-container {
   display: flex;
   padding-top: 90px;
-  padding-bottom: 325px;
+  padding-bottom: 100px;
 }
 
 .hero_detail-box {
@@ -511,8 +517,8 @@ a:focus {
 
 /* info section */
 .info_section {
-  background-color: #f7f7f7;
-  color: #667180;
+  background-color: #101010;
+  color: #dcdde0;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -539,21 +545,22 @@ a:focus {
 }
 
 .info_section ul li a {
-  color: #8997aa;
+  color: #dcdde0;
 }
 
 .info_section ul li a:hover {
-  color: #667180;
+  color: #f7f7f7;
 }
 
 .info_section h5 {
   margin-bottom: 12px;
   font-size: 0.8rem;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
 .info_section .form_container input {
-  width: 270px;
+  /*width: 270px;*/
   height: 40px;
   padding: 10px;
 }
