@@ -16,18 +16,30 @@
     <h2>Meet the team MindHug revolutionising the way people think about mental wellbeing.</h2>
     <div class="row">
         <div class="col-sm-4" id="raj">
-            <img src="{{ url_for('static', filename='images/raj2.jpeg') }}" alt="Chitraj Singh, Co-Founder and CEO of MindHug" />
+            <picture>
+              <source srcset="{{ url_for('static', filename='images/raj.webp') }}" type="image/webp" alt="Chitraj Singh, Co-Founder and CEO of MindHug" class="img-fluid">
+              <source srcset="{{ url_for('static', filename='images/raj.png') }}" type="image/png" alt="Chitraj Singh, Co-Founder and CEO of MindHug" class="img-fluid"> 
+              <img src="{{ url_for('static', filename='images/raj.png') }}" type="image/png" alt="Chitraj Singh, Co-Founder and CEO of MindHug" class="img-fluid">
+            </picture>
             <h3>Chitraj Singh</h3>
             <p>CEO and Co-Founder</p>
         </div>
         <div class="col-sm-4" id="thad">
-            <img src="{{ url_for('static', filename='images/thad.jpg') }}" alt="Dr. Thaddeus Cheung, Chief Medical Officer and Co-Founder of MindHug">
+            <picture>
+              <source srcset="{{ url_for('static', filename='images/thad.webp') }}" type="image/webp" alt="Dr. Thaddeus Cheung, Chief Medical Officer and Co-Founder of MindHug" class="img-fluid">
+              <source srcset="{{ url_for('static', filename='images/thad.png') }}" type="image/png" alt="Dr. Thaddeus Cheung, Chief Medical Officer and Co-Founder of MindHug" class="img-fluid"> 
+              <img src="{{ url_for('static', filename='images/thad.png') }}" type="image/png" alt="Dr. Thaddeus Cheung, Chief Medical Officer and Co-Founder of MindHug" class="img-fluid">
+            </picture>
             <h3>Dr. Thaddeus Cheung</h3>
             <h3>MBChB, MRCPsych</h3>
             <p>Chief Medical Officer and Co-Founder</p>
         </div>
         <div class="col-sm-4" id="mark">
-            <img src="{{ url_for('static', filename='images/mark.jpg') }}" alt="Mark Claydon, CTO and Co-Founder of MindHug">
+            <picture>
+              <source srcset="{{ url_for('static', filename='images/mark.webp') }}" type="image/webp" alt="Mark Claydon, CTO and Co-Founder of MindHug" class="img-fluid">
+              <source srcset="{{ url_for('static', filename='images/mark.png') }}" type="image/png" alt="Mark Claydon, CTO and Co-Founder of MindHug" class="img-fluid"> 
+              <img src="{{ url_for('static', filename='images/mark.png') }}" type="image/png" alt="Mark Claydon, CTO and Co-Founder of MindHug" class="img-fluid">
+            </picture>
             <h3>Mark Claydon</h3>
             <p>CTO and Co-Founder</p>
         </div>

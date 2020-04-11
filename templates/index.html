@@ -31,7 +31,11 @@
         </div>
         <div class="hero_img-container">
           <div>
-            <img src="{{ url_for('static', filename='images/hero.png') }}" alt="MindHug Hero" class="img-fluid">
+            <picture>
+              <source srcset="{{ url_for('static', filename='images/hero.webp') }}" type="image/webp" alt="MindHug Hero" class="img-fluid">
+              <source srcset="{{ url_for('static', filename='images/hero.png') }}" type="image/png" alt="MindHug Hero" class="img-fluid"> 
+              <img src="{{ url_for('static', filename='images/hero.png') }}" type="image/png" alt="MindHug Hero" class="img-fluid">
+            </picture>
           </div>
         </div>
       </div>
@@ -47,7 +51,11 @@
         <div class="row">
           <div class="col-md-6">
             <div class="about_img-container">
-              <img src="{{ url_for('static', filename='images/community.png') }}" alt="MindHug Community">
+              <picture>
+                <source srcset="{{ url_for('static', filename='images/community.webp') }}" type="image/webp" alt="MindHug Community" class="img-fluid">
+                <source srcset="{{ url_for('static', filename='images/community.png') }}" type="image/png" alt="MindHug Community" class="img-fluid"> 
+                <img src="{{ url_for('static', filename='images/community.png') }}" type="image/png" alt="MindHug Community" class="img-fluid">
+              </picture>
             </div>
           </div>
           <div class="col-md-6">
@@ -80,7 +88,11 @@
           </div>
           <div class="col-md-6">
             <div class="admission_img-container">
-              <img src="{{ url_for('static', filename='images/engage.png') }}" alt="MindHug Engage">
+              <picture>
+                <source srcset="{{ url_for('static', filename='images/engage.webp') }}" type="image/webp" alt="MindHug Engage" class="img-fluid">
+                <source srcset="{{ url_for('static', filename='images/engage.png') }}" type="image/png" alt="MindHug Engage" class="img-fluid"> 
+                <img src="{{ url_for('static', filename='images/engage.png') }}" type="image/png" alt="MindHug Engage" class="img-fluid">
+              </picture>
             </div>
           </div>
         </div>
@@ -93,7 +105,11 @@
         <div class="row">
           <div class="col-md-6">
             <div class="why_img-container">
-              <img src="{{ url_for('static', filename='images/events.png') }}" alt="MindHug Events">
+              <picture>
+                <source srcset="{{ url_for('static', filename='images/events.webp') }}" type="image/webp" alt="MindHug Events" class="img-fluid">
+                <source srcset="{{ url_for('static', filename='images/events.png') }}" type="image/png" alt="MindHug Events" class="img-fluid"> 
+                <img src="{{ url_for('static', filename='images/events.png') }}" type="image/png" alt="MindHug Events" class="img-fluid">
+              </picture>
             </div>
           </div>
           <div class="col-md-6">
@@ -136,7 +152,11 @@
           </div>
           <div class="col-md-6">
             <div class="determine_img-container">
-              <img src="{{ url_for('static', filename='images/taster-session.png') }}" alt="MindHug Session">
+              <picture>
+                <source srcset="{{ url_for('static', filename='images/taster-session.webp') }}" type="image/webp" alt="MindHug Session" class="img-fluid">
+                <source srcset="{{ url_for('static', filename='images/taster-session.png') }}" type="image/png" alt="MindHug Session" class="img-fluid"> 
+                <img src="{{ url_for('static', filename='images/taster-session.png') }}" type="image/png" alt="MindHug Session" class="img-fluid">
+              </picture>
             </div>
           </div>
         </div>
@@ -149,7 +169,11 @@
         <div class="row">
           <div class="col-md-6">
             <div class="why_img-container">
-              <img src="{{ url_for('static', filename='images/analytics.png') }}" alt="MindHug Analytics">
+              <picture>
+                <source srcset="{{ url_for('static', filename='images/analytics.webp') }}" type="image/webp" alt="MindHug Analytics" class="img-fluid">
+                <source srcset="{{ url_for('static', filename='images/analytics.png') }}" type="image/png" alt="MindHug Analytics" class="img-fluid"> 
+                <img src="{{ url_for('static', filename='images/analytics.png') }}" type="image/png" alt="MindHug Analytics" class="img-fluid">
+              </picture>
             </div>
           </div>
           <div class="col-md-6">
@@ -183,7 +207,11 @@
           </div>
           <div class="col-md-6">
             <div class="determine_img-container">
-              <img src="{{ url_for('static', filename='images/credible.png') }}" alt="MindHug Credibility">
+              <picture>
+                <source srcset="{{ url_for('static', filename='images/credible.webp') }}" type="image/webp" alt="MindHug Credibility" class="img-fluid">
+                <source srcset="{{ url_for('static', filename='images/credible.png') }}" type="image/png" alt="MindHug Credibility" class="img-fluid"> 
+                <img src="{{ url_for('static', filename='images/credible.png') }}" type="image/png" alt="MindHug Credibility" class="img-fluid">
+              </picture>
             </div>
           </div>
         </div>
@@ -196,7 +224,11 @@
         <div class="row">
           <div class="col-md-6">
             <div class="why_img-container">
-              <img src="{{ url_for('static', filename='images/safety.png') }}" alt="MindHug Safety">
+              <picture>
+                <source srcset="{{ url_for('static', filename='images/safety.webp') }}" type="image/webp" alt="MindHug Safety" class="img-fluid">
+                <source srcset="{{ url_for('static', filename='images/safety.png') }}" type="image/png" alt="MindHug Safety" class="img-fluid"> 
+                <img src="{{ url_for('static', filename='images/safety.png') }}" type="image/png" alt="MindHug Safety" class="img-fluid">
+              </picture>
             </div>
           </div>
           <div class="col-md-6">
@@ -229,7 +261,11 @@
           </div>
           <div class="col-md-6">
             <div class="determine_img-container">
-              <img src="{{ url_for('static', filename='images/privacy.png') }}" alt="MindHug Privacy">
+              <picture>
+                <source srcset="{{ url_for('static', filename='images/privacy.webp') }}" type="image/webp" alt="MindHug Privacy" class="img-fluid">
+                <source srcset="{{ url_for('static', filename='images/privacy.png') }}" type="image/png" alt="MindHug Privacy" class="img-fluid"> 
+                <img src="{{ url_for('static', filename='images/privacy.png') }}" type="image/png" alt="MindHug Privacy" class="img-fluid">
+              </picture>
             </div>
           </div>
         </div>
@@ -253,7 +289,11 @@
                   <div class="row">
                       <div class="col-md-3">
                         <div class="client_img-box">
-                          <img src="{{ url_for('static', filename='images/testimonial.png') }}" alt="">
+                        <picture>
+                          <source srcset="{{ url_for('static', filename='images/testimonial.webp') }}" type="image/webp" alt="MindHug Testimonial" class="img-fluid">
+                          <source srcset="{{ url_for('static', filename='images/testimonial.png') }}" type="image/png" alt="MindHug Testimonial" class="img-fluid"> 
+                          <img src="{{ url_for('static', filename='images/testimonial.png') }}" type="image/png" alt="MindHug Testimonial" class="img-fluid">
+                        </picture>
                         </div>
                       </div>
                       <div class="col-md-9">
@@ -274,7 +314,11 @@
                   <div class="row">
                       <div class="col-md-3">
                         <div class="client_img-box">
-                          <img src="{{ url_for('static', filename='images/testimonial.png') }}" alt="">
+                        <picture>
+                          <source srcset="{{ url_for('static', filename='images/testimonial.webp') }}" type="image/webp" alt="MindHug Testimonial" class="img-fluid">
+                          <source srcset="{{ url_for('static', filename='images/testimonial.png') }}" type="image/png" alt="MindHug Testimonial" class="img-fluid"> 
+                          <img src="{{ url_for('static', filename='images/testimonial.png') }}" type="image/png" alt="MindHug Testimonial" class="img-fluid">
+                        </picture>
                         </div>
                       </div>
                       <div class="col-md-9">
@@ -295,7 +339,11 @@
                   <div class="row">
                       <div class="col-md-3">
                         <div class="client_img-box">
-                          <img src="{{ url_for('static', filename='images/testimonial.png') }}" alt="">
+                        <picture>
+                          <source srcset="{{ url_for('static', filename='images/testimonial.webp') }}" type="image/webp" alt="MindHug Testimonial" class="img-fluid">
+                          <source srcset="{{ url_for('static', filename='images/testimonial.png') }}" type="image/png" alt="MindHug Testimonial" class="img-fluid"> 
+                          <img src="{{ url_for('static', filename='images/testimonial.png') }}" type="image/png" alt="MindHug Testimonial" class="img-fluid">
+                        </picture>
                         </div>
                       </div>
                       <div class="col-md-9">

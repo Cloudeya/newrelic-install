@@ -17,7 +17,11 @@
         <div class="row">
           <div class="col-md-6">
             <div class="about_img-container">
-              <img src="{{ url_for('static', filename='images/ucl-inno.png') }}" alt="UCL Innovation and Enterprise">
+              <picture>
+                <source srcset="{{ url_for('static', filename='images/ucl-inno.webp') }}" type="image/webp" alt="UCL Innovation and Enterprise" class="img-fluid">
+                <source srcset="{{ url_for('static', filename='images/ucl-inno.png') }}" type="image/png" alt="UCL Innovation and Enterprise" class="img-fluid"> 
+                <img src="{{ url_for('static', filename='images/ucl-inno.png') }}" type="image/png" alt="UCL Innovation and Enterprise" class="img-fluid">
+              </picture>
             </div>
           </div>
           <div class="col-md-6" style="margin: 200px auto;">
