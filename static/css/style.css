@@ -313,6 +313,7 @@ a:focus {
 /* about section */
 .about_section {
   text-align: right;
+  margin-bottom: 100px;
 }
 
 .about_section a {
