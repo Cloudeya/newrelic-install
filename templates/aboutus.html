@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block metatags %}
+<meta name="description" content="About Us">
+{% endblock %}
+
+{% block title %}Learn more about MindHug{% endblock %}
+
+<body class="sub_page">
+
+{% block body %}
+
+{% include 'includes/_navsub.html' %}
+
+<div class="container" id="team">
+    <h2>Meet the team MindHug revolutionising the way people think about mental wellbeing.</h2>
+    <div class="row">
+        <div class="col-sm-4" id="raj">
+            <img src="{{ url_for('static', filename='images/raj2.jpeg') }}" alt="Chitraj Singh, Co-Founder and CEO of MindHug" />
+            <h3>Chitraj Singh</h3>
+            <p>CEO and Co-Founder</p>
+        </div>
+        <div class="col-sm-4" id="thad">
+            <img src="{{ url_for('static', filename='images/thad.jpg') }}" alt="Dr. Thaddeus Cheung, Chief Medical Officer and Co-Founder of MindHug">
+            <h3>Dr. Thaddeus Cheung</h3>
+            <h3>MBChB, MRCPsych</h3>
+            <p>Chief Medical Officer and Co-Founder</p>
+        </div>
+        <div class="col-sm-4" id="mark">
+            <img src="{{ url_for('static', filename='images/mark.jpg') }}" alt="Mark Claydon, CTO and Co-Founder of MindHug">
+            <h3>Mark Claydon</h3>
+            <p>CTO and Co-Founder</p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="join" style="height: 200px">
+    <h3>Join the team</h3>
+    <p> if you are interested in working for MindHug drop us a line with your CV at <b><a href="mailto:hello@mindhug.io" title="glorythemes">hello@mindhug.io</a></b> </p>
+    <br>
+    <br>
+</div>
+
+{% endblock %}
