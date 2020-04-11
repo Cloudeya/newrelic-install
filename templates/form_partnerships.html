@@ -6,7 +6,11 @@
 
 {% block title %}MindHug - Partnerships Form{% endblock %}
 
+<body class="sub_page">
+
 {% block body %}
+
+{% include 'includes/_navsub.html' %}
 
 <iframe name="votar" style="display:none;"></iframe>
 <div class="container" id="form_con" style="border: 1px solid rgb(64,224,208);">
@@ -34,10 +38,9 @@
         </fieldset>
         <fieldset>
             <button name="submit" type="submit" id="contact-submit" tabindex="5" onclick="myFunction()">Submit</button>
-            <label  for="field_terms"><input type="checkbox" class="btn-lg" id="field_terms" style="margin: 5px; padding: 0px;" oninvalid="this.setCustomValidity('Please check the box to continue')" oninput="this.setCustomValidity('')" required/><font style="font-size: 12px; font-weight: normal; color: dimgrey">I accept <a href="/privacy-policy" target="_blank"><u>privacy policy</u></a> and <a href = "/cookie-policy" target="_blank"><u>cookie policy</u></a>.</font><span class="mock_checkbox"></span></label>
+            <label  for="field_terms"><input type="checkbox" class="btn-lg" id="field_terms" style="margin: 5px; padding: 0px;" oninvalid="this.setCustomValidity('Please check the box to continue')" oninput="this.setCustomValidity('')" required/><font style="font-size: 12px; font-weight: normal; color: dimgrey">I accept MindHug's <a href="/privacy-policy" target="_blank"><u>Privacy Policy</u></a> and <a href = "/cookie-policy" target="_blank"><u>Cookie Policy</u></a>.</font><span class="mock_checkbox"></span></label>
 
         </fieldset>
-        <a href="/" class="btn btn-primary">Go back to Home</a>
     </form>
 
     <!-- The Modal -->

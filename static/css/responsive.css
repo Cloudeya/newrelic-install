@@ -23,10 +23,7 @@
     .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
         color: #fff;
     }
-
-
 }
-
 
 @media (max-width: 768px) {
 
@@ -71,7 +68,7 @@
         width: 75px;
         height: 20px;
         border-radius: 20px;
-        background-color: #fdd31d;
+        background-color: #40E0D0;
     }
 
     .client_img-box::before {
@@ -135,8 +132,22 @@
     .info_section .social-box {
         width: auto;
     }
-}
 
+    .subpagemob {
+        background-color: #40E0D0;
+    }
+
+    .mindhug_validation {
+        width: 270px;
+        display: block;
+        position: relative;
+        padding-left: 30px;
+        margin-top: 15px;
+        margin-left: 80px;
+        margin-bottom: 12px;
+        cursor: pointer;
+    }
+}
 
 
 @media (max-width: 480px) {}

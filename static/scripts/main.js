@@ -1,34 +1,9 @@
-// nav
-$(document).ready(function() {
-  $(".navbar a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      var ht = $(".navbar-fixed-top").height() - 50;
-      var val = $(hash).offset().top;
-      $('html, body').unbind().animate({
-        scrollTop: val
-      }, 500, function() {
-        window.location.hash = hash;
-      });
-    }
-  });
-
-  $('.navbar-nav>li>a').on('click', function() {
-    $('.navbar-collapse').collapse('hide');
-  });
-
-  $('.hidden').fadeIn(4000).removeClass('hidden');
-  $('h1').fadeIn(4000).removeClass('hiddenA');
-  $('p').fadeIn(4000).removeClass('hiddenB');
-});
-
 // cookies
 window.addEventListener("load", function(){
   window.wpcc.init({
     "colors":{
     "popup":{
-    "background":"#222222",
+    "background":"#3b4045",
     "text":"#ffffff",
     "border":"#f9f9f9"
     },
@@ -41,8 +16,8 @@ window.addEventListener("load", function(){
     "margin":"none",
     "transparency":"10",
     "content":{
-      "message":"This website uses cookies to ensure you get the best experience on our website.",
-      "link":"Cookie Policy",
+      "message":"By using our site, you acknowledge that you have read and understand our",
+      "link":"Cookie Policy.",
       "button":"Close",
       "href":"/cookie-policy"
     }
@@ -84,7 +59,7 @@ window.addEventListener("load", function(){
     window.addEventListener("DOMContentLoaded", function(e) {
         var myForm = document.getElementById("myForm");
         var checkForm = function(e) {
-            ...
+            //...
             if(!this.terms.checked) {
                 alert("Please indicate that you accept the Terms and Conditions");
                 this.terms.focus();
@@ -181,3 +156,30 @@ window.addEventListener("load", function(){
             return true;
         }
     }
+
+
+// nav
+$(document).ready(function() {
+  $(".navbar a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      var ht = $(".navbar-fixed-top").height() - 50;
+      var val = $(hash).offset().top;
+      $('html, body').unbind().animate({
+        scrollTop: val
+      }, 500, function() {
+        window.location.hash = hash;
+      });
+    }
+  });
+
+  $('.navbar-nav>li>a').on('click', function() {
+    $('.navbar-collapse').collapse('hide');
+  });
+
+  $('.hidden').fadeIn(4000).removeClass('hidden');
+  $('h1').fadeIn(4000).removeClass('hiddenA');
+  $('p').fadeIn(4000).removeClass('hiddenB');
+});
+

@@ -1,7 +1,7 @@
 ## MindHug Marketing Site
 We help find what works best for their happiness and wellbeing. We do this by harnessing the familiarity of community and the power of digital.
 
-### Development
+### 🧱 Development
 
 - Install [Homebrew](https://brew.sh/) on your local machine.
 
@@ -41,10 +41,9 @@ python3 main.py
 #Site is served here: http://127.0.0.1:8080
 ```
 
+### 🚀 Production Deployment (Google App Engine)
 
-### Production Deployment (Google App Engine)
-
-- Install Google Cloud SDK
+- Install Google Cloud SDK (macOS)
 ```bash
 brew cask install google-cloud-sdk
 ```
@@ -56,10 +55,17 @@ brew cask install google-cloud-sdk
 gcloud app deploy app.yml --project mindhug-marketing-site
 ```
 
-### License
+### 🤵 Authors
+
+- **Rajveer Beerda** _aka rajveerbeerda_ - _Main Developer_ - [rajveerbeerda](https://github.com/rajveerbeerda)
+- **Finbarrs Oketunji** _aka 0xnu_ - _Main Developer_ - [0xnu](https://github.com/0xnu)
+- **Manmeet Sethi** _aka ManmeetSethi_ - _Main Developer_ - [ManmeetSethi](https://github.com/ManmeetSethi)
+- **Mark Claydon** _aka remaininlight_ - _Main Developer_ - [remaininlight](https://github.com/remaininlight)
+
+### 🖋 License
 
 The script is published under [BSD 3-Clause License](license.txt).
 
-### Copyright
+### 🤝 Copyright
 
 (c) 2020 [MindHug Ltd](https://www.mindhug.io).

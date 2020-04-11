@@ -6,26 +6,28 @@
 
 {% block title %}MindHug - Contact Us{% endblock %}
 
+<body class="sub_page">
+
 {% block body %}
 
+{% include 'includes/_navsub.html' %}
+
 <iframe name="votar" style="display:none;"></iframe>
-<div class="container" id="form_con" style="border: 1px solid rgb(64,224,208);">
+
+<div class="container" id="form_con">
+
     <form id="contact_workshop" target="votar" method="post">
         <h1>Contact us</h1>
         <h6>Get in touch with us today</h6>
-
         <fieldset>
             <input placeholder="First Name" type="text" tabindex="1" id="fname" name="fname" oninvalid="this.setCustomValidity('Please enter your first name')" oninput="this.setCustomValidity('')" required autofocus>
         </fieldset>
-
         <fieldset>
             <input placeholder="Last Name" type="text" tabindex="1" id="lname" name="lname">
         </fieldset>
-
         <fieldset>
             <input placeholder="Email address" type="email" id="email" name="email" tabindex="2" oninvalid="this.setCustomValidity('Please enter a valid email address')" oninput="this.setCustomValidity('')" required >
         </fieldset>
-
         <fieldset>
             <input placeholder="Organisation's name" type="text" id="company" name="company" tabindex="3">
         </fieldset>
@@ -34,10 +36,8 @@
         </fieldset>
         <fieldset>
             <button name="submit" type="submit" id="contact-submit" tabindex="5" onclick="myFunction()">Submit</button>
-            <label  for="field_terms"><input type="checkbox" class="btn-lg" id="field_terms" style="margin: 5px; padding: 0px;" oninvalid="this.setCustomValidity('Please check the box to continue')" oninput="this.setCustomValidity('')" required/><font style="font-size: 12px; font-weight: normal; color: dimgrey">I accept <a href="/privacy-policy" target="_blank"><u>privacy policy</u></a> and <a href = "/cookie-policy" target="_blank"><u>cookie policy</u></a>.</font><span class="mock_checkbox"></span></label>
-
+            <label  for="field_terms"><input type="checkbox" class="btn-lg" id="field_terms" style="margin: 5px; padding: 0px;" oninvalid="this.setCustomValidity('Please check the box to continue')" oninput="this.setCustomValidity('')" required/><font style="font-size: 12px; font-weight: normal; color: dimgrey">I accept MindHug's <a href="/privacy-policy" target="_blank"><u>Privacy Policy</u></a> and <a href = "/cookie-policy" target="_blank"><u>Cookie Policy</u></a>.</font><span class="mock_checkbox"></span></label>
         </fieldset>
-        <a href="/" class="btn btn-primary">Go back to Home</a>
     </form>
 
     <!-- The Modal -->
@@ -53,6 +53,7 @@
             </div>
         </div>
     </div>
+
 </div>
 
 {% endblock %}

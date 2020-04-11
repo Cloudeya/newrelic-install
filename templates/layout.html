@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
     <meta name="keywords" content="MindHug, Mental Health, Mental Health Coronavirus, Mental Wellbeing, Happiness, Art Therapy, Music Therapy, Sound Therapy, Drama Therapy, Mindfullness, Therapists Near Me, Losing It With Mental Health, Mental Disorder, Mental Health Emergency">
     {% endblock %}
@@ -17,7 +17,7 @@
     <!-- Styles -->
     {% block style %}
     <link rel="stylesheet" type="text/css" href="//wpcc.io/lib/1.0.2/cookieconsent.min.css"/>
-
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
 
     <!-- fonts style -->
@@ -67,10 +67,10 @@
 
 {% block script %}
 <!-- Cookies -->
-<script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js" type="text/javascript"></script>
+<script src="{{ url_for('static', filename='scripts/cookieconsent.min.js') }}" type="text/javascript"></script>
 
 <!-- Main Script -->
-<script src="{{ url_for('static', filename='scripts/main.js') }}" type="text/javascript"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='scripts/jquery-3.4.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='scripts/bootstrap.js') }}"></script>
 

@@ -6,50 +6,39 @@
 
 {% block title %}Careers at MindHug{% endblock %}
 
+<body class="sub_page">
+
 {% block body %}
 
-<div class="jumbotron career" id="page_home">
-    <h1>Careers at MindHug</h1>
-</div>
-<div class="container-fluid" id="mission">
-    <h3>At MindHug, we are revolutionising the way people think about mental wellbeing.</h3>
-</div>
-<div class="container" id="team_intro">
-    <h2>Meet the team</h2>
-</div>
+{% include 'includes/_navsub.html' %}
+
 <div class="container" id="team">
+    <h2>Meet the team MindHug revolutionising the way people think about mental wellbeing.</h2>
     <div class="row">
         <div class="col-sm-4" id="raj">
-            <div><img src="{{ url_for('static', filename='images/raj2.jpeg') }}" alt="Chitraj Singh, Co-Founder and CEO of MindHug" /></div>
-            <div><h3>Chitraj Singh</h3></div>
-            <div><p>CEO and Co-Founder</p></div>
-            <br><br>
+            <img src="{{ url_for('static', filename='images/raj2.jpeg') }}" alt="Chitraj Singh, Co-Founder and CEO of MindHug" />
+            <h3>Chitraj Singh</h3>
+            <p>CEO and Co-Founder</p>
         </div>
         <div class="col-sm-4" id="thad">
-            <div><img src="{{ url_for('static', filename='images/thad1.jpg') }}" alt="Dr. Thaddeus Cheung, Chief Medical Officer and Co-Founder of MindHug"></div>
-            <div><h3><b>Dr. Thaddeus Cheung</b> </h3></div>
+            <img src="{{ url_for('static', filename='images/thad.jpg') }}" alt="Dr. Thaddeus Cheung, Chief Medical Officer and Co-Founder of MindHug">
+            <h3>Dr. Thaddeus Cheung</h3>
             <h3>MBChB, MRCPsych</h3>
-            <div><p>Chief Medical Officer and Co-Founder</p></div>
-            <br><br>
+            <p>Chief Medical Officer and Co-Founder</p>
         </div>
         <div class="col-sm-4" id="mark">
-            <div><img src="{{ url_for('static', filename='images/mark.jpg') }}" alt="Mark Claydon, CTO and Co-Founder of MindHug"></div>
-            <div><h3><b>Mark Claydon</b> </h3></div>
-            <!--            <h3>MBChB, MRCPsych</h3>-->
-            <div><p>CTO and Co-Founder</p></div>
-            <br><br>
+            <img src="{{ url_for('static', filename='images/mark.jpg') }}" alt="Mark Claydon, CTO and Co-Founder of MindHug">
+            <h3>Mark Claydon</h3>
+            <p>CTO and Co-Founder</p>
         </div>
     </div>
 </div>
 
 <div class="container" id="join" style="height: 200px">
     <h3>Join the team</h3>
-    <br>
-    <br>
     <p> if you are interested in working for MindHug drop us a line with your CV at <b><a href="mailto:hello@mindhug.io" title="glorythemes">hello@mindhug.io</a></b> </p>
     <br>
     <br>
 </div>
-<br><br>
 
 {% endblock %}
