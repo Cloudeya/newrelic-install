@@ -130,6 +130,7 @@ sup {
   padding-top: 10px;
   font-family: 'Poppins', sans-serif;
   border-top: 3px solid #34bbae;
+  background: #ffffff;
 }
 
 .subpages{
@@ -138,7 +139,8 @@ sup {
   margin-bottom: 100px;
   height: 90px;
   border-top: 3px solid #34bbae;
-  box-shadow: 0 1px 1px rgba(12,13,14,0.15);
+  background: #ffffff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 nav.navbar.navbar-expand-lg {
@@ -337,11 +339,37 @@ a:focus {
 }
 
 .section .bottom-area {
-    max-width: 960px;
+    max-width: 760px;
     margin: 70px auto 70px;
     display: block;
     padding: 0 15px;
     text-align: center;
+}
+
+.section .bottom-area h3{
+    font-size: 2.6rem;
+}
+
+.section .bottom-area p{
+    font-size: 1.4rem;
+}
+
+.section .bottom-area button {
+    background-color: #34bbae;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 12px 40px;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.section .bottom-area button:hover {
+  background-color: #247971;
+  color: #ffffff;
 }
 
 .avatar {
@@ -682,7 +710,7 @@ a:focus {
 .social_container {
   width: 90%;
   margin: 0 auto;
-  border-top: 1px solid #1b1b1b;
+  /*border-top: 1px solid #1b1b1b;*/
   padding: 25px 0;
 }
 

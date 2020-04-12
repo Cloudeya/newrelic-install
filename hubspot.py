@@ -39,7 +39,6 @@ def workshop_forms(email_id, first_name, last_name, company_name, message):
 	else:
 		return 0
 
-
 def therapist_forms(email_id, first_name, last_name, company_name, message):
 	endpoint = hubspot_url + config.hubspot_key + '/' + config.therapist_form_key + '?&'
 
@@ -75,5 +74,3 @@ def partnership_forms(email_id, first_name, last_name="", company_name="", messa
 		return 1
 	else:
 		return 0
-
-
