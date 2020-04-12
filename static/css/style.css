@@ -124,7 +124,6 @@ sup {
   font-weight: bold;
   text-align: center;
 }
-
 /*header section*/
 
 .header_section {
@@ -171,8 +170,6 @@ a:focus {
   position: relative;
 }
 
-
-
 .top_container::before {
   content: "";
   position: absolute;
@@ -189,20 +186,6 @@ a:focus {
   background-color: #fdd31d;
   background-image: none;
 }
-
-/*.top_container::after {
-  content: "";
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  bottom: 20%;
-  left: 6%;
-  background-color: #40E0D0;
-}*/
-
-/*.sub_page .top_container::after {
-  display: none;
-}*/
 
 .navbar-brand img {
  /* width: 25px;*/
@@ -245,7 +228,6 @@ a:focus {
   background-image: url('../images/menu.svg');
   background-size: 40px;
 }
-
 /*end header section*/
 
 /* hero section */
@@ -283,7 +265,6 @@ a:focus {
   margin-top: 20px;
   margin-bottom: 35px;
 }
-
 /* end hero section */
 
 /* common style for some sections */
@@ -313,6 +294,7 @@ a:focus {
 /* about section */
 .about_section {
   text-align: right;
+  margin-bottom: 100px;
 }
 
 .about_section a {
@@ -320,11 +302,60 @@ a:focus {
   color: #ffffff;
 }
 
+.section .title-area {
+    max-width: 960px;
+    margin: 0 auto 70px;
+    display: block;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.card .description {
+    font-size: 13px;
+}
+
+.description h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+.card .title {
+    margin-bottom: 5px;
+    color: #333333;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.small-text {
+    color: #777777;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section .bottom-area {
+    max-width: 960px;
+    margin: 70px auto 70px;
+    display: block;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.avatar {
+    border: 3px solid #34bbae;
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+.avatar-danger {
+    border-color: #34bbae;
+}
 /* end about section */
 
 /* admission section */
-
-
 .admission_section a {
   background-color: #fdd31d;
   color: #fefeff;
@@ -342,18 +373,13 @@ a:focus {
   background-color: #34bbae;
   color: #ffffff;
 }
-
 /* end why section */
 
 /* determine section */
-
-
 .determine_section a {
   background-color: #faab18;
   color: #fefeff;
 }
-
-
 /* end determine section */
 
 /* client section */
@@ -459,11 +485,9 @@ a:focus {
 .client_section .carousel-indicators li.active {
   background-color: #40E0D0;
 }
-
 /* end client section */
 
 /* contact section */
-
 .contact_section {
   padding: 75px 45px;
   font-family: 'Poppins', sans-serif;
