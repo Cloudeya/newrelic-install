@@ -129,7 +129,7 @@ sup {
 .header_section {
   padding-top: 10px;
   font-family: 'Poppins', sans-serif;
-
+  border-top: 3px solid #34bbae;
 }
 
 .subpages{
@@ -137,6 +137,8 @@ sup {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 100px;
   height: 90px;
+  border-top: 3px solid #34bbae;
+  box-shadow: 0 1px 1px rgba(12,13,14,0.15);
 }
 
 nav.navbar.navbar-expand-lg {
