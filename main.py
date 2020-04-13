@@ -25,7 +25,7 @@ def contact_us():
         message = request.form['comment']
         flag = workshop_forms(email, fname, lname, company, message)
 
-    return render_template('form_workshops.html')
+    return render_template('contact.html')
 
 @app.route('/partnerships', methods=["GET", "POST"])
 def partnerships():
