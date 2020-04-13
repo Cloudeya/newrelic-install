@@ -852,6 +852,11 @@ a:focus {
   opacity: 0.8;
 }
 
+.inner-pages p {
+    margin: 30px auto;
+    line-height: 1.8rem;
+}
+
 /* end info section */
 
 /* footer section*/
