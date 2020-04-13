@@ -130,7 +130,6 @@ sup {
   padding-top: 10px;
   font-family: 'Poppins', sans-serif;
   border-top: 3px solid #34bbae;
-  background: #ffffff;
 }
 
 .subpages{
@@ -518,6 +517,59 @@ a:focus {
 /* end client section */
 
 /* contact section */
+.section .mcp-title-area {
+    max-width: 960px;
+    margin: 0 auto 70px;
+    display: block;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.section .mcp-area {
+    max-width: 760px;
+    margin: 0px auto 70px;
+    display: block;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.section .mcp-area input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.section .mcp-area textarea {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 15px 15px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.section .mcp-area button {
+    background-color: #34bbae;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 12px 40px;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.section .mcp-area button:hover {
+  background-color: #247971;
+  color: #ffffff;
+}
+
 .contact_section {
   padding: 75px 45px;
   font-family: 'Poppins', sans-serif;
@@ -564,7 +616,6 @@ a:focus {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 35px;
 }
-
 /* end contact section */
 
 
