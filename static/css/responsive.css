@@ -1,4 +1,6 @@
-@media (max-width: 1120px) {}
+@media (max-width: 1120px) {
+
+}
 
 @media (max-width: 992px) {
     .hero-container {
@@ -48,6 +50,12 @@
     .common_style img {
         width: 100%;
         margin: 20px auto;
+    }
+
+    .validation-text {
+        position: relative;
+        top: 2px;
+        right: 60px;
     }
 }
 
@@ -140,6 +148,12 @@
         margin-bottom: 12px;
         cursor: pointer;
     }
+
+    .validation-text {
+        position: relative;
+        top: 2px;
+        right: 30px;
+    }
 }
 
 
@@ -147,9 +161,18 @@
     body {
         font-size: 1.2rem !important;
     }
+
     .about_detail-box {
         margin-top: 20px !important;
         margin-bottom: 60px !important;
+    }
+
+    .mindhug-checkmark {
+        left: -50px !important;
+    }
+
+    .mindhug_checkmark {
+        left: -2px !important;
     }
 }
 
@@ -157,9 +180,18 @@
     body {
         font-size: 1.2rem !important;
     }
+
     .about_detail-box {
         margin-top: 20px !important;
         margin-bottom: 60px !important;
+    }
+
+    .mindhug-checkmark {
+        left: -50px !important;
+    }
+
+    .mindhug_checkmark {
+        left: -2px !important;
     }
 }
 
@@ -167,9 +199,18 @@
     body {
         font-size: 1.2rem !important;
     }
+
     .about_detail-box {
         margin-top: 20px !important;
         margin-bottom: 60px !important;
+    }
+
+    .mindhug-checkmark {
+        left: -50px !important;
+    }
+
+    .mindhug_checkmark {
+        left: -20px !important;
     }
 }
 

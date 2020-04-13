@@ -85,6 +85,15 @@ sup {
   font-weight: 600;
 }
 
+.footer_link {
+  color: #34bbae;
+}
+
+.footer_link:hover {
+  color: #34bbae;
+  opacity: 0.8;
+}
+
 .call_to-btn {
   display: inline-block;
   padding: 15px 45px;
@@ -518,7 +527,7 @@ a:focus {
 
 /* contact section */
 .section .mcp-title-area {
-    max-width: 960px;
+    max-width: 760px;
     margin: 0 auto 70px;
     display: block;
     padding: 0 15px;
@@ -566,8 +575,14 @@ a:focus {
 }
 
 .section .mcp-area button:hover {
-  background-color: #247971;
-  color: #ffffff;
+    background-color: #247971;
+    color: #ffffff;
+}
+
+.validation-text {
+    position: relative;
+    top: 2px;
+    right: 170px;
 }
 
 .contact_section {
@@ -695,7 +710,7 @@ a:focus {
   position: relative;
   padding-left: 35px;
   margin-top: 15px;
-  margin-bottom: 12px;
+  margin-bottom: 40px;
   cursor: pointer;
   font-size: .8rem;
   -webkit-user-select: none;
@@ -747,6 +762,48 @@ a:focus {
 }
 
 .mindhug_validation .mindhug_checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 7px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.mindhug-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+}
+
+.mindhug_validation:hover input ~ .mindhug-checkmark {
+  background-color: #f9f9f9;
+}
+
+.mindhug_validation input:checked ~ .mindhug-checkmark {
+  background-color: #34bbae;
+  border: none;
+}
+
+.mindhug-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.mindhug_validation input:checked ~ .mindhug-checkmark:after {
+  display: block;
+}
+
+.mindhug_validation .mindhug-checkmark:after {
   left: 9px;
   top: 5px;
   width: 7px;
