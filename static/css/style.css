@@ -354,12 +354,13 @@ a:focus {
     text-align: center;
 }
 
-.section .bottom-area h3{
+.section .bottom-area h3 {
     font-size: 2.6rem;
 }
 
-.section .bottom-area p{
-    font-size: 1.4rem;
+.section .bottom-area p {
+    font-size: 1.2rem;
+    color: #777777;
 }
 
 .section .bottom-area button {
