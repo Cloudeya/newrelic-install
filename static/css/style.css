@@ -561,6 +561,14 @@ a:focus {
     border: 1px solid #ccc;
 }
 
+.section .mcp-area input:focus {
+  outline: none !important;
+}
+
+.section .mcp-area textarea:focus {
+  outline: none !important;
+}
+
 .section .mcp-area button {
     background-color: #34bbae;
     border: none;
