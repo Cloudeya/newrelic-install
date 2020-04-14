@@ -58,9 +58,13 @@ def partnership_form():
         flag = partnership_forms(email, fname, lname, company, message)
     return render_template('form_partnerships.html')
 
-@app.route('/about', methods=["GET", "POST"])
-def careers():
+@app.route('/about')
+def about():
     return render_template('aboutus.html')
+
+@app.route('/careers')
+def careers():
+    return render_template('careers.html')
 
 @app.route('/cookie-policy')
 def cookie_policy():
