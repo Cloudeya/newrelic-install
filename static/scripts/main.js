@@ -8,17 +8,17 @@ window.addEventListener("load", function(){
     "border":"#f9f9f9"
     },
     "button":{
-      "background":"#F1D600",
-      "text":"#000000"
+      "background":"#247971",
+      "text":"#ffffff"
     }
     },
     "position":"bottom",
     "margin":"none",
     "transparency":"10",
     "content":{
-      "message":"By using our site, you acknowledge that you have read and understand our",
+      "message":"We care about your data, and we'd use cookies only to improve your experience:",
       "link":"Cookie Policy.",
-      "button":"Close",
+      "button":"Okay, sure! 🦁",
       "href":"/cookie-policy"
     }
   })

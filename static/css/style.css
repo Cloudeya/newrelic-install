@@ -860,7 +860,6 @@ a:focus {
 /* end info section */
 
 /* footer section*/
-
 .footer_section {
   background-color: #101010;
   padding: 20px 15px;
@@ -879,4 +878,7 @@ a:focus {
   color: #fdfdfe;
 }
 
+.wpcc-btn {
+  border-radius: 5px;
+}
 /* end footer section*/
