@@ -24,24 +24,6 @@ sup {
   top: -.3em;
 }
 
-#raj img{
-  border-radius: 300px;
-  height: 200px;
-  margin-bottom: 20px;
-}
-
-#thad img{
-  border-radius: 300px;
-  height: 200px;
-  margin-bottom: 20px;
-}
-
-#mark img{
-  border-radius: 300px;
-  height: 200px;
-  margin-bottom: 20px;
-}
-
 .layout_padding {
   padding: 75px 0;
 }
@@ -79,6 +61,33 @@ sup {
 
 .layout_padding-bottom {
   padding-bottom: 75px;
+}
+
+#mindhugJobs {
+  margin-bottom: 100px;
+}
+
+.btn-link {
+    font-weight: 600;
+    color: #34bbae !important;
+    text-decoration: none !important;
+}
+
+.mindhugCareer button {
+  background-color: #34bbae;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 8px 30px;
+  margin-top: 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.mindhugCareer button:hover {
+  background-color: #247971;
+  color: #ffffff;
 }
 
 .footer_link {

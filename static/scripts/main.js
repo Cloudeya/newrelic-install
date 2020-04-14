@@ -16,7 +16,7 @@ window.addEventListener("load", function(){
     "margin":"none",
     "transparency":"10",
     "content":{
-      "message":"We care about your data, and we'd use cookies only to improve your experience:",
+      "message":"We care about your data, and we'd use cookies 🍪 only to improve your experience:",
       "link":"Cookie Policy.",
       "button":"Okay, sure! 🦁",
       "href":"/cookie-policy"
