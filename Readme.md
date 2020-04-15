@@ -41,26 +41,18 @@ python3 main.py
 #Site is served here: http://127.0.0.1:8080
 ```
 
-### 🚀 Production Deployment (Google App Engine)
+### 🚀 Development, Testing, Staging, and Production Strategy
 
-- Install Google Cloud SDK (macOS)
-```bash
-brew cask install google-cloud-sdk
-```
+[Google Cloud Build](https://cloud.google.com/cloud-build) handles our pipelines, and as such, pushing or merging into the `master` branch will initiate deployment to live site. **DO NOT IT WITHOUT PERMISSION!**
 
-- Follow the setup and deployment guide [here](https://cloud.google.com/sdk/docs/quickstart-macos)
+Remember to check out the `dev` branch on your local machine, work exclusively in there and push your changes to the project repository. Then, ask [Finbarrs](https://github.com/0xnu) to review your changes or PR (Pull Request), so he can merge it into the `qa` branch for our QA Tester(s). We'll use the `staging` branch to demo our work to internal stakeholders before making them live to end-users.
 
-- Deploy the app
-```bash
-gcloud app deploy app.yml --project mindhug-marketing-site
-```
 
 ### 🤵 Authors
 
 - **Rajveer Beerda** _aka rajveerbeerda_ - _Main Developer_ - [rajveerbeerda](https://github.com/rajveerbeerda)
 - **Finbarrs Oketunji** _aka 0xnu_ - _Main Developer_ - [0xnu](https://github.com/0xnu)
 - **Manmeet Sethi** _aka ManmeetSethi_ - _Main Developer_ - [ManmeetSethi](https://github.com/ManmeetSethi)
-- **Mark Claydon** _aka remaininlight_ - _Main Developer_ - [remaininlight](https://github.com/remaininlight)
 
 ### 🖋 License
 
