@@ -15,13 +15,13 @@ body {
 }
 
 sup {
-  font-size: .8rem;
-  top: -.9em;
+  font-size: 1.8rem;
+  top: -.2em;
 }
 
 .sup_footer {
-  font-size: .6rem;
-  top: -.3em;
+  font-size: 1.2rem;
+  top: -.02em;
 }
 
 .layout_padding {
@@ -654,8 +654,8 @@ a:focus {
 
 /* info section */
 .info_section {
-  background-color: #101010;
-  color: #dcdde0;
+  background-color: #f7f7f7;
+  color: #222525;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -667,7 +667,7 @@ a:focus {
 .info_logo-box h2 {
   font-weight: bold;
   padding: 5px 7px;
-  border-bottom: 1px solid #1b1b1b;
+  border-bottom: 1px solid #e6e2dd;
 }
 
 .info_section ul {
@@ -682,11 +682,12 @@ a:focus {
 }
 
 .info_section ul li a {
-  color: #dcdde0;
+  color: #222525;
 }
 
 .info_section ul li a:hover {
-  color: #f7f7f7;
+  color: #222525;
+  opacity: 0.8;
 }
 
 .info_section h5 {
@@ -853,12 +854,13 @@ a:focus {
 }
 
 .info_section .social-box .fa {
-  padding-left: 0.8rem !important;
-  color: #dcdde0;
+  padding-left: .8rem!important;
+  color: #222525;
+  opacity: 0.7;
 }
 
 .info_section .social-box .fa:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .inner-pages p {
@@ -870,14 +872,14 @@ a:focus {
 
 /* footer section*/
 .footer_section {
-  background-color: #101010;
+  background-color: #f7f7f7;
   padding: 20px 15px;
   font-family: 'Poppins', sans-serif;
-  border-top: 1px solid #1b1b1b;
+  border-top: 1px solid #e6e2dd;
 }
 
 .footer_section p {
-  color: #dcdde0;
+  color: #222525;
   margin: 0;
   text-align: center;
   font-size: 0.8rem;
