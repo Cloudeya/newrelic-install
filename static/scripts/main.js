@@ -3,9 +3,9 @@ window.addEventListener("load", function(){
   window.wpcc.init({
     "colors":{
     "popup":{
-    "background":"#3b4045",
-    "text":"#ffffff",
-    "border":"#f9f9f9"
+    "background":"#fff2cc",
+    "text":"#101010",
+    "border":"#fff2cc"
     },
     "button":{
       "background":"#247971",
@@ -14,7 +14,7 @@ window.addEventListener("load", function(){
     },
     "position":"bottom",
     "margin":"none",
-    "transparency":"10",
+    "transparency":"40",
     "content":{
       "message":"We care about your data, and we'd use cookies 🍪 only to improve your experience:",
       "link":"Cookie Policy.",

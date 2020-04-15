@@ -889,5 +889,10 @@ a:focus {
 
 .wpcc-btn {
   border-radius: 5px;
+  outline: none !important;
+}
+
+.wpcc-container {
+  box-shadow: 0 0 10px rgba(0,0,0,.4);
 }
 /* end footer section*/
