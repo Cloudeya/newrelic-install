@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'deploy', '--project', '$PROJECT_ID', 
+         '-q', '$_MMW_PROMOTE', '-v', '$_MMW_VERSION']
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'services', '--project', '$PROJECT_ID', 
+         'set-traffic', '--splits', '$_MMW_TRAFFIC']
