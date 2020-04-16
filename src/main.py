@@ -1,6 +1,11 @@
+import os
+import logging
+
 from flask import Flask, request, jsonify, render_template, make_response, redirect, url_for, flash, sessions, session, get_flashed_messages
 from hubspot import subscribe_form, workshop_forms, partnership_forms, therapist_forms
-from waitress import serve
+
+# Change the format of messages logged to Stackdriver
+logging.basicConfig(format='%(message)s', level=logging.INFO)
 
 app = Flask(__name__)
 
@@ -87,15 +92,8 @@ def site_map():
 def robots():
     return render_template('robots.txt')
 
-# Development: comment out before pushing to repo!
 # if __name__ == '__main__':
-#     server = Server(app.wsgi_app)
-#     server.serve(debug=False, port=8080)
+#     app.run(debug=False, port=8080)
 
-# Production: uncomment before pushing to repo!
-# if __name__ == '__main__':
-    #app.run(debug=False, port=8080)
-
-# Production
-if __name__ == "__main__":
-    serve(app)
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))

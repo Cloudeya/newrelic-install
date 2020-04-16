@@ -2,17 +2,19 @@ FROM 0xnu/alpine3-python3-docker
 
 MAINTAINER Finbarrs Oketunji <finbarrs@mindhug.io>
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+ENV APP_HOME /app
+WORKDIR $APP_HOME
 
-COPY ./src/requirements.txt /usr/src/app/
+COPY ./src $APP_HOME
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-COPY src /usr/src/app
+RUN chmod 444 main.py
+RUN chmod 444 requirements.txt
 
-# Expose the Flask port
-EXPOSE 8080
+# Service must listen to $PORT environment variable.
+# This default value facilitates local development.
+ENV PORT 8080
 
-# Execute the Flask app
+# Run the web service on container startup.
 CMD [ "python3", "main.py" ]
 
