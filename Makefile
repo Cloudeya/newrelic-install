@@ -1,6 +1,5 @@
-.PHONY: build dev docs release inspect clean
+.PHONY: build dev inspect clean
 
-DOCS_PORT=5000
 APP_PORT=8080
 IMAGE_NAME=0xnu/alpine3-python3-docker
 CONTAINER_NAME=mindhug-marketing-website-v1
