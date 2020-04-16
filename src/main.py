@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify, render_template, make_response, redirect, url_for, flash, sessions, session, get_flashed_messages
 from hubspot import subscribe_form, workshop_forms, partnership_forms, therapist_forms
-from livereload import Server
 from waitress import serve
 
 app = Flask(__name__)
