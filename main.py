@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify, render_template, make_response, redirect, url_for, flash, sessions, session, get_flashed_messages
 from hubspot import subscribe_form, workshop_forms, partnership_forms, therapist_forms
 from livereload import Server
+from waitress import serve
 
 app = Flask(__name__)
+
 app.secret_key = "abcdefgh"
 
 @app.route('/', methods=["GET", "POST"])
@@ -87,10 +89,14 @@ def robots():
     return render_template('robots.txt')
 
 # Development: comment out before pushing to repo!
-if __name__ == '__main__':
-    server = Server(app.wsgi_app)
-    server.serve(debug=False, port=8080)
+# if __name__ == '__main__':
+#     server = Server(app.wsgi_app)
+#     server.serve(debug=False, port=8080)
 
 # Production: uncomment before pushing to repo!
 # if __name__ == '__main__':
-#     app.run(debug=False, port=8080)
+    #app.run(debug=False, port=8080)
+
+# Production
+if __name__ == "__main__":
+    serve(app)
