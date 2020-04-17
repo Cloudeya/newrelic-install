@@ -68,12 +68,20 @@
 {% block script %}
 
 <script>
-    var viewMode = getCookie("view-mode");
-    if(viewMode == "desktop"){
-        viewport.setAttribute('content', 'width=1024');
-    }else if (viewMode == "mobile"){
-        viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
-    }
+/* JavaScript Media Queries */
+if (matchMedia) {
+    const mq = window.matchMedia("(min-width: 500px)");
+    mq.addListener(WidthChange);
+    WidthChange(mq);
+}
+
+// media query change
+function WidthChange(mq) {
+
+    const msg = (mq.matches ? "more" : "less") + " than 500 pixels";
+    document.getElementById("current").firstChild.nodeValue = msg;
+
+}
 </script>
 <!-- Cookies -->
 <script src="{{ url_for('static', filename='scripts/cookieconsent.min.js') }}" type="text/javascript"></script>
