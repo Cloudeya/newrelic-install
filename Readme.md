@@ -29,16 +29,24 @@ source venv/bin/activate
 deactivate
 ```
 
-- Install project's dependencies.
+- Dockerize the app
 ```bash
-pip3 install -r requirements.txt
+make build
 ```
 
-- Run app.
+- Launch a development instance
 ```bash
-python3 main.py
+make dev
+```
 
-#Site is served here: http://127.0.0.1:8080
+- Inspect your Docker image
+```bash
+make inspect
+```
+
+- Clean up after yourself!
+```bash
+make clean
 ```
 
 ### 🚀 Development, Testing, Staging, and Production Strategy
