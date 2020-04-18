@@ -610,7 +610,7 @@ a:focus {
 }
 
 .section .mcp-area button {
-    background-color: #34bbae;
+    background-color: #3cd6c7;
     border: none;
     outline: none;
     color: #ffffff;
@@ -623,7 +623,7 @@ a:focus {
 }
 
 .section .mcp-area button:hover {
-    background-color: #247971;
+    background-color: #34bbae;
     color: #ffffff;
 }
 
