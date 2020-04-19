@@ -94,11 +94,11 @@ def robots():
     return render_template('robots.txt')
 
 # Development with Livereload. Remember to comment out before pushing the code!
-app.debug = True
-server = Server(app.wsgi_app)
-server.serve()
+# app.debug = True
+# server = Server(app.wsgi_app)
+# server.serve()
 
 # Production
-# if __name__ == "__main__":
-#     serve(app)
+if __name__ == "__main__":
+    serve(app)
 
