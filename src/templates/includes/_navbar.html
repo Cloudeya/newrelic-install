@@ -1,46 +1,47 @@
 
-    <!-- header section starts -->
-    <header class="header_section">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="/">
-            <picture>
-              <source srcset="{{ url_for('static', filename='images/logo.webp') }}" type="image/webp" alt="MindHug Logo" class="img-fluid">
-              <source srcset="{{ url_for('static', filename='images/logo.png') }}" type="image/png" alt="MindHug Logo" class="img-fluid"> 
-              <img src="{{ url_for('static', filename='images/logo.png') }}" type="image/png" alt="MindHug Logo" class="img-fluid">
-            </picture>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <!--Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-light fixed-top">
+        <div class="container"> <a class="navbar-brand d-flex align-items-center" href="/">
+        <picture>
+          <source srcset="{{ url_for('static', filename='images/logo.webp') }}" type="image/webp" alt="MindHug Logo" class="img-fluid">
+          <source srcset="{{ url_for('static', filename='images/logo.png') }}" type="image/png" alt="MindHug Logo" class="img-fluid"> 
+          <img src="{{ url_for('static', filename='images/logo.png') }}" type="image/png" alt="MindHug Logo" class="img-fluid">
+        </picture>
+        </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="/"> Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="/about"> About </a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="/partnerships"> Partnerships </a>
-                </li>
-
-                <li class="nav-item ">
-                  <a class="nav-link" href="/therapists"> Therapists </a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="https://medium.com/mymindhug"> Blog </a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="/contact"> Contact </a>
-                </li>
-              </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbar4">
+        <ul class="navbar-nav ml-auto pr-4">
+        <li class="nav-item px-md-2"> <a class="nav-link" href="/">Home</a> </li>
+        <li class="nav-item px-md-2"> <a class="nav-link" href="/about">About</a> </li>
+        <li class="nav-item px-md-2 dropdown d-menu">
+        <a class="nav-link" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partners
+        <svg  id="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+        </a>
+        <div class="dropdown-menu shadow-sm sm-menu" aria-labelledby="dropdown01">
+        <a class="dropdown-item" href="/institutions">Institutions</a>
+        <a class="dropdown-item" href="/therapists">Therapists</a>
+        </div>
+        </li>
+        <li class="nav-item px-md-2 dropdown d-menu">
+        <a class="nav-link" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Learn
+        <svg  id="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+        </a>
+        <div class="dropdown-menu shadow-sm sm-menu" aria-labelledby="dropdown01">
+        <a class="dropdown-item" href="https://medium.com/mymindhug">Medical Research</a>
+        <a class="dropdown-item" href="#">Engineering Blog</a>
+        </div>
+        </li>
+        <li class="nav-item px-md-2"> <a class="nav-link" href="https://www.eventbrite.com/o/mindhug-29549779583">Events</a> </li>
+        <li class="nav-item px-md-2"> <a class="nav-link" href="/contact">Contact</a> </li>
+        </ul>
+        <a class="text-phone pl-4 d-none d-lg-inline-block border-left border-light text-decoration-none" href="tel:+442038564110"><i class="fa fa-phone-square phone"></i> Call Us</a>
+        </div>
+        </div>
         </nav>
-      </div>
-    </header>
+

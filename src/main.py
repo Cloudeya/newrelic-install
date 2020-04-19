@@ -34,9 +34,9 @@ def contact_us():
 
     return render_template('contact.html')
 
-@app.route('/partnerships', methods=["GET", "POST"])
+@app.route('/institutions', methods=["GET", "POST"])
 def partnerships():
-    return render_template('partnership.html')
+    return render_template('institutions.html')
 
 @app.route('/therapists', methods=["GET", "POST"])
 def therapists():
