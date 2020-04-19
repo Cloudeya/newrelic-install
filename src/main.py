@@ -1,6 +1,7 @@
 import os
 import logging
 from waitress import serve
+from livereload import Server, shell
 from flask import Flask, request, jsonify, render_template, make_response, redirect, url_for, flash, sessions, session, get_flashed_messages
 from hubspot import subscribe_form, workshop_forms, partnership_forms, therapist_forms
 
@@ -92,10 +93,12 @@ def site_map():
 def robots():
     return render_template('robots.txt')
 
-# Dev, QA, and Staging
-# if __name__ == '__main__':
-#     app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
+# Development with Livereload. Remember to comment out before pushing the code!
+# app.debug = True
+# server = Server(app.wsgi_app)
+# server.serve()
 
 # Production
 if __name__ == "__main__":
     serve(app)
+
