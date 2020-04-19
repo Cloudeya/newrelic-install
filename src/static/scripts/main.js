@@ -157,7 +157,6 @@ window.addEventListener("load", function(){
         }
     }
 
-
 // nav
 $(document).ready(function() {
   $(".navbar a").on('click', function(event) {
@@ -182,4 +181,3 @@ $(document).ready(function() {
   $('h1').fadeIn(4000).removeClass('hiddenA');
   $('p').fadeIn(4000).removeClass('hiddenB');
 });
-
