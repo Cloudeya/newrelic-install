@@ -448,13 +448,13 @@ a:focus {
 
 /* determine section */
 .determine_section a {
-  background-color: #3cd6c7;
+  background-color: #34bbae;
   color: #ffffff;
   outline: none;
 }
 
 .determine_section a:hover {
-  background-color: #34bbae;
+  background-color: #3cd6c7;
   color: #ffffff;
   outline: none;
 }
