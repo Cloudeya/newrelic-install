@@ -169,7 +169,6 @@ sup {
   margin-bottom: 100px;
   height: 90px;
   border-top: 3px solid #34bbae;
-  background: #ffffff;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
@@ -488,7 +487,7 @@ a:focus {
 .client_section img {
   width: 100%;
 }
-
+/*
 .client_img-box::before,
 .client_img-box::after {
   content: "";
@@ -513,7 +512,7 @@ a:focus {
   right: -15px;
   animation: afteranimate 1s;
   animation-delay: .1s;
-}
+}*/
 
 
 @keyframes beforeanimate {

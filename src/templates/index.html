@@ -10,9 +10,9 @@
 
 {% block body %}
 
-<div class="top_container">
+{% include 'includes/_navbar.html' %}
 
-    {% include 'includes/_navbar.html' %}
+<div class="top_container">
 
     <section class="hero_section ">
       <div class="hero-container container">
@@ -64,7 +64,7 @@
                 Explore your community
               </h3>
               <p>
-                Find, book and try a wide choice of beneficial therapies and activities in your community. We will offer art therapy, mindfulness, music therapy, sound baths, breathing, pet therapy, drama therapy, yoga and nature walks.
+                Find, book and experience a wide choice of beneficial therapies and activities in your community. We will offer art therapy, mindfulness, music therapy, sound baths, breathing, pet therapy, drama therapy, yoga and nature walks.
               </p>
             </div>
           </div>
@@ -275,14 +275,13 @@
   <!-- testimonial section -->
   <section class="client_section layout_padding">
     <h2 class="">
-      Testimonial
+      Testimonials
     </h2>
     <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -299,7 +298,7 @@
                       <div class="col-md-9">
                         <div class="client_detail-box">
                           <h5>
-                            Becca Staple (MindHug Moments Attendee)
+                            Becca Staple - MindHug moments Attendee
                           </h5>
                           <p>
                             Having activities to try was a really good way to engage and understand how it can really help.
@@ -322,7 +321,7 @@
                       <div class="col-md-9">
                         <div class="client_detail-box">
                           <h5>
-                            Diana Yin, (Innovation Advisor, UCL Innovation and Enterprise)
+                            Diana Yin - Innovation Advisor, UCL Innovation and Enterprise
                           </h5>
                           <p>
                             Thanks team!!! I came in tired after a whole day of work (also end of the week), but came out relaxed and happy, almost ready for the week ahead. ;)
