@@ -1,24 +1,18 @@
-@font-face{
-  font-family:'Glyphicons Halflings';
-  src:url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.eot");
-  src:url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"),
-  url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.woff2") format("woff2"),
-  url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.woff") format("woff"),
-  url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.ttf") format("truetype"),
-  url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg")
-}
-
-body {
-  font-family: 'Nunito', sans-serif;
-  font-size: 1rem;
-  background-color: #fefeff;
+html {
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
   -webkit-font-smoothing:antialiased;
   -moz-font-smoothing:antialiased;
   -o-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
+  overflow-x: hidden;
   outline: none !important;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  background-color: #fefeff;
 }
 
 sup {
@@ -70,18 +64,101 @@ sup {
   padding-bottom: 75px;
 }
 
-/* Career Start*/
-/*#mindhugJobs {
-  margin-bottom: 100px;
+.footer_link {
+  font-weight: 600;
 }
 
-.btn-link {
-    font-weight: 600;
-    color: #34bbae !important;
-    text-decoration: none !important;
+.footer_link {
+  color: #34bbae;
 }
-*/
 
+.footer_link:hover {
+  color: #34bbae;
+  opacity: 0.8;
+}
+
+/* button start */
+.call_to-btn {
+  display: inline-block;
+  padding: 15px 45px;
+  border-radius: 3px;
+  border: none !important;
+  font-size: 15px;
+  background-color: #34bbae;
+  color: #ffffff;
+  font-weight: 700;
+  outline: none;
+}
+
+.call_to-btn:hover {
+  background-color: #3cd6c7;
+  color: #ffffff;
+  outline: none;
+}
+/* button end */
+
+/* home start */
+.homesec {
+  background-image:url('../images/hero.jpg');
+  background-position: center center, center center;
+  background-size: cover, cover;
+  background-repeat: repeat, repeat;
+}
+
+.homesec h3 {
+  margin-top: 80px;
+  font-size: 50px;
+  color: #304351;
+  font-weight: 600;
+}
+
+.homesec p {
+  color: #304351;
+  font-weight: 300;
+}
+/* home end */
+
+/* navbar start */
+nav.navbar.navbar-expand-lg {
+  padding: 10px 0;
+  background-color: #ffffff !important;
+  outline: none !important;
+}
+
+.phone {
+  font-size: 1rem !important;
+  padding-right: 10px;
+  color: #304351;
+}
+
+.text-phone {
+    color: #304351;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 0.9375rem;
+  color: #304351;
+  text-decoration: none;
+}
+
+.navbar-dark .navbar-nav .nav-link:active {
+  color: #8f8c8c !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+ color: #34bbae !important;
+}
+
+.navbar-toggler {
+  outline: none !important;
+}
+
+.navbar-collapse {
+  margin: 20px 20px;
+}
+/* navbar end */
+
+/* career start*/
 .mhjobs{
   max-width: 960px;
   margin: 0 auto 70px;
@@ -118,8 +195,8 @@ sup {
 }
 
 .panel-heading  a:before {
-   font-family: 'Glyphicons Halflings';
-   content: "\e114";
+   font-family: 'FontAwesome';
+   content: "\f107";
    float: right;
    padding: 0 20px;
    transition: all 0.5s;
@@ -153,110 +230,8 @@ sup {
 .mhjobs button:hover {
   background-color: #247971;
   color: #ffffff;
-}*/
-
-/* Career End*/
-
-.footer_link {
-  font-weight: 600;
 }
-
-.footer_link {
-  color: #34bbae;
-}
-
-.footer_link:hover {
-  color: #34bbae;
-  opacity: 0.8;
-}
-
-.call_to-btn {
-  display: inline-block;
-  padding: 15px 45px;
-  border-radius: 3px;
-  border: none !important;
-  font-size: 15px;
-  background-color: #ffffff;
-  color: #304351;
-  font-weight: 700;
-  outline: none;
-}
-
-.hero_section {
-  background-image: url("../images/hero.jpg");
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-bottom: 100px;
-}
-
-.hero_section .call_to-btn {
-  background-color: #34bbae;
-  color: #ffffff;
-  outline: none;
-}
-
-.call_to-btn img {
-  width: 18px;
-  margin-left: 10px;
-}
-
-.btn_on-hover {
-  background-color: #3cd6c7;
-  color: #ffffff;
-  outline: none;
-}
-
-.call_to-btn:hover,
-.btn_on-hover:hover {
-  background-color: #3cd6c7;
-  color: #ffffff;
-  outline: none;
-}
-
-.main-heading {
-  color: #082465;
-  font-weight: bold;
-  text-align: center;
-}
-/*header section*/
-
-.header_section {
-  padding-top: 10px;
-  font-family: 'Nunito', sans-serif;
-  height: 90px;
-  border-top: 3px solid #34bbae;
-  border-bottom: 1px solid #e4ebec;
-}
-
-.subpages{
-  padding-top: 10px;
-  font-family: 'Nunito', sans-serif;
-  margin-bottom: 100px;
-  height: 90px;
-  border-top: 3px solid #34bbae;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-
-nav.navbar.navbar-expand-lg {
-  padding: 10px 0;
-}
-
-.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
-  padding: 10px 20px;
-  text-align: center;
-  font-size: 0.9375rem;
-  color: #304351;
-  text-decoration: none;
-}
-
-.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link:active {
-  color: #8f8c8c !important;
-}
-
-.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link:hover {
-  color: #34bbae;
-}
+/* career end*/
 
 a,
 a:hover,
@@ -403,7 +378,6 @@ a:focus {
 /* about section */
 .about_section {
   text-align: right;
-  margin-bottom: 100px;
 }
 
 .about_section a {

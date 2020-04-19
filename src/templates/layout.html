@@ -57,13 +57,9 @@
 
 </head>
 
-<!-- <body> -->
-
 {% block body %} {% endblock %}
 
 {% include 'includes/_footer.html' %}
-
-</body>
 
 {% block script %}
 <!-- Cookies -->
@@ -73,6 +69,18 @@
 <script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='scripts/jquery-3.4.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='scripts/bootstrap.min.js') }}"></script>
+
+<script>
+$(document).ready(function () {
+if ($(window).width() > 991){
+$('.navbar-light .d-menu').hover(function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+    }, function () {
+        $(this).find('.sm-menu').first().stop(true, true).delay(120).slideUp(100);
+    });
+    }
+});
+</script>
 
 <script>
  $('.panel-collapse').on('show.bs.collapse', function () {
@@ -94,4 +102,5 @@
 </script>
 {% endblock %}
 
+</body>
 </html>
