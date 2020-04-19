@@ -1,18 +1,24 @@
-html {
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    -webkit-font-smoothing:antialiased;
-    -moz-font-smoothing:antialiased;
-    -o-font-smoothing:antialiased;
-    text-rendering:optimizeLegibility;
-    overflow-x: hidden;
-    outline: none !important;
+@font-face{
+  font-family:'Glyphicons Halflings';
+  src:url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.eot");
+  src:url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"),
+  url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.woff2") format("woff2"),
+  url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.woff") format("woff"),
+  url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.ttf") format("truetype"),
+  url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg")
 }
 
 body {
   font-family: 'Nunito', sans-serif;
   font-size: 1rem;
   background-color: #fefeff;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+  -moz-font-smoothing:antialiased;
+  -o-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  outline: none !important;
 }
 
 sup {
@@ -64,7 +70,8 @@ sup {
   padding-bottom: 75px;
 }
 
-#mindhugJobs {
+/* Career Start*/
+/*#mindhugJobs {
   margin-bottom: 100px;
 }
 
@@ -73,23 +80,82 @@ sup {
     color: #34bbae !important;
     text-decoration: none !important;
 }
+*/
 
-.mindhugCareer button {
+.mhjobs{
+  max-width: 960px;
+  margin: 0 auto 70px;
+  display: block;
+  padding: 0 15px;
+}
+
+@media(max-width:992px){
+ .mhjobs{
+    max-width: 960px;
+    margin: 0 auto 70px;
+    display: block;
+    padding: 0 15px;
+  }
+}
+
+.panel-heading {
+  padding: 0;
+  margin: 10px auto;
+  border: 1px solid #f7f7f7;
+  border-radius: 3px;
+}
+
+.panel-title>a, .panel-title>a:active{
+  display: block;
+  padding: 20px 0px 10px 20px;
+  color: #555;
+  font-size: .8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  text-decoration: none;
+}
+
+.panel-heading  a:before {
+   font-family: 'Glyphicons Halflings';
+   content: "\e114";
+   float: right;
+   padding: 0 20px;
+   transition: all 0.5s;
+}
+
+.panel-heading.active a:before {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.panel-body {
+  padding: 10px 20px;
+  margin-top: -10px;
+  border: 1px solid #f7f7f7;
+}
+
+.mhjobs button {
   background-color: #34bbae;
   border: none;
   outline: none;
   color: #ffffff;
   padding: 8px 30px;
-  margin-top: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 15px;
   text-transform: uppercase;
   border-radius: 3px;
 }
 
-.mindhugCareer button:hover {
+.mhjobs button:hover {
   background-color: #247971;
   color: #ffffff;
-}
+}*/
+
+/* Career End*/
 
 .footer_link {
   font-weight: 600;
