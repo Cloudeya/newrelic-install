@@ -1,4 +1,36 @@
 /* Bootstrap 4 Breakpoints */
+@media (min-width: 320px) {
+
+	.navbar-brand {
+	    margin: 0 20px;
+	    height: auto;
+	    width: 150px;
+	}
+
+	.homesec h3 {
+	    font-size: 40px;
+	}
+
+	.common_style img {
+		max-width: 100%;
+    	width: 70%;
+    	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.about_section,
+	.about_img-container,
+	.admission_detail-box,
+	.determine_detail-box {
+		text-align: center !important;
+	}
+
+	.validation-text {
+	    right: 50px;
+	}
+
+}
 
 @media (min-width: 480px) {
 
@@ -20,22 +52,15 @@
     	margin-right: auto;
 	}
 
-	.about_detail-box,
+	.about_section,
+	.about_img-container,
 	.admission_detail-box,
 	.determine_detail-box {
-		text-align: center;
+		text-align: center !important;
 	}
 
 	.validation-text {
 	    right: 50px;
-	}
-
-	.bottom_border {
-	     margin-top: 0px; 
-	}
-
-	.footer-copy {
-	 
 	}
 
 }
@@ -61,23 +86,17 @@
     	margin-right: auto;
 	}
 
-	.about_detail-box,
+	.about_section,
+	.about_img-container,
 	.admission_detail-box,
 	.determine_detail-box {
-		text-align: center;
+		text-align: center !important;
 	}
 
 	.validation-text {
 	    right: 80px;
 	}
 
-	.bottom_border {
-	     margin-top: 0px; 
-	}
-
-	.footer-copy {
-	
-	}
 }
 
 /* Medium devices (tablets, 768px and up) */

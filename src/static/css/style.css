@@ -713,15 +713,10 @@ footer p { font-size:1rem; color:#222525; padding-bottom:0px; margin-bottom:20px
 .footer-email { color:#34bbae; text-decoration:none; background-color:transparent; margin-left:5px; }
 .footer-email:hover { color:#34bbae; opacity:0.8; }
 
-.footer-copy { text-align: center; }
+.footer-copy { text-align: center; margin: 60px auto; }
 
 .foote_bottom_ul_amrc li { display:inline;}
 .foote_bottom_ul_amrc li a { color:#999; margin:0 12px;}
-
-.social_footer_ul { max-width: 270px; list-style: none; margin: 40px auto;  }
-.social_footer_ul li { display: inline; }
-.social_footer_ul li a { color:#CCC; padding:8px;border-radius:50%;}
-.social_footer_ul li i { font-size: 1.8rem; text-align:center;}
 
 .wpcc-btn { border-radius: 5px; outline: none !important; }
 .wpcc-container { box-shadow: 0 0 10px rgba(0,0,0,.4); }
