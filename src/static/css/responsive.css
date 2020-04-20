@@ -1,12 +1,16 @@
 /* Bootstrap 4 Breakpoints */
 
-/*
-Extra small devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-*/
+@media (min-width: 480px) {
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+	.navbar-brand {
+	    margin: 0 20px;
+	    height: auto;
+	    width: 150px;
+	}
+
+	.homesec h3 {
+	    font-size: 40px;
+	}
 
 	.common_style img {
 		max-width: 100%;
@@ -23,23 +27,56 @@ No media query since this is the default in Bootstrap
 	}
 
 	.validation-text {
-	    right: 80px;
+	    right: 50px !important;
 	}
 
-	.crisis {
-		max-width: 100%;
-    	flex: 0 0 100%;
-    	-webkit-box-flex: 0;
-    	text-align: center;
-	}
-
-	.social_footer_ul {
-/*		margin: 40px 40px 40px 40px;*/
+	.bottom_border {
+	     margin-top: 0px; 
 	}
 
 	.footer-copy {
-    	margin: 40px 40px 40px 40px;
-    	text-align: center;
+	    text-align: left;
+	}
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+	.navbar-brand {
+	    margin: 0 20px;
+	    height: auto;
+	    width: 150px;
+	}
+
+	.homesec h3 {
+	    font-size: 40px;
+	}
+
+	.common_style img {
+		max-width: 100%;
+    	width: 70%;
+    	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.about_detail-box,
+	.admission_detail-box,
+	.determine_detail-box {
+		text-align: center;
+	}
+
+	.validation-text {
+	    right: 80px !important;
+	}
+
+	.bottom_border {
+	     margin-top: 0px; 
+	}
+
+	.footer-copy {
+	    text-align: left;
 	}
 }
 
