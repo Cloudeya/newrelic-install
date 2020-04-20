@@ -1,12 +1,37 @@
 /* Bootstrap 4 Breakpoints */
 
-/*
-Extra small devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-*/
+@media (min-width: 480px) {
+
+	.homesec h3 {
+	    font-size: 38px;
+	}
+
+	.common_style img {
+		max-width: 100%;
+    	width: 70%;
+    	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.about_detail-box,
+	.admission_detail-box,
+	.determine_detail-box {
+		text-align: center;
+	}
+
+	.validation-text {
+	    right: 50px;
+	}
+
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+
+	.homesec h3 {
+	    font-size: 42px;
+	}
 
 	.common_style img {
 		max-width: 100%;
@@ -31,10 +56,6 @@ No media query since this is the default in Bootstrap
     	flex: 0 0 100%;
     	-webkit-box-flex: 0;
     	text-align: center;
-	}
-
-	.social_footer_ul {
-/*		margin: 40px 40px 40px 40px;*/
 	}
 
 	.footer-copy {
