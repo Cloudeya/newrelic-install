@@ -27,7 +27,7 @@
 	}
 
 	.validation-text {
-	    right: 50px !important;
+	    right: 50px;
 	}
 
 	.bottom_border {
@@ -35,7 +35,7 @@
 	}
 
 	.footer-copy {
-	    text-align: left;
+	 
 	}
 
 }
@@ -68,7 +68,7 @@
 	}
 
 	.validation-text {
-	    right: 80px !important;
+	    right: 80px;
 	}
 
 	.bottom_border {
@@ -76,7 +76,7 @@
 	}
 
 	.footer-copy {
-	    text-align: left;
+	
 	}
 }
 
