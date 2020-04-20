@@ -9,7 +9,8 @@
     <meta charset="utf-8" />
 
     <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 
     <meta name="keywords" content="MindHug, Mental Health, Mental Health Coronavirus, Mental Wellbeing, Happiness, Art Therapy, Music Therapy, Sound Therapy, Drama Therapy, Mindfullness, Therapists Near Me, Losing It With Mental Health, Mental Disorder, Mental Health Emergency">
     {% endblock %}
@@ -47,15 +48,32 @@
 
     <!-- Open Graph -->
     {% block opengraph %}
-    <meta property="og:title" content="Mental Wellbeing and You">
-    <meta property="og:site_name" content="MindHug">
-    <meta property="og:url" content="https://www.minghug.io">
-    <meta property="og:description" content="We help find what works best for your happiness and wellbeing.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="{{ url_for('static', filename='images/og-image.jpg') }}">
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="MindHug - Mental Wellbeing and You">
+    <meta itemprop="description" content="We help find what works best for your happiness and wellbeing.">
+    <meta itemprop="image" content="{{ url_for('static', filename='images/og-image.jpg') }}">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="@mymindhug">
+    <meta name="twitter:title" content="MindHug - Mental Wellbeing and You">
+    <meta name="twitter:description" content="We help find what works best for your happiness and wellbeing.">
+    <meta name="twitter:creator" content="@mymindhug">
+    <meta name="twitter:image" content="{{ url_for('static', filename='images/og-image.jpg') }}">
+
+    <!-- Open Graph data -->
+    <meta property="fb:app_id" content="#">
+    <meta property="og:title" content="Mental Wellbeing and You" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.minghug.io" />
+    <meta property="og:image" content="{{ url_for('static', filename='images/og-image.jpg') }}"/>
+    <meta property="og:description" content="We help find what works best for your happiness and wellbeing." />
+    <meta property="og:site_name" content="MindHug" />
     {% endblock %}
 
 </head>
+
+<body>
 
 {% block body %} {% endblock %}
 
@@ -67,7 +85,7 @@
 
 <!-- Main Script -->
 <script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js') }}"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='scripts/jquery-3.4.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='scripts/jquery-slim.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='scripts/bootstrap.min.js') }}"></script>
 
 <script>

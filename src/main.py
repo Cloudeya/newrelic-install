@@ -42,7 +42,7 @@ def partnerships():
 def therapists():
     return render_template('therapists.html')
 
-@app.route('/therapists/therapists-form', methods=["GET", "POST"])
+@app.route('/therapists-form/', methods=["GET", "POST"])
 def therapists_form():
     if request.method=="POST":
         fname = request.form['fname']
@@ -53,7 +53,7 @@ def therapists_form():
         flag = therapist_forms(email, fname, lname, company, message)
     return render_template('form_therapists.html')
 
-@app.route('/partnerships/partnership-form', methods=["GET", "POST"])
+@app.route('/institutions-form/', methods=["GET", "POST"])
 def partnership_form():
     if request.method=="POST":
         fname = request.form['fname']
@@ -63,7 +63,7 @@ def partnership_form():
         message = request.form['comment']
 
         flag = partnership_forms(email, fname, lname, company, message)
-    return render_template('form_partnerships.html')
+    return render_template('form_institutions.html')
 
 @app.route('/about')
 def about():
