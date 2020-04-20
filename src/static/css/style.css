@@ -78,6 +78,7 @@ nav.navbar.navbar-expand-lg {
   padding: 10px 0;
   background-color: #ffffff !important;
   outline: none !important;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
 }
 
 .navbar-brand {
@@ -173,6 +174,19 @@ nav.navbar.navbar-expand-lg {
   padding: 10px 20px;
   margin-top: -10px;
   border: 1px solid #f7f7f7;
+}
+
+.panel-body h5 {
+  font-weight: 600;
+}
+
+.panel-body p {
+  margin-bottom: 30px;
+  line-height: 2rem;
+}
+
+.panel-body li {
+  margin-bottom: 10px;
 }
 
 .mhjobs button {
@@ -445,6 +459,15 @@ nav.navbar.navbar-expand-lg {
     right: 190px;
 }
 
+.validation-text a {
+    color: #34bbae;
+}
+
+.validation-text a:hover {
+    color: #34bbae;
+    opacity: 0.8;
+}
+
 .contact_section {
   padding: 75px 45px;
   font-family: 'Nunito', sans-serif;
@@ -645,8 +668,13 @@ nav.navbar.navbar-expand-lg {
     line-height: 1.8rem;
 }
 
-.inner-pages li {
-    
+.inner-pages a {
+    color: #34bbae;
+}
+
+.inner-pages a:hover {
+    color: #34bbae;
+    opacity: 0.8;
 }
 
 /* end info section */
@@ -669,7 +697,7 @@ footer p { font-size:1rem; color:#222525; padding-bottom:0px; margin-bottom:8px;
 .footer_ul2_amrc li a:hover { text-decoration:none;}
 .footer_ul2_amrc li i { margin-top:5px;}
 
-.bottom_border { padding-bottom:20px;}
+.bottom_border { padding-bottom:20px; margin-top: 60px;}
 .foote_bottom_ul_amrc {
   list-style-type:none;
   padding:0px;
