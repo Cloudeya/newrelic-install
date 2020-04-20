@@ -6,46 +6,23 @@
 
 {% block title %}MindHug - Mental Wellbeing and You.{% endblock %}
 
-<body>
-
 {% block body %}
 
 {% include 'includes/_navbar.html' %}
 
-<div class="top_container">
-
-    <section class="hero_section ">
-      <div class="hero-container container">
-        <div class="hero_detail-box">
-          <h1>
-            Mental wellbeing and you. Because one size does not fit all.
-          </h1>
-          <p>
-            We help find what works best for your happiness and wellbeing. We do this by harnessing the familiarity of community and the power of digital.
-          </p>
-          <div class="hero_btn-continer">
-            <button class="call_to-btn btn_white-border" onClick="document.getElementById('signupnow').scrollIntoView();">
-              Stay In Touch
-            </button>
-          </div>
-        </div>
-        <div class="hero_img-container">
-          <div>
-            <picture>
-              <source srcset="{{ url_for('static', filename='images/hero-image.webp') }}" type="image/webp" alt="MindHug Hero" class="img-fluid">
-              <source srcset="{{ url_for('static', filename='images/hero-image.png') }}" type="image/png" alt="MindHug Hero" class="img-fluid"> 
-              <img src="{{ url_for('static', filename='images/hero-image.png') }}" type="image/png" alt="MindHug Hero" class="img-fluid">
-            </picture>
-          </div>
+  <div class="py-5 text-center h-100 align-items-center d-flex homesec">
+    <div class="container py-5">
+      <div class="row py-5">
+        <div class="mx-auto col-lg-10">
+          <h3 class="display-4 mb-4 ">Mental wellbeing and you. Because one size does not fit all.</h3>
+          <p class="lead mb-5">We help find what works best for your happiness and wellbeing. We do this by harnessing the familiarity of community and the power of digital.</p> <a href="#signupnow" class="btn btn-primary call_to-btn mx-1">Keep in touch</a> 
         </div>
       </div>
-    </section>
-</div>
-<!-- end header section -->
+    </div>
+  </div>
 
   <div class="common_style">
 
-    <!-- section one -->
     <section class="about_section">
       <div class="container">
         <div class="row">
@@ -72,7 +49,6 @@
       </div>
     </section>
 
-    <!-- section two -->
     <section class="admission_section">
       <div class="container">
         <div class="row">
@@ -99,12 +75,11 @@
       </div>
     </section>
 
-    <!-- section three -->
-    <section class="why_section">
+    <section class="about_section">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="why_img-container">
+            <div class="about_img-container">
               <picture>
                 <source srcset="{{ url_for('static', filename='images/events.webp') }}" type="image/webp" alt="MindHug Events" class="img-fluid">
                 <source srcset="{{ url_for('static', filename='images/events.png') }}" type="image/png" alt="MindHug Events" class="img-fluid"> 
@@ -113,7 +88,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="why_detail-box">
+            <div class="about_detail-box">
               <h3>
                 Book workshops and events
               </h3>
@@ -131,7 +106,6 @@
       </div>
     </section>
 
-    <!-- section four -->
     <section class="determine_section">
       <div class="container">
         <div class="row">
@@ -163,12 +137,11 @@
       </div>
     </section>
 
-    <!-- section five -->
-    <section class="why_section">
+    <section class="about_section">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="why_img-container">
+            <div class="about_img-container">
               <picture>
                 <source srcset="{{ url_for('static', filename='images/analytics.webp') }}" type="image/webp" alt="MindHug Analytics" class="img-fluid">
                 <source srcset="{{ url_for('static', filename='images/analytics.png') }}" type="image/png" alt="MindHug Analytics" class="img-fluid"> 
@@ -177,7 +150,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="why_detail-box">
+            <div class="about_detail-box">
               <h3>
                 Employ a mood diary and wellbeing analytics
               </h3>
@@ -190,8 +163,6 @@
       </div>
     </section>
 
-
-    <!-- section six -->
     <section class="determine_section">
       <div class="container">
         <div class="row">
@@ -218,12 +189,11 @@
       </div>
     </section>
 
-    <!-- section seven -->
-    <section class="why_section">
+    <section class="about_section">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="why_img-container">
+            <div class="about_img-container">
               <picture>
                 <source srcset="{{ url_for('static', filename='images/safety.webp') }}" type="image/webp" alt="MindHug Safety" class="img-fluid">
                 <source srcset="{{ url_for('static', filename='images/safety.png') }}" type="image/png" alt="MindHug Safety" class="img-fluid"> 
@@ -232,7 +202,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="why_detail-box">
+            <div class="about_detail-box">
               <h3>
                 Safety
               </h3>
@@ -245,7 +215,6 @@
       </div>
     </section>
 
-    <!-- section eight -->
     <section class="determine_section">
       <div class="container">
         <div class="row">
@@ -272,7 +241,6 @@
       </div>
     </section>
 
-  <!-- testimonial section -->
   <section class="client_section layout_padding">
     <h2 class="">
       Testimonials

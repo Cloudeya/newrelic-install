@@ -6,17 +6,16 @@
 
 {% block title %}MindHug's Panel of Therapists{% endblock %}
 
-<body class="sub_page">
-
 {% block body %}
 
-{% include 'includes/_navsub.html' %}
+{% include 'includes/_navbar.html' %}
 
+  <div class="common_style">
     <section class="about_section">
       <div class="container">
-        <div class="row">
+        <div class="row ti">
           <div class="col-md-6">
-            <div class="about_img-container">
+            <div class="about_img-container ti">
               <picture>
                 <source srcset="{{ url_for('static', filename='images/therapist.webp') }}" type="image/webp" alt="MindHug Therapists" class="img-fluid">
                 <source srcset="{{ url_for('static', filename='images/therapist.png') }}" type="image/png" alt="MindHug Therapists" class="img-fluid"> 
@@ -25,7 +24,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="about_detail-box" style="margin-top: 150px;">
+            <div class="about_detail-box">
               <h3>
                 Therapists
               </h3>
@@ -33,7 +32,7 @@
                 Are you a therapist or an activity provider keen to join us on our journey?
               </p>
               <div class="">
-                <a href="/therapists/therapists-form" class="call_to-btn btn_white-border">
+                <a href="/therapists-form/" class="call_to-btn btn_white-border">
                   Contact Us
                 </a>
               </div>
@@ -42,5 +41,6 @@
         </div>
       </div>
     </section>
+  </div>
 
 {% endblock %}

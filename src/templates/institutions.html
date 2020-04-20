@@ -6,17 +6,16 @@
 
 {% block title %}Partnerships at MindHug{% endblock %}
 
-<body class="sub_page">
-
 {% block body %}
 
-{% include 'includes/_navsub.html' %}
+{% include 'includes/_navbar.html' %}
 
+  <div class="common_style">
     <section class="about_section">
       <div class="container">
-        <div class="row">
+        <div class="row ti">
           <div class="col-md-6">
-            <div class="about_img-container">
+            <div class="about_img-container ti">
               <picture>
                 <source srcset="{{ url_for('static', filename='images/ucl-inno.webp') }}" type="image/webp" alt="UCL Innovation and Enterprise" class="img-fluid">
                 <source srcset="{{ url_for('static', filename='images/ucl-inno.png') }}" type="image/png" alt="UCL Innovation and Enterprise" class="img-fluid"> 
@@ -25,7 +24,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="about_detail-box" style="margin-top: 150px;">
+            <div class="about_detail-box">
               <h3>
                 Our Current Partner
               </h3>
@@ -33,7 +32,7 @@
                 We are always on the lookout for valuable partnerships. If you would like to partner with us, feel free to contact us.
               </p>
               <div class="">
-                <a href="/partnerships/partnership-form" class="call_to-btn btn_white-border">
+                <a href="/institutions-form/" class="call_to-btn btn_white-border">
                   Contact Us
                 </a>
               </div>
@@ -42,5 +41,6 @@
         </div>
       </div>
     </section>
+  </div>
 
 {% endblock %}
