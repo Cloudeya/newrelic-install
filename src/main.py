@@ -81,6 +81,10 @@ def cookie_policy():
 def privacy_policy():
     return render_template('privacy_policy.html')
 
+@app.route('/terms')
+def terms_of_use():
+    return render_template('terms_of_use.html')
+
 @app.route('/disclaimer')
 def disclaimer():
     return render_template('disclaimer.html')
@@ -101,4 +105,3 @@ def robots():
 # Production
 if __name__ == "__main__":
     serve(app)
-
