@@ -74,6 +74,14 @@ sup {
 /* home end */
 
 /* navbar start */
+#dropdown01:before {
+    font-family: 'FontAwesome';
+    content: "\f107";
+    float: right;
+    padding: 0px 0px 0px 6px;
+    transition: all 0.5s;
+}
+
 nav.navbar.navbar-expand-lg {
   padding: 10px 0;
   background-color: #ffffff !important;
@@ -439,9 +447,10 @@ nav.navbar.navbar-expand-lg {
     background-color: #34bbae;
     border: none;
     outline: none;
+    position: relative;
     color: #ffffff;
     padding: 12px 40px;
-    margin-top: 15px;
+    margin-top: 80px;
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
@@ -519,8 +528,8 @@ nav.navbar.navbar-expand-lg {
 /* Checkbox */
 .mindhug_validation {
   display: block;
-  position: relative;
-  padding-left: 35px;
+  position: absolute;
+  padding-left: 55px;
   margin-top: 15px;
   margin-bottom: 40px;
   cursor: pointer;
@@ -533,7 +542,7 @@ nav.navbar.navbar-expand-lg {
 
 .mindhug_validation span{
   line-height: 1rem;
-  right: 190px;
+  right: 20px;
 }
 
 .mindhug_validation input {
