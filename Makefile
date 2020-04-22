@@ -7,7 +7,7 @@ BUILD=docker build -t
 RUN=docker run --rm -it
 TESTS=./kubernetes/structure-tests.yaml
 CONTAINER_NAME=mmw1
-VERSION=v0.9
+VERSION=v0.10
 PROJECT_ID=mindhug-marketing-site
 SUBMIT=gcloud builds submit --tag
 
