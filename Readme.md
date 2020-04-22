@@ -44,6 +44,11 @@ make dev
 make inspect
 ```
 
+- Deploy image to GCP Container Storage
+```bash
+make deploy
+```
+
 - Clean up after yourself!
 ```bash
 make clean
