@@ -1,4 +1,4 @@
-FROM 0xnu/alpine3-python3-docker
+FROM mindhug/alpine3-python3-docker
 
 MAINTAINER Finbarrs Oketunji <finbarrs@mindhug.io>
 

@@ -5,9 +5,9 @@ DOCS_PORT=5000
 IMAGE_NAME=0xnu/alpine3-python3-docker
 BUILD=docker build -t
 RUN=docker run --rm -it
-TESTS=./kubernetes/structure-tests.yaml
+TESTS=./tests/structure-tests.yaml
 CONTAINER_NAME=mmw1
-VERSION=v0.10
+VERSION=v0.12
 PROJECT_ID=mindhug-marketing-site
 SUBMIT=gcloud builds submit --tag
 
