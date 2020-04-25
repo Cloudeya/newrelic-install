@@ -1,4 +1,4 @@
-.PHONY: all verify lint test check security build dev prod validate dive deploy clean system
+.PHONY: all verify lint test check security build dev prod validate dive kubesp kubesp-ingress certmanager hcm deploy clean system
 
 APP_PORT=8080
 DOCS_PORT=5000
@@ -7,7 +7,7 @@ BUILD=docker build -t
 RUN=docker run --rm -it
 TESTS=./tests/structure-tests.yaml
 CONTAINER_NAME=mmw1
-VERSION=v0.14
+VERSION=v0.15
 PROJECT_ID=mindhug-marketing-site
 SUBMIT=gcloud builds submit --tag
 
@@ -45,6 +45,33 @@ validate: .prod-build
 
 dive: .prod-build
 	$(RUN) -v //var/run/docker.sock:/var/run/docker.sock wagoodman/dive $(IMAGE_NAME)
+
+helm:
+	chmod +x ./helm/secure_helm.sh
+	chmod +x ./helm/secure_redis.sh
+	./helm/secure_helm.sh && ./helm/secure_redis.sh
+
+kubesp:
+	kubectl create -f ./k8s/mindhug-staging.yaml
+	kubectl create -f ./k8s/mindhug-prod.yaml
+	kubectl get service
+
+kubesp-ingress:
+	kubectl create -f ./k8s/mindhug-ingress.yaml
+
+certmanager:
+	kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v0.14.1/cert-manager.crds.yaml
+	kubectl create namespace cert-manager
+
+# Add Jetstack Helm repository to Helm. It hosts the Cert-Manager chart.
+hcm:
+	helm repo add jetstack https://charts.jetstack.io
+	helm install cert-manager --version v0.14.1 --namespace cert-manager jetstack/cert-manager
+
+letsencrypt:
+	kubectl create -f letsencrypt-issuer.yaml
+	kubectl apply -f mindhug-ingress.yaml
+	kubectl describe certificate mindhug-tls
 
 deploy:
 	$(SUBMIT) gcr.io/$(PROJECT_ID)/$(CONTAINER_NAME):$(VERSION) .
