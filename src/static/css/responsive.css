@@ -19,6 +19,15 @@
     	margin-right: auto;
 	}
 
+	.client_img-box img {
+		width: 50%;
+		border: 3px solid #34bbae;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
 	.about_section,
 	.about_img-container,
 	.admission_detail-box,
@@ -46,6 +55,15 @@
     	display: block;
     	margin-left: auto;
     	margin-right: auto;
+	}
+
+	.client_img-box img {
+		width: 50%;
+		border: 3px solid #34bbae;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 0 auto;
+		margin-bottom: 30px;
 	}
 
 	.about_section,
