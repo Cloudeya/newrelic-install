@@ -1,12 +1,17 @@
 # Terraform files
 terraform
 .terraform
+terraform.tf
 terraform.tfstate
 terraform.tfvars
 *.tfstate*
 *.tf
-terraform.tf
-terraform-gke-keyfile.json
+
+# Kubernetes
+k8s
+
+# Helm
+helm
 
 # OS X files
 .history
@@ -30,4 +35,5 @@ __pycache__
 mock-user-data.log
 
 # Others
+.vscode
 Procfile
