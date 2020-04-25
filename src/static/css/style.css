@@ -238,6 +238,16 @@ nav.navbar.navbar-expand-lg {
 .common_style img {
   width: 100%;
 }
+
+.client_img-box img {
+  width: 80%;
+  border: 3px solid #34bbae;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
 /* end common style */
 
 /* about section */
