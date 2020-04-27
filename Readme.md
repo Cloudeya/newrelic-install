@@ -5,22 +5,43 @@ We help find what works best for their happiness and wellbeing. We do this by ha
 
 - Install [Homebrew](https://brew.sh/) on your local machine.
 
-- Install Python3 if you haven't already, then verify the installation.
+- Install Python3 if you haven't already, then verify the installation
 ```bash
 brew install python3 && python3 --version
 ```
 
-- Install virtualEnv so you can isolate Python environments.
+- Pipenv Workflow
+```bash
+brew install pipenv
+
+# Install from Pipevn
+pipenv install
+
+# Add a new package
+
+pipenv install <package>
+
+# Check outdate packages
+pipenv update --outdated
+
+# Update installed packages
+pipenv update
+
+# Update a specific package
+pipenv update <pkg>
+```
+
+- Install virtualEnv so you can isolate Python environments
 ```bash
 sudo pip3 install virtualenv
 ```
 
-- Go to your MindHug directory (**yours might be different!**) and create virtualenv with python 3.
+- Go to your MindHug directory (**yours might be different!**) and create virtualenv with python 3
 ```bash
 cd ~/projects/MindHug && virtualenv venv -p python3
 ```
 
-- Activate virtualenv.
+- Activate virtualenv
 ```bash
 # Activate
 source venv/bin/activate
@@ -37,11 +58,6 @@ make build
 - Launch a development instance
 ```bash
 make dev
-```
-
-- Inspect your Docker image
-```bash
-make inspect
 ```
 
 - Deploy image to GCP Container Storage
