@@ -33,17 +33,14 @@ pipenv update <pkg>
 
 - Install virtualEnv so you can isolate Python environments
 ```bash
+# Install virtualEnv
 sudo pip3 install virtualenv
-```
 
-- Go to your MindHug directory (**yours might be different!**) and create virtualenv with python 3
-```bash
+# Go to your MindHug directory (**yours might be different!**) and create virtualenv with python 3
 cd ~/projects/MindHug && virtualenv venv -p python3
-```
 
-- Activate virtualenv
-```bash
-# Activate
+
+# Activate virtualenv
 source venv/bin/activate
 
 # Exit venv with the following command
@@ -52,16 +49,13 @@ deactivate
 
 - Dockerize the app
 ```bash
+# Build image
 make build
-```
 
-- Launch a development instance
-```bash
+# Launch a development instance
 make dev
-```
 
-- Deploy image to GCP Container Storage
-```bash
+# Deploy image to GCP Container Storage
 make deploy
 ```
 
