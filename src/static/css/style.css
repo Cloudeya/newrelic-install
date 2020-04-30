@@ -26,6 +26,10 @@ a:focus {
   color: initial;
 }
 
+.dropdown-item:hover {
+  background-color: #f7f7f7;
+}
+
 sup {
   font-size: 1rem;
   top: -.6em;
