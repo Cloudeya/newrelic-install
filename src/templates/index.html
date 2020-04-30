@@ -3,10 +3,7 @@
 {% block metatags %}
 <meta charset="utf-8" />
 
-<!-- Mobile Metas -->
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-
 <meta name="description" content="MindHug is a mental health services provider in London, United Kingdom. We help find what works best for your happiness and wellbeing.">
 <meta name="keywords" content="MindHug, Mental Health, Mental Health Coronavirus, Mental Wellbeing, Happiness, Art Therapy, Music Therapy, Sound Therapy, Drama Therapy, Mindfullness, Therapists Near Me, Losing It With Mental Health, Mental Disorder, Mental Health Emergency">
 {% endblock %}
@@ -20,7 +17,7 @@
   <div class="py-5 text-center h-100 align-items-center d-flex homesec">
     <div class="container py-5">
       <div class="row py-5">
-        <div class="mx-auto col-lg-10">
+        <div class="mx-auto col-lg-7">
           <h3 class="display-4 mb-4 ">Mental wellbeing and you. Because one size does not fit all.</h3>
           <p class="lead mb-5">We help find what works best for your happiness and wellbeing. We do this by harnessing the familiarity of community and the power of digital.</p> <a href="#footy" class="btn btn-primary call_to-btn mx-1">Get in Touch Below</a> 
         </div>
@@ -88,19 +85,41 @@
           <div class="col-md-6">
             <div class="about_img-container">
               <picture>
-                <source srcset="{{ url_for('static', filename='images/events.webp') }}" type="image/webp" alt="MindHug Events" class="img-fluid">
-                <source srcset="{{ url_for('static', filename='images/events.png') }}" type="image/png" alt="MindHug Events" class="img-fluid"> 
-                <img src="{{ url_for('static', filename='images/events.png') }}" type="image/png" alt="MindHug Events" class="img-fluid">
+                <source srcset="{{ url_for('static', filename='images/analytics.webp') }}" type="image/webp"
+                  alt="MindHug Analytics" class="img-fluid">
+                <source srcset="{{ url_for('static', filename='images/analytics.png') }}" type="image/png"
+                  alt="MindHug Analytics" class="img-fluid">
+                <img src="{{ url_for('static', filename='images/analytics.png') }}" type="image/png" alt="MindHug Analytics"
+                  class="img-fluid">
               </picture>
             </div>
           </div>
           <div class="col-md-6">
             <div class="about_detail-box">
               <h3>
+                Maintain a mood diary and employ wellbeing analytics
+              </h3>
+              <p>
+                Track lifestyle, sleep, diet, emotional health and your response to activities and therapies through our
+                unique mood diary. Use our analytics to find what works best for you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="admission_section">
+      <div class="container">
+        <div class="row flex-column-reverse flex-md-row">
+          <div class="col-md-6">
+            <div class="admission_detail-box">
+              <h3>
                 Book workshops and events
               </h3>
               <p>
-                Book and attend bespoke workshops and retreats to help rejuvenate yourself. If you would like to talk to us about organising a workshop for your organisation or group.
+                Book and attend bespoke workshops and retreats to help rejuvenate yourself. If you would like to talk to us about
+                organising a workshop for your organisation or group, click the button below.
               </p>
               <div class="">
                 <a href="/contact" class="call_to-btn btn_white-border">
@@ -109,34 +128,15 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="determine_section">
-      <div class="container">
-        <div class="row flex-column-reverse flex-md-row">
           <div class="col-md-6">
-            <div class="determine_detail-box">
-              <h3>
-                Experience free taster sessions
-              </h3>
-              <p>
-                Attend free events to meet your community and try some therapies and activities.
-              </p>
-              <div class="">
-                <a href="https://www.eventbrite.com/o/mindhug-29549779583" class="call_to-btn btn_white-border">
-                  Events
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="determine_img-container">
+            <div class="admission_img-container">
               <picture>
-                <source srcset="{{ url_for('static', filename='images/taster-session.webp') }}" type="image/webp" alt="MindHug Session" class="img-fluid">
-                <source srcset="{{ url_for('static', filename='images/taster-session.png') }}" type="image/png" alt="MindHug Session" class="img-fluid"> 
-                <img src="{{ url_for('static', filename='images/taster-session.png') }}" type="image/png" alt="MindHug Session" class="img-fluid">
+                <source srcset="{{ url_for('static', filename='images/events.webp') }}" type="image/webp" alt="MindHug Events"
+                  class="img-fluid">
+                <source srcset="{{ url_for('static', filename='images/events.png') }}" type="image/png" alt="MindHug Events"
+                  class="img-fluid">
+                <img src="{{ url_for('static', filename='images/events.png') }}" type="image/png" alt="MindHug Events"
+                  class="img-fluid">
               </picture>
             </div>
           </div>
@@ -150,20 +150,28 @@
           <div class="col-md-6">
             <div class="about_img-container">
               <picture>
-                <source srcset="{{ url_for('static', filename='images/analytics.webp') }}" type="image/webp" alt="MindHug Analytics" class="img-fluid">
-                <source srcset="{{ url_for('static', filename='images/analytics.png') }}" type="image/png" alt="MindHug Analytics" class="img-fluid"> 
-                <img src="{{ url_for('static', filename='images/analytics.png') }}" type="image/png" alt="MindHug Analytics" class="img-fluid">
+                <source srcset="{{ url_for('static', filename='images/taster-session.webp') }}" type="image/webp"
+                  alt="MindHug Session" class="img-fluid">
+                <source srcset="{{ url_for('static', filename='images/taster-session.png') }}" type="image/png" alt="MindHug Session"
+                  class="img-fluid">
+                <img src="{{ url_for('static', filename='images/taster-session.png') }}" type="image/png" alt="MindHug Session"
+                  class="img-fluid">
               </picture>
             </div>
           </div>
           <div class="col-md-6">
             <div class="about_detail-box">
               <h3>
-                Maintain a mood diary and employ wellbeing analytics
+                Experience free taster sessions
               </h3>
               <p>
-                Track lifestyle, sleep, diet, emotional health and your response to activities and therapies through our unique mood diary. Use our analytics to find what works best for you.
+                Attend free events to meet your community and try some therapies and activities.
               </p>
+              <div class="">
+                <a href="https://www.eventbrite.com/o/mindhug-29549779583" class="call_to-btn btn_white-border">
+                  Events
+                </a>
+              </div>
             </div>
           </div>
         </div>
