@@ -13,7 +13,6 @@ COPY ./src $APP_HOME
 RUN chmod 444 main.py
 
 COPY Pipfile $APP_HOME
-COPY Pipfile.lock $APP_HOME
 
 ENV PORT 8080
 
