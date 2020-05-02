@@ -132,6 +132,202 @@ nav.navbar.navbar-expand-lg {
 }
 /* navbar end */
 
+/* start subscribe */
+.mb-5, .my-5 {
+  margin-bottom: 0px !important;
+}
+
+.subscribe-area {
+    max-width: 600px;
+    margin: 0px auto 70px;
+    display: block;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.subscribe-area input {
+    width: 100%;
+    height: 60px;
+    padding: 0 15px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.subscribe-area textarea {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 15px 15px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.subscribe-area input:focus {
+  outline: none !important;
+}
+
+.subscribe-area textarea:focus {
+  outline: none !important;
+}
+
+.subscribe-area button {
+    background-color: #34bbae;
+    border: none;
+    outline: none;
+    position: relative;
+    color: #ffffff;
+    padding: 12px 40px;
+    margin-top: 80px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.subscribe-area button:hover {
+    background-color: #3cd6c7;
+    color: #ffffff;
+}
+
+.validation-text {
+    position: relative;
+    top: 4px;
+    right: 190px;
+}
+
+.validation-text a {
+    color: #34bbae;
+}
+
+.validation-text a:hover {
+    color: #34bbae;
+    opacity: 0.8;
+}
+
+.subscribe_validation {
+  position: absolute;
+  padding-left: 40px;
+  padding-top: 3px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  font-size: .8rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.subscribe_validation a {
+  color: #34bbae;
+}
+
+.subscribe_validation a:hover {
+  color: #34bbae;
+  opacity: 0.8;
+}
+
+
+.subscribe_validation span{
+  line-height: 1rem;
+  right: 20px;
+}
+
+.subscribe_validation input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.subscribe_checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+}
+
+.subscribe_validation:hover input ~ .subscribe_checkmark {
+  background-color: #f9f9f9;
+}
+
+.subscribe_validation input:checked ~ .subscribe_checkmark {
+  background-color: #34bbae;
+  border: none;
+}
+
+.subscribe_checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.subscribe_validation input:checked ~ .subscribe_checkmark:after {
+  display: block;
+}
+
+.subscribe_validation .subscribe_checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 7px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.subscribe-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+}
+
+.subscribe_validation:hover input ~ .subscribe-checkmark {
+  background-color: #f9f9f9;
+}
+
+.subscribe_validation input:checked ~ .subscribe-checkmark {
+  background-color: #34bbae;
+  border: none;
+}
+
+.subscribe-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.subscribe_validation input:checked ~ .subscribe-checkmark:after {
+  display: block;
+}
+
+.subscribe_validation .subscribe-checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 7px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* end subscribe */
+
+
 /* career start*/
 .mhjobs{
   max-width: 960px;

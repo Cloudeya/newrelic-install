@@ -2,7 +2,6 @@
 
 {% block metatags %}
 <meta charset="utf-8" />
-
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 <meta name="description" content="MindHug is a mental health services provider in London, United Kingdom. We help find what works best for your happiness and wellbeing.">
 <meta name="keywords" content="MindHug, Mental Health, Mental Health Coronavirus, Mental Wellbeing, Happiness, Art Therapy, Music Therapy, Sound Therapy, Drama Therapy, Mindfullness, Therapists Near Me, Losing It With Mental Health, Mental Disorder, Mental Health Emergency">
@@ -14,14 +13,51 @@
 
 {% include 'includes/_navbar.html' %}
 
+<iframe name="votar" style="display:none;"></iframe>
+
   <div class="py-5 text-center h-100 align-items-center d-flex homesec">
     <div class="container py-5">
+
       <div class="row py-5">
         <div class="mx-auto col-lg-7">
           <h3 class="display-4 mb-4 ">Mental wellbeing and you. Because one size does not fit all.</h3>
-          <p class="lead mb-5">We help find what works best for your happiness and wellbeing. We do this by harnessing the familiarity of community and the power of digital.</p> <a href="#footy" class="btn btn-primary call_to-btn mx-1">Get in Touch Below</a> 
+          <p class="lead mb-5">We help find what works best for your happiness and wellbeing. We do this by harnessing the familiarity of community and the power of digital.</p>
         </div>
       </div>
+
+      <div class="subscribe-area">
+        <form method="post" id="myForm1" target="votar">
+          <input type="email" class="form-control" name="sub_email1"
+            placeholder="Enter your email"
+            oninvalid="this.setCustomValidity('Please enter a valid email address')"
+            oninput="this.setCustomValidity('')" required>         
+          <label class="subscribe_validation">
+            <input type="checkbox" checked="checked" id="field_terms1"
+                          oninvalid="this.setCustomValidity('Please check the box to continue!')" oninput="this.setCustomValidity('')"
+                          required>
+            <span class="subscribe-checkmark"></span
+            <span class="validation-text">I agree to MindHug’s <a href="/privacy-policy" target="_blank" class="footer_link">Privacy
+                Policy</a>.</span>    
+          </label>
+          <button type="submit" onclick="myFunction1()" name="subscribe_btn" value="subscribe_btn1" id="subscribe_btn">
+                        Join Our Community
+          </button>
+          </form>
+          <!-- The Modal -->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <font style="font-size: 32px"></font>Thank you for subscribing! We'll be in touch soon!</font>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="modalClose()">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
     </div>
   </div>
 
@@ -319,6 +355,6 @@
     </div>
   </section>
 
-  </div>
+</div>
 
 {% endblock %}
