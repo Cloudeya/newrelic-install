@@ -25,15 +25,6 @@ window.addEventListener("load", function(){
 });
 
 // Form Homepage
-    function myFunction() {
-        var email = document.forms["myForm"]["sub_email"].value;
-        if (validate(email) && document.getElementById('field_terms').checked) {
-            $('#myModal').modal('show');
-        }
-        else {
-            return false;
-        }
-    }
     function myFunction1() {
         var email = document.forms["myForm1"]["sub_email1"].value;
         if (validate(email) && document.getElementById('field_terms1').checked) {
@@ -43,9 +34,9 @@ window.addEventListener("load", function(){
             return false;
         }
     }
-    function closeModal() {
-        document.getElementById("myForm").reset();
+    function modalClose() {
         document.getElementById("myForm1").reset();
+        window.location.href = "/";
     }
     function validate(email) {
         var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{1,4})$/;
@@ -57,7 +48,7 @@ window.addEventListener("load", function(){
     }
 
     window.addEventListener("DOMContentLoaded", function(e) {
-        var myForm = document.getElementById("myForm");
+        var myForm = document.getElementById("myForm1");
         var checkForm = function(e) {
             //...
             if(!this.terms.checked) {
@@ -132,7 +123,6 @@ window.addEventListener("load", function(){
         }
     }
 
-
 // Form Workshops
     function myFunction() {
         var name = document.forms["contact_workshop"]["fname"].value;
@@ -156,28 +146,3 @@ window.addEventListener("load", function(){
             return true;
         }
     }
-
-// nav
-$(document).ready(function() {
-  $(".navbar a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      var ht = $(".navbar-fixed-top").height() - 50;
-      var val = $(hash).offset().top;
-      $('html, body').unbind().animate({
-        scrollTop: val
-      }, 500, function() {
-        window.location.hash = hash;
-      });
-    }
-  });
-
-  $('.navbar-nav>li>a').on('click', function() {
-    $('.navbar-collapse').collapse('hide');
-  });
-
-  $('.hidden').fadeIn(4000).removeClass('hidden');
-  $('h1').fadeIn(4000).removeClass('hiddenA');
-  $('p').fadeIn(4000).removeClass('hiddenB');
-});
