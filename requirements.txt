@@ -3,3 +3,5 @@ urllib3
 requests
 waitress
 livereload
+Flask-gzip
+Flask-Caching
