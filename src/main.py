@@ -1,6 +1,8 @@
 import os
 import logging
 from waitress import serve
+from flask_gzip import Gzip
+from flask_caching import Cache
 from livereload import Server, shell
 from flask import Flask, request, jsonify, render_template, make_response, redirect, url_for, flash, sessions, session, get_flashed_messages
 from hubspot import subscribe_form, workshop_forms, partnership_forms, therapist_forms
@@ -10,9 +12,26 @@ logging.basicConfig(format='%(message)s', level=logging.INFO)
 
 app = Flask(__name__)
 
+# Configurations
+app.config.from_pyfile('config.py')
 app.secret_key = "abcdefgh"
 
+# Caching
+cache = Cache(app, config={'CACHE_TYPE': 'simple'})
+
+# GZip Compression
+gzip = Gzip(app)
+
+# Caching
+@app.after_request
+def add_header(response):
+    # response.cache_control.no_store = True
+    if 'Cache-Control' not in response.headers:
+        response.headers['Cache-Control'] = 'no-store'
+    return response
+
 @app.route('/', methods=["GET", "POST"])
+@cache.cached(timeout=50)
 def index():
     if request.method=="POST":
         if request.form['subscribe_btn']=='subscribe_btn':
