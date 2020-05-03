@@ -4,7 +4,7 @@ RUN=docker run --rm -it
 TESTS=./tests/structure-tests.yaml
 CONTAINER_NAME=mmw1
 BUILD_NAME=mmw
-VERSION=v1.0.10
+VERSION=v1.0.11
 PROJECT_ID=mindhug-marketing-site
 SUBMIT=gcloud builds submit --tag
 
