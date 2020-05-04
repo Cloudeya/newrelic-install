@@ -26,6 +26,6 @@ spec:
     spec:
       containers:
       - name: mmw1
-        image: gcr.io/mindhug-marketing-site/mmw1/mmw:v1.0.14
+        image: gcr.io/mindhug-marketing-site/github.com/mindhug/www-v1:$COMMIT_SHA
         ports:
         - containerPort: 8080
