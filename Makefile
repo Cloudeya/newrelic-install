@@ -4,14 +4,24 @@ RUN=docker run --rm -it
 TESTS=./tests/structure-tests.yaml
 CONTAINER_NAME=mmw1
 BUILD_NAME=mmw
-VERSION=v1.0.14
+VERSION=v1.0.15
 PROJECT_ID=mindhug-marketing-site
 SUBMIT=gcloud builds submit --tag
 
-# Addresses Minikube Connection
-# minikube stop
-# kubectl config use-context minikube
-# minikube start --vm-driver virtualbox
+setup: ## Setup system for local development.
+	@/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+	@brew cask upgrade -f; brew update; brew upgrade; brew cleanup
+	@softwareupdate --all --install --force
+	@brew install python3 && python3 --version
+	@brew install pipenv
+	@brew install dnsmasq
+	@sudo brew services start dnsmasq
+	@minikube stop; minikube delete ; rm -rf ~/.minikube
+	@brew install kubectl && brew reinstall kubectl
+	@brew install minikube && brew reinstall minikube
+	@brew install hyperkit && brew reinstall hyperkit
+	@minikube start
+	@minikube dashboard --url
 
 verify: lint test check security ## Verify everything!
 	@echo "lint, test, check and perform security assessment of a Docker image."
@@ -36,6 +46,9 @@ security: ## Check Docker image security.
 dev: ## Spin up development instance.
 	@echo "Starting development instance..."
 	@python3 ./src/main.py
+
+build: ## Build Docker image.
+	$(BUILD) $(IMAGE_NAME):latest -t $(CONTAINER_NAME):$(VERSION) .
 
 deploy: ## Send Docker image to GCP.
 	@echo " ## Sending Docker image to GCP..."
