@@ -39,7 +39,6 @@ sudo pip3 install virtualenv
 # Go to your MindHug directory (**yours might be different!**) and create virtualenv with python 3
 cd ~/projects/MindHug && virtualenv venv -p python3
 
-
 # Activate virtualenv
 source venv/bin/activate
 

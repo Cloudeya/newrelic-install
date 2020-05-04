@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mmw-production
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: mmw-production
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mmw-production
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mmw-production
+  template:
+    metadata:
+      labels:
+        app: mmw-production
+    spec:
+      containers:
+      - name: mmw1
+        image: gcr.io/mindhug-marketing-site/mmw1/mmw:v1.0.14
+        ports:
+        - containerPort: 8080

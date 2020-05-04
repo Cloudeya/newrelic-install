@@ -4,9 +4,14 @@ RUN=docker run --rm -it
 TESTS=./tests/structure-tests.yaml
 CONTAINER_NAME=mmw1
 BUILD_NAME=mmw
-VERSION=v1.0.11
+VERSION=v1.0.14
 PROJECT_ID=mindhug-marketing-site
 SUBMIT=gcloud builds submit --tag
+
+# Addresses Minikube Connection
+# minikube stop
+# kubectl config use-context minikube
+# minikube start --vm-driver virtualbox
 
 verify: lint test check security ## Verify everything!
 	@echo "lint, test, check and perform security assessment of a Docker image."
