@@ -1,31 +1,43 @@
-apiVersion: v1
-kind: Service
-metadata:
-  name: mmw-production
-spec:
-  type: ClusterIP
-  ports:
-  - port: 80
-    targetPort: 8080
-  selector:
-    app: mmw-production
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mmw-production
+  namespace: default
 spec:
   replicas: 2
   selector:
     matchLabels:
       app: mmw-production
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
   template:
     metadata:
       labels:
         app: mmw-production
     spec:
       containers:
-      - name: github.com
-        image: gcr.io/mindhug-marketing-site/github.com/mindhug/www-v1:$COMMIT_SHA
-        ports:
-        - containerPort: 8080
+        - image: gcr.io/mindhug-marketing-site/github.com/mindhug/www-v1
+          imagePullPolicy: IfNotPresent
+          name: mmw1
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mmw-production
+  namespace: default
+spec:
+  clusterIP: 10.7.252.174
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: mmw-production
+  sessionAffinity: None
+  type: ClusterIP
