@@ -25,7 +25,7 @@ spec:
         app: mmw-staging
     spec:
       containers:
-      - name: mindhug
-        image: gcr.io/mindhug-marketing-site/github.com/mindhug/www-v1,image.tag=$COMMIT_SHA
+      - name: www-v1
+        image: gcr.io/mindhug-marketing-site/mmw1/www-v1/mmw:$COMMIT_SHA
         ports:
         - containerPort: 8080
