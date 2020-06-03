@@ -35,6 +35,98 @@ sup {
   top: -.6em;
 }
 
+/* video start */
+.overlay-video {
+  display: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  -ms-transition: opacity 600ms ease-in;
+  transition: opacity 600ms ease-in;
+  -ms-transition: opacity .6s;
+  transition: opacity .6s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .7);
+  z-index: 999999;
+}
+
+.o1 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity: 1;
+  -ms-transition: opacity 600ms ease-out;
+  transition: opacity 600ms ease-out;
+  -ms-transition: opacity .6s;
+  transition: opacity .6s;
+}
+
+.videoWrapperExt {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 982px;
+  padding: 0 20px;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.close {
+  /* background-image:url(); */
+  position: absolute;
+  top: -50px;
+  right: 0px;
+  cursor: pointer;
+  z-index: 9999;
+  height: 40px;
+  width: 40px;
+  background-size: 40px;
+  @media (max-width: 767px) and (orientation: landscape) {
+    display: none;
+  }
+}
+
+.mindhugvid {
+  text-align: center;
+  color: #304351;
+  cursor: pointer;
+}
+
+.mindhugvid p {
+  font-size: 1em;
+  text-transform: lowercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.favid {
+  font-size: 80px !important;
+  color: #304351;
+}
+
+.favid:hover {
+  transform: scale(0.9);
+  transition: transform .2s;
+}
+
+/* video end */
+
 /* button start */
 .call_to-btn {
   display: inline-block;
