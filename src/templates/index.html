@@ -23,22 +23,45 @@
         <div class="mx-auto col-lg-7">
           <h3 class="display-4 mb-4 ">Mental wellbeing and you. Because one size does not fit all.</h3>
           <p class="lead mb-5">We help find what works best for your happiness and wellbeing. We do this by harnessing the familiarity of community and the power of digital. Join our mailing list and stay abreast of our progress. Be the first to hear about relevant news and events.</p>
-        </div>
-      </div>
-
-      <div class="overlay-video">
-        <div class="videoWrapperExt">
-            <div class="videoWrapper">
-              <div class="close"></div>
-                <iframe id="player" width="853" height="480" src="" frameborder="0" allowfullscreen></iframe>
+          <div class="subscribe-area" style="margin-top: 50px"> 
+            <form method="post" id="myForm1" target="votar">
+              <input type="email" class="form-control" name="sub_email1"
+                placeholder="Enter your email..."
+                oninvalid="this.setCustomValidity('Please enter a valid email address')"
+                oninput="this.setCustomValidity('')" required>         
+              <label class="subscribe_validation">
+                <input type="checkbox" class="mindhug-checkmark" id="field_terms1"
+                              oninvalid="this.setCustomValidity('Please check the box to continue!')" oninput="this.setCustomValidity('')"
+                              required>
+                <span class="subscribe-checkmark"></span
+                <span class="validation-text">I agree to MindHug’s <a href="/privacy-policy" target="_blank" class="footer_link">Privacy
+                    Policy</a>.</span>    
+              </label>
+              <button type="submit" onclick="myFunction1()" name="subscribe_btn" value="subscribe_btn1" id="subscribe_btn">
+                            Join mailing list
+              </button>
+            </form>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <font style="font-size: 32px"></font>Thank you for subscribing! We'll be in touch soon!</font>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="modalClose()">Close</button>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div> 
+        </div>
+        <div class="mx-auto col-lg-5" style="align-self: center;">
+          <div style="position:relative;padding-top:56.25%;">
+            <iframe src="https://www.youtube.com/embed/DBGT2AKrn6s?rel=0&amp;showinfo=0&amp;" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+          </div>
         </div>
       </div>
-      <div class="js-overlay-start mindhugvid" data-url="https://www.youtube.com/embed/DBGT2AKrn6s?rel=0&amp;showinfo=0&amp;autoplay=1">
-        <i class="fa fa-play-circle favid"></i>
-        <p>click/tap to watch</p>
-      </div>
-
     </div>
   </div>
 
