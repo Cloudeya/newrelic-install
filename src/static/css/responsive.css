@@ -27,11 +27,7 @@
 		margin: 0 auto;
 		margin-bottom: 30px;
 	}
-
-	.vidheader {
-		width:280px;
-	}
-
+	
 	.about_section,
 	.about_img-container,
 	.admission_detail-box,
@@ -68,10 +64,6 @@
 		overflow: hidden;
 		margin: 0 auto;
 		margin-bottom: 30px;
-	}
-
-	.vidheader {
-		width:460px;
 	}
 
 	.about_section,
