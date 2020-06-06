@@ -29,7 +29,7 @@
 	}
 
 	.vidheader {
-		width:470px;
+		width:280px;
 	}
 
 	.about_section,
@@ -68,6 +68,10 @@
 		overflow: hidden;
 		margin: 0 auto;
 		margin-bottom: 30px;
+	}
+
+	.vidheader {
+		width:460px;
 	}
 
 	.about_section,
