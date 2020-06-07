@@ -27,7 +27,11 @@
 		margin: 0 auto;
 		margin-bottom: 30px;
 	}
-	
+
+	.headersub {
+		margin-top: -100px;
+	  }
+
 	.about_section,
 	.about_img-container,
 	.admission_detail-box,

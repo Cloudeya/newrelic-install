@@ -147,6 +147,7 @@ sup {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
   overflow: hidden;
 }
+
 .headersub input {
   line-height: 70px;
   padding: 0;
@@ -157,11 +158,13 @@ sup {
   background: #ffffff;
   letter-spacing: 0.02em;
 }
+
 .headersub input:not([type="submit"]) {
   width: 100%;
   display: block;
   padding: 0 150px 0 30px;
 }
+
 .headersub input:not([type="email"]) {
   position: absolute;
   height: 50px;
@@ -176,10 +179,12 @@ sup {
   cursor: pointer;
   outline: none !important;
 }
+
 .headersub input:not([type="email"]):hover {
   background: #3cd6c7;
   outline: none !important;
 }
+
 .headersub input:focus {
   outline: none !important;
   background: #ffffff;
