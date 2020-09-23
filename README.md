@@ -6,7 +6,9 @@ System-Level Monitoring for applications in the cloud using New Relic Client.
 
 Run the following in your terminal. Don't forget to update your NewRelic license key:
 
-```LICENSE_KEY={YOUR_NEWRELIC_LICENCE_KEY_HERE} sudo -E -H bash -c "$(curl -sSL https://gitlab.com/cloudeya/newrelic-install/-/raw/master/newrelic_install.sh)"```
+```sh
+LICENSE_KEY={YOUR_NEWRELIC_LICENCE_KEY_HERE} sudo -E -H bash -c "$(curl -sSL https://raw.githubusercontent.com/Cloudeya/newrelic-install/master/newrelic_install.sh)"
+```
 
 ## License
 
